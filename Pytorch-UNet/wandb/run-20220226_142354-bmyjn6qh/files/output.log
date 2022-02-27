@@ -1,0 +1,60 @@
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      1
+        Learning rate:   1e-05
+        Training size:   1464
+        Validation size: 1449
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  0.5
+        Mixed Precision: True
+Epoch 1/5:   0%|                                                                    | 0/1464 [00:00<?, ?img/s]/home/dvir_proj_1/anaconda3/lib/python3.7/site-packages/torch/nn/functional.py:3063: UserWarning: Default upsampling behavior when mode=bilinear is changed to align_corners=False since 0.4.0. Please specify align_corners=True if the old behavior is desired. See the documentation of nn.Upsample for details.
+  "See the documentation of nn.Upsample for details.".format(mode))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 1/5:  40%|███████████████▌                       | 584/1464 [00:44<01:13, 11.99img/s, loss (batch)=1.07]
+Traceback (most recent call last):
+  File "train.py", line 328, in <module>
+    amp=args.amp)
+  File "train.py", line 259, in train_net
+    val_score = evaluate(net, val_loader, device)
+  File "/home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/evaluate.py", line 38, in evaluate
+    mask_pred = net(image)
+  File "/home/dvir_proj_1/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/unet/unet_model.py", line 26, in forward
+    x1 = self.inc(x)
+  File "/home/dvir_proj_1/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/unet/unet_parts.py", line 25, in forward
+    return self.double_conv(x)
+  File "/home/dvir_proj_1/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/dvir_proj_1/anaconda3/lib/python3.7/site-packages/torch/nn/modules/container.py", line 117, in forward
+    input = module(input)
+  File "/home/dvir_proj_1/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/dvir_proj_1/anaconda3/lib/python3.7/site-packages/torch/nn/modules/conv.py", line 423, in forward
+    return self._conv_forward(input, self.weight)
+  File "/home/dvir_proj_1/anaconda3/lib/python3.7/site-packages/torch/nn/modules/conv.py", line 420, in _conv_forward
+    self.padding, self.dilation, self.groups)
+RuntimeError: Given groups=1, weight of size [64, 4, 3, 3], expected input[4, 3, 224, 224] to have 4 channels, but got 3 channels instead

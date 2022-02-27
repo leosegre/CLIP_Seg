@@ -1,0 +1,39 @@
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      1
+        Learning rate:   1e-05
+        Training size:   1464
+        Validation size: 1449
+        Checkpoints:     True
+        Device:          cpu
+        Images scaling:  0.5
+        Mixed Precision: True
+/home/dvir_proj_1/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py:115: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.")
+Epoch 1/5:   0%|                                                           | 0/1464 [00:00<?, ?img/s]
+Traceback (most recent call last):
+  File "train.py", line 212, in <module>
+    train_net(net=net,
+  File "train.py", line 103, in train_net
+    for (images, true_masks) in train_loader:
+  File "/home/dvir_proj_1/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 521, in __next__
+    data = self._next_data()
+  File "/home/dvir_proj_1/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1203, in _next_data
+    return self._process_data(data)
+  File "/home/dvir_proj_1/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1229, in _process_data
+    data.reraise()
+  File "/home/dvir_proj_1/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torch/_utils.py", line 425, in reraise
+    raise self.exc_type(msg)
+RuntimeError: Caught RuntimeError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/dvir_proj_1/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torch/utils/data/_utils/worker.py", line 287, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/home/dvir_proj_1/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 47, in fetch
+    return self.collate_fn(data)
+  File "/home/dvir_proj_1/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torch/utils/data/_utils/collate.py", line 84, in default_collate
+    return [default_collate(samples) for samples in transposed]
+  File "/home/dvir_proj_1/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torch/utils/data/_utils/collate.py", line 84, in <listcomp>
+    return [default_collate(samples) for samples in transposed]
+  File "/home/dvir_proj_1/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torch/utils/data/_utils/collate.py", line 56, in default_collate
+    return torch.stack(batch, 0, out=out)
+RuntimeError: stack expects each tensor to be equal size, but got [3, 333, 500] at entry 0 and [3, 375, 500] at entry 1

@@ -1,0 +1,251 @@
+2022-02-26 14:58:21,209 INFO    MainThread:36466 [internal.py:wandb_internal():92] W&B internal server running at pid: 36466, started at: 2022-02-26 14:58:21.209181
+2022-02-26 14:58:21,211 DEBUG   HandlerThread:36466 [handler.py:handle_request():131] handle_request: check_version
+2022-02-26 14:58:21,211 INFO    WriterThread:36466 [datastore.py:open_for_write():77] open: /home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/wandb/run-20220226_145819-2skva0cq/run-2skva0cq.wandb
+2022-02-26 14:58:21,213 DEBUG   SenderThread:36466 [sender.py:send():235] send: header
+2022-02-26 14:58:21,213 DEBUG   SenderThread:36466 [sender.py:send_request():249] send_request: check_version
+2022-02-26 14:58:21,512 DEBUG   SenderThread:36466 [sender.py:send():235] send: run
+2022-02-26 14:58:21,514 INFO    SenderThread:36466 [sender.py:_maybe_setup_resume():490] checking resume status for None/U-Net/2skva0cq
+2022-02-26 14:58:22,196 INFO    SenderThread:36466 [dir_watcher.py:__init__():169] watching files in: /home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/wandb/run-20220226_145819-2skva0cq/files
+2022-02-26 14:58:22,196 INFO    SenderThread:36466 [sender.py:_start_run_threads():812] run started: 2skva0cq with start time 1645880300
+2022-02-26 14:58:22,196 DEBUG   SenderThread:36466 [sender.py:send():235] send: summary
+2022-02-26 14:58:22,196 INFO    SenderThread:36466 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-26 14:58:22,197 DEBUG   HandlerThread:36466 [handler.py:handle_request():131] handle_request: run_start
+2022-02-26 14:58:22,203 DEBUG   HandlerThread:36466 [meta.py:__init__():36] meta init
+2022-02-26 14:58:22,203 DEBUG   HandlerThread:36466 [meta.py:__init__():50] meta init done
+2022-02-26 14:58:22,203 DEBUG   HandlerThread:36466 [meta.py:probe():210] probe
+2022-02-26 14:58:22,210 DEBUG   HandlerThread:36466 [meta.py:_setup_git():200] setup git
+2022-02-26 14:58:22,227 DEBUG   HandlerThread:36466 [meta.py:_setup_git():207] setup git done
+2022-02-26 14:58:22,228 DEBUG   HandlerThread:36466 [meta.py:_save_pip():54] save pip
+2022-02-26 14:58:22,228 DEBUG   HandlerThread:36466 [meta.py:_save_pip():68] save pip done
+2022-02-26 14:58:22,229 DEBUG   HandlerThread:36466 [meta.py:_save_conda():75] save conda
+2022-02-26 14:58:23,198 INFO    Thread-8  :36466 [dir_watcher.py:_on_file_created():217] file/dir created: /home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/wandb/run-20220226_145819-2skva0cq/files/conda-environment.yaml
+2022-02-26 14:58:23,199 INFO    Thread-8  :36466 [dir_watcher.py:_on_file_created():217] file/dir created: /home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/wandb/run-20220226_145819-2skva0cq/files/wandb-summary.json
+2022-02-26 14:58:23,199 INFO    Thread-8  :36466 [dir_watcher.py:_on_file_created():217] file/dir created: /home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/wandb/run-20220226_145819-2skva0cq/files/requirements.txt
+2022-02-26 14:58:23,738 DEBUG   HandlerThread:36466 [meta.py:_save_conda():85] save conda done
+2022-02-26 14:58:23,738 DEBUG   HandlerThread:36466 [meta.py:probe():248] probe done
+2022-02-26 14:58:23,742 DEBUG   SenderThread:36466 [sender.py:send():235] send: files
+2022-02-26 14:58:23,742 INFO    SenderThread:36466 [sender.py:_save_file():944] saving file wandb-metadata.json with policy now
+2022-02-26 14:58:23,749 DEBUG   HandlerThread:36466 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-26 14:58:23,749 DEBUG   SenderThread:36466 [sender.py:send_request():249] send_request: stop_status
+2022-02-26 14:58:24,115 DEBUG   SenderThread:36466 [sender.py:send():235] send: config
+2022-02-26 14:58:24,198 INFO    Thread-8  :36466 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/wandb/run-20220226_145819-2skva0cq/files/conda-environment.yaml
+2022-02-26 14:58:24,198 INFO    Thread-8  :36466 [dir_watcher.py:_on_file_created():217] file/dir created: /home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/wandb/run-20220226_145819-2skva0cq/files/wandb-metadata.json
+2022-02-26 14:58:24,198 INFO    Thread-8  :36466 [dir_watcher.py:_on_file_created():217] file/dir created: /home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/wandb/run-20220226_145819-2skva0cq/files/output.log
+2022-02-26 14:58:24,716 INFO    Thread-11 :36466 [upload_job.py:push():137] Uploaded file /tmp/tmphu20s0zkwandb/2683arrb-wandb-metadata.json
+2022-02-26 14:58:26,199 INFO    Thread-8  :36466 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/wandb/run-20220226_145819-2skva0cq/files/output.log
+2022-02-26 14:58:39,118 DEBUG   HandlerThread:36466 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-26 14:58:39,119 DEBUG   SenderThread:36466 [sender.py:send_request():249] send_request: stop_status
+2022-02-26 14:58:52,210 INFO    Thread-8  :36466 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/wandb/run-20220226_145819-2skva0cq/files/config.yaml
+2022-02-26 14:58:52,855 DEBUG   SenderThread:36466 [sender.py:send():235] send: stats
+2022-02-26 14:58:54,490 DEBUG   HandlerThread:36466 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-26 14:58:54,490 DEBUG   SenderThread:36466 [sender.py:send_request():249] send_request: stop_status
+2022-02-26 14:59:05,998 DEBUG   SenderThread:36466 [sender.py:send():235] send: history
+2022-02-26 14:59:05,999 DEBUG   SenderThread:36466 [sender.py:send():235] send: summary
+2022-02-26 14:59:06,004 INFO    SenderThread:36466 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-26 14:59:06,216 INFO    Thread-8  :36466 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/wandb/run-20220226_145819-2skva0cq/files/wandb-summary.json
+2022-02-26 14:59:08,217 INFO    Thread-8  :36466 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/wandb/run-20220226_145819-2skva0cq/files/output.log
+2022-02-26 14:59:09,821 DEBUG   HandlerThread:36466 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-26 14:59:09,821 DEBUG   SenderThread:36466 [sender.py:send_request():249] send_request: stop_status
+2022-02-26 14:59:13,300 DEBUG   SenderThread:36466 [sender.py:send():235] send: history
+2022-02-26 14:59:13,300 DEBUG   SenderThread:36466 [sender.py:send():235] send: summary
+2022-02-26 14:59:13,303 INFO    SenderThread:36466 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-26 14:59:14,219 INFO    Thread-8  :36466 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/wandb/run-20220226_145819-2skva0cq/files/output.log
+2022-02-26 14:59:14,220 INFO    Thread-8  :36466 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/wandb/run-20220226_145819-2skva0cq/files/wandb-summary.json
+2022-02-26 14:59:20,434 DEBUG   SenderThread:36466 [sender.py:send():235] send: history
+2022-02-26 14:59:20,434 DEBUG   SenderThread:36466 [sender.py:send():235] send: summary
+2022-02-26 14:59:20,435 INFO    SenderThread:36466 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-26 14:59:21,222 INFO    Thread-8  :36466 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/wandb/run-20220226_145819-2skva0cq/files/wandb-summary.json
+2022-02-26 14:59:22,222 INFO    Thread-8  :36466 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/wandb/run-20220226_145819-2skva0cq/files/output.log
+2022-02-26 14:59:25,154 DEBUG   HandlerThread:36466 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-26 14:59:25,154 DEBUG   SenderThread:36466 [sender.py:send_request():249] send_request: stop_status
+2022-02-26 14:59:25,683 DEBUG   SenderThread:36466 [sender.py:send():235] send: stats
+2022-02-26 14:59:27,761 DEBUG   SenderThread:36466 [sender.py:send():235] send: history
+2022-02-26 14:59:27,761 DEBUG   SenderThread:36466 [sender.py:send():235] send: summary
+2022-02-26 14:59:27,763 INFO    SenderThread:36466 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-26 14:59:28,225 INFO    Thread-8  :36466 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/wandb/run-20220226_145819-2skva0cq/files/wandb-summary.json
+2022-02-26 14:59:30,226 INFO    Thread-8  :36466 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/wandb/run-20220226_145819-2skva0cq/files/output.log
+2022-02-26 14:59:34,975 DEBUG   SenderThread:36466 [sender.py:send():235] send: history
+2022-02-26 14:59:34,976 DEBUG   SenderThread:36466 [sender.py:send():235] send: summary
+2022-02-26 14:59:34,977 INFO    SenderThread:36466 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-26 14:59:35,229 INFO    Thread-8  :36466 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/wandb/run-20220226_145819-2skva0cq/files/wandb-summary.json
+2022-02-26 14:59:36,229 INFO    Thread-8  :36466 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/wandb/run-20220226_145819-2skva0cq/files/output.log
+2022-02-26 14:59:40,488 DEBUG   HandlerThread:36466 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-26 14:59:40,489 DEBUG   SenderThread:36466 [sender.py:send_request():249] send_request: stop_status
+2022-02-26 14:59:42,083 DEBUG   SenderThread:36466 [sender.py:send():235] send: history
+2022-02-26 14:59:42,083 DEBUG   SenderThread:36466 [sender.py:send():235] send: summary
+2022-02-26 14:59:42,086 INFO    SenderThread:36466 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-26 14:59:42,232 INFO    Thread-8  :36466 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/wandb/run-20220226_145819-2skva0cq/files/wandb-summary.json
+2022-02-26 14:59:44,232 INFO    Thread-8  :36466 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/wandb/run-20220226_145819-2skva0cq/files/output.log
+2022-02-26 14:59:49,266 DEBUG   SenderThread:36466 [sender.py:send():235] send: history
+2022-02-26 14:59:49,267 DEBUG   SenderThread:36466 [sender.py:send():235] send: summary
+2022-02-26 14:59:49,267 INFO    SenderThread:36466 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-26 14:59:50,235 INFO    Thread-8  :36466 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/wandb/run-20220226_145819-2skva0cq/files/output.log
+2022-02-26 14:59:50,235 INFO    Thread-8  :36466 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/wandb/run-20220226_145819-2skva0cq/files/wandb-summary.json
+2022-02-26 14:59:55,827 DEBUG   HandlerThread:36466 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-26 14:59:55,827 DEBUG   SenderThread:36466 [sender.py:send_request():249] send_request: stop_status
+2022-02-26 14:59:56,317 DEBUG   SenderThread:36466 [sender.py:send():235] send: history
+2022-02-26 14:59:56,317 DEBUG   SenderThread:36466 [sender.py:send():235] send: summary
+2022-02-26 14:59:56,319 INFO    SenderThread:36466 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-26 14:59:57,238 INFO    Thread-8  :36466 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/wandb/run-20220226_145819-2skva0cq/files/wandb-summary.json
+2022-02-26 14:59:58,238 INFO    Thread-8  :36466 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/wandb/run-20220226_145819-2skva0cq/files/output.log
+2022-02-26 14:59:58,508 DEBUG   SenderThread:36466 [sender.py:send():235] send: stats
+2022-02-26 15:00:03,506 DEBUG   SenderThread:36466 [sender.py:send():235] send: history
+2022-02-26 15:00:03,507 DEBUG   SenderThread:36466 [sender.py:send():235] send: summary
+2022-02-26 15:00:03,507 INFO    SenderThread:36466 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-26 15:00:04,241 INFO    Thread-8  :36466 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/wandb/run-20220226_145819-2skva0cq/files/wandb-summary.json
+2022-02-26 15:00:06,242 INFO    Thread-8  :36466 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/wandb/run-20220226_145819-2skva0cq/files/output.log
+2022-02-26 15:00:10,623 DEBUG   SenderThread:36466 [sender.py:send():235] send: history
+2022-02-26 15:00:10,624 DEBUG   SenderThread:36466 [sender.py:send():235] send: summary
+2022-02-26 15:00:10,626 INFO    SenderThread:36466 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-26 15:00:11,174 DEBUG   HandlerThread:36466 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-26 15:00:11,175 DEBUG   SenderThread:36466 [sender.py:send_request():249] send_request: stop_status
+2022-02-26 15:00:11,244 INFO    Thread-8  :36466 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/wandb/run-20220226_145819-2skva0cq/files/wandb-summary.json
+2022-02-26 15:00:12,245 INFO    Thread-8  :36466 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/wandb/run-20220226_145819-2skva0cq/files/output.log
+2022-02-26 15:00:17,786 DEBUG   SenderThread:36466 [sender.py:send():235] send: history
+2022-02-26 15:00:17,786 DEBUG   SenderThread:36466 [sender.py:send():235] send: summary
+2022-02-26 15:00:17,787 INFO    SenderThread:36466 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-26 15:00:18,247 INFO    Thread-8  :36466 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/wandb/run-20220226_145819-2skva0cq/files/wandb-summary.json
+2022-02-26 15:00:20,248 INFO    Thread-8  :36466 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/wandb/run-20220226_145819-2skva0cq/files/output.log
+2022-02-26 15:00:20,964 DEBUG   SenderThread:36466 [sender.py:send():235] send: history
+2022-02-26 15:00:20,965 DEBUG   SenderThread:36466 [sender.py:send():235] send: summary
+2022-02-26 15:00:20,968 INFO    SenderThread:36466 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-26 15:00:21,249 INFO    Thread-8  :36466 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/wandb/run-20220226_145819-2skva0cq/files/wandb-summary.json
+2022-02-26 15:00:22,249 INFO    Thread-8  :36466 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/wandb/run-20220226_145819-2skva0cq/files/output.log
+2022-02-26 15:00:26,519 DEBUG   HandlerThread:36466 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-26 15:00:26,520 DEBUG   SenderThread:36466 [sender.py:send_request():249] send_request: stop_status
+2022-02-26 15:00:30,234 DEBUG   SenderThread:36466 [sender.py:send():235] send: history
+2022-02-26 15:00:30,234 DEBUG   SenderThread:36466 [sender.py:send():235] send: summary
+2022-02-26 15:00:30,235 INFO    SenderThread:36466 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-26 15:00:30,252 INFO    Thread-8  :36466 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/wandb/run-20220226_145819-2skva0cq/files/wandb-summary.json
+2022-02-26 15:00:31,372 DEBUG   SenderThread:36466 [sender.py:send():235] send: stats
+2022-02-26 15:00:32,253 INFO    Thread-8  :36466 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/wandb/run-20220226_145819-2skva0cq/files/output.log
+2022-02-26 15:00:37,375 DEBUG   SenderThread:36466 [sender.py:send():235] send: history
+2022-02-26 15:00:37,376 DEBUG   SenderThread:36466 [sender.py:send():235] send: summary
+2022-02-26 15:00:37,377 INFO    SenderThread:36466 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-26 15:00:38,256 INFO    Thread-8  :36466 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/wandb/run-20220226_145819-2skva0cq/files/output.log
+2022-02-26 15:00:38,256 INFO    Thread-8  :36466 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/wandb/run-20220226_145819-2skva0cq/files/wandb-summary.json
+2022-02-26 15:00:41,878 DEBUG   HandlerThread:36466 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-26 15:00:41,879 DEBUG   SenderThread:36466 [sender.py:send_request():249] send_request: stop_status
+2022-02-26 15:00:43,380 WARNING MainThread:36466 [internal.py:wandb_internal():152] Internal process interrupt: 1
+2022-02-26 15:00:46,259 INFO    Thread-8  :36466 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/wandb/run-20220226_145819-2skva0cq/files/output.log
+2022-02-26 15:00:46,488 DEBUG   SenderThread:36466 [sender.py:send():235] send: telemetry
+2022-02-26 15:00:46,489 DEBUG   HandlerThread:36466 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-26 15:00:46,489 DEBUG   SenderThread:36466 [sender.py:send():235] send: exit
+2022-02-26 15:00:46,489 INFO    SenderThread:36466 [sender.py:send_exit():371] handling exit code: 0
+2022-02-26 15:00:46,490 INFO    SenderThread:36466 [sender.py:send_exit():373] handling runtime: 144
+2022-02-26 15:00:46,491 INFO    SenderThread:36466 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-26 15:00:46,491 INFO    SenderThread:36466 [sender.py:send_exit():379] send defer
+2022-02-26 15:00:46,491 DEBUG   SenderThread:36466 [sender.py:send_request():249] send_request: poll_exit
+2022-02-26 15:00:46,492 DEBUG   HandlerThread:36466 [handler.py:handle_request():131] handle_request: defer
+2022-02-26 15:00:46,492 INFO    HandlerThread:36466 [handler.py:handle_request_defer():154] handle defer: 0
+2022-02-26 15:00:46,493 DEBUG   SenderThread:36466 [sender.py:send_request():249] send_request: defer
+2022-02-26 15:00:46,493 INFO    SenderThread:36466 [sender.py:send_request_defer():388] handle sender defer: 0
+2022-02-26 15:00:46,493 INFO    SenderThread:36466 [sender.py:transition_state():392] send defer: 1
+2022-02-26 15:00:46,493 DEBUG   HandlerThread:36466 [handler.py:handle_request():131] handle_request: defer
+2022-02-26 15:00:46,493 INFO    HandlerThread:36466 [handler.py:handle_request_defer():154] handle defer: 1
+2022-02-26 15:00:46,747 DEBUG   SenderThread:36466 [sender.py:send_request():249] send_request: defer
+2022-02-26 15:00:46,748 DEBUG   HandlerThread:36466 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-26 15:00:46,748 INFO    SenderThread:36466 [sender.py:send_request_defer():388] handle sender defer: 1
+2022-02-26 15:00:46,748 INFO    SenderThread:36466 [sender.py:transition_state():392] send defer: 2
+2022-02-26 15:00:46,749 DEBUG   SenderThread:36466 [sender.py:send_request():249] send_request: poll_exit
+2022-02-26 15:00:46,749 DEBUG   SenderThread:36466 [sender.py:send():235] send: stats
+2022-02-26 15:00:46,749 DEBUG   HandlerThread:36466 [handler.py:handle_request():131] handle_request: defer
+2022-02-26 15:00:46,750 INFO    HandlerThread:36466 [handler.py:handle_request_defer():154] handle defer: 2
+2022-02-26 15:00:46,751 DEBUG   SenderThread:36466 [sender.py:send_request():249] send_request: defer
+2022-02-26 15:00:46,751 INFO    SenderThread:36466 [sender.py:send_request_defer():388] handle sender defer: 2
+2022-02-26 15:00:46,751 INFO    SenderThread:36466 [sender.py:transition_state():392] send defer: 3
+2022-02-26 15:00:46,751 DEBUG   HandlerThread:36466 [handler.py:handle_request():131] handle_request: defer
+2022-02-26 15:00:46,751 INFO    HandlerThread:36466 [handler.py:handle_request_defer():154] handle defer: 3
+2022-02-26 15:00:46,752 DEBUG   SenderThread:36466 [sender.py:send():235] send: summary
+2022-02-26 15:00:46,752 INFO    SenderThread:36466 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-26 15:00:46,752 DEBUG   SenderThread:36466 [sender.py:send_request():249] send_request: defer
+2022-02-26 15:00:46,752 INFO    SenderThread:36466 [sender.py:send_request_defer():388] handle sender defer: 3
+2022-02-26 15:00:46,752 INFO    SenderThread:36466 [sender.py:transition_state():392] send defer: 4
+2022-02-26 15:00:46,753 DEBUG   HandlerThread:36466 [handler.py:handle_request():131] handle_request: defer
+2022-02-26 15:00:46,753 INFO    HandlerThread:36466 [handler.py:handle_request_defer():154] handle defer: 4
+2022-02-26 15:00:46,753 DEBUG   SenderThread:36466 [sender.py:send_request():249] send_request: defer
+2022-02-26 15:00:46,753 INFO    SenderThread:36466 [sender.py:send_request_defer():388] handle sender defer: 4
+2022-02-26 15:00:46,851 DEBUG   HandlerThread:36466 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-26 15:00:47,114 INFO    SenderThread:36466 [sender.py:transition_state():392] send defer: 5
+2022-02-26 15:00:47,115 DEBUG   SenderThread:36466 [sender.py:send_request():249] send_request: poll_exit
+2022-02-26 15:00:47,115 DEBUG   HandlerThread:36466 [handler.py:handle_request():131] handle_request: defer
+2022-02-26 15:00:47,116 INFO    HandlerThread:36466 [handler.py:handle_request_defer():154] handle defer: 5
+2022-02-26 15:00:47,116 DEBUG   SenderThread:36466 [sender.py:send_request():249] send_request: defer
+2022-02-26 15:00:47,116 INFO    SenderThread:36466 [sender.py:send_request_defer():388] handle sender defer: 5
+2022-02-26 15:00:47,116 INFO    SenderThread:36466 [dir_watcher.py:finish():283] shutting down directory watcher
+2022-02-26 15:00:47,217 DEBUG   HandlerThread:36466 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-26 15:00:47,259 INFO    Thread-8  :36466 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/wandb/run-20220226_145819-2skva0cq/files/output.log
+2022-02-26 15:00:47,260 INFO    SenderThread:36466 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/wandb/run-20220226_145819-2skva0cq/files/wandb-summary.json
+2022-02-26 15:00:47,260 INFO    SenderThread:36466 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/wandb/run-20220226_145819-2skva0cq/files/config.yaml
+2022-02-26 15:00:47,260 INFO    SenderThread:36466 [dir_watcher.py:finish():313] scan: /home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/wandb/run-20220226_145819-2skva0cq/files
+2022-02-26 15:00:47,260 INFO    SenderThread:36466 [dir_watcher.py:finish():327] scan save: /home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/wandb/run-20220226_145819-2skva0cq/files/conda-environment.yaml conda-environment.yaml
+2022-02-26 15:00:47,261 INFO    SenderThread:36466 [dir_watcher.py:finish():327] scan save: /home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/wandb/run-20220226_145819-2skva0cq/files/wandb-metadata.json wandb-metadata.json
+2022-02-26 15:00:47,261 INFO    SenderThread:36466 [dir_watcher.py:finish():327] scan save: /home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/wandb/run-20220226_145819-2skva0cq/files/output.log output.log
+2022-02-26 15:00:47,261 INFO    SenderThread:36466 [dir_watcher.py:finish():327] scan save: /home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/wandb/run-20220226_145819-2skva0cq/files/requirements.txt requirements.txt
+2022-02-26 15:00:47,265 INFO    SenderThread:36466 [dir_watcher.py:finish():327] scan save: /home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/wandb/run-20220226_145819-2skva0cq/files/config.yaml config.yaml
+2022-02-26 15:00:47,269 INFO    SenderThread:36466 [dir_watcher.py:finish():327] scan save: /home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/wandb/run-20220226_145819-2skva0cq/files/wandb-summary.json wandb-summary.json
+2022-02-26 15:00:47,269 INFO    SenderThread:36466 [sender.py:transition_state():392] send defer: 6
+2022-02-26 15:00:47,270 DEBUG   SenderThread:36466 [sender.py:send_request():249] send_request: poll_exit
+2022-02-26 15:00:47,280 DEBUG   HandlerThread:36466 [handler.py:handle_request():131] handle_request: defer
+2022-02-26 15:00:47,280 INFO    HandlerThread:36466 [handler.py:handle_request_defer():154] handle defer: 6
+2022-02-26 15:00:47,281 DEBUG   SenderThread:36466 [sender.py:send_request():249] send_request: defer
+2022-02-26 15:00:47,281 INFO    SenderThread:36466 [sender.py:send_request_defer():388] handle sender defer: 6
+2022-02-26 15:00:47,281 INFO    SenderThread:36466 [file_pusher.py:finish():177] shutting down file pusher
+2022-02-26 15:00:47,374 DEBUG   HandlerThread:36466 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-26 15:00:47,375 DEBUG   SenderThread:36466 [sender.py:send_request():249] send_request: poll_exit
+2022-02-26 15:00:47,476 DEBUG   HandlerThread:36466 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-26 15:00:47,477 DEBUG   SenderThread:36466 [sender.py:send_request():249] send_request: poll_exit
+2022-02-26 15:00:47,579 DEBUG   HandlerThread:36466 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-26 15:00:47,579 DEBUG   SenderThread:36466 [sender.py:send_request():249] send_request: poll_exit
+2022-02-26 15:00:47,681 DEBUG   HandlerThread:36466 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-26 15:00:47,681 DEBUG   SenderThread:36466 [sender.py:send_request():249] send_request: poll_exit
+2022-02-26 15:00:47,783 DEBUG   HandlerThread:36466 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-26 15:00:47,783 DEBUG   SenderThread:36466 [sender.py:send_request():249] send_request: poll_exit
+2022-02-26 15:00:47,885 DEBUG   HandlerThread:36466 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-26 15:00:47,885 DEBUG   SenderThread:36466 [sender.py:send_request():249] send_request: poll_exit
+2022-02-26 15:00:47,986 DEBUG   HandlerThread:36466 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-26 15:00:47,987 DEBUG   SenderThread:36466 [sender.py:send_request():249] send_request: poll_exit
+2022-02-26 15:00:48,089 DEBUG   HandlerThread:36466 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-26 15:00:48,089 DEBUG   SenderThread:36466 [sender.py:send_request():249] send_request: poll_exit
+2022-02-26 15:00:48,167 INFO    Thread-14 :36466 [upload_job.py:push():137] Uploaded file /home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/wandb/run-20220226_145819-2skva0cq/files/requirements.txt
+2022-02-26 15:00:48,169 INFO    Thread-16 :36466 [upload_job.py:push():137] Uploaded file /home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/wandb/run-20220226_145819-2skva0cq/files/wandb-summary.json
+2022-02-26 15:00:48,183 INFO    Thread-13 :36466 [upload_job.py:push():137] Uploaded file /home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/wandb/run-20220226_145819-2skva0cq/files/output.log
+2022-02-26 15:00:48,190 INFO    Thread-12 :36466 [upload_job.py:push():137] Uploaded file /home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/wandb/run-20220226_145819-2skva0cq/files/conda-environment.yaml
+2022-02-26 15:00:48,191 DEBUG   HandlerThread:36466 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-26 15:00:48,191 DEBUG   SenderThread:36466 [sender.py:send_request():249] send_request: poll_exit
+2022-02-26 15:00:48,228 INFO    Thread-15 :36466 [upload_job.py:push():137] Uploaded file /home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/wandb/run-20220226_145819-2skva0cq/files/config.yaml
+2022-02-26 15:00:48,293 DEBUG   HandlerThread:36466 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-26 15:00:48,293 DEBUG   SenderThread:36466 [sender.py:send_request():249] send_request: poll_exit
+2022-02-26 15:00:48,395 DEBUG   HandlerThread:36466 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-26 15:00:48,396 DEBUG   SenderThread:36466 [sender.py:send_request():249] send_request: poll_exit
+2022-02-26 15:00:48,429 INFO    Thread-7  :36466 [sender.py:transition_state():392] send defer: 7
+2022-02-26 15:00:48,430 DEBUG   HandlerThread:36466 [handler.py:handle_request():131] handle_request: defer
+2022-02-26 15:00:48,430 INFO    HandlerThread:36466 [handler.py:handle_request_defer():154] handle defer: 7
+2022-02-26 15:00:48,430 DEBUG   SenderThread:36466 [sender.py:send_request():249] send_request: defer
+2022-02-26 15:00:48,430 INFO    SenderThread:36466 [sender.py:send_request_defer():388] handle sender defer: 7
+2022-02-26 15:00:48,498 DEBUG   HandlerThread:36466 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-26 15:00:49,030 INFO    SenderThread:36466 [sender.py:transition_state():392] send defer: 8
+2022-02-26 15:00:49,030 DEBUG   SenderThread:36466 [sender.py:send_request():249] send_request: poll_exit
+2022-02-26 15:00:49,031 DEBUG   HandlerThread:36466 [handler.py:handle_request():131] handle_request: defer
+2022-02-26 15:00:49,031 INFO    HandlerThread:36466 [handler.py:handle_request_defer():154] handle defer: 8
+2022-02-26 15:00:49,031 DEBUG   SenderThread:36466 [sender.py:send_request():249] send_request: defer
+2022-02-26 15:00:49,032 INFO    SenderThread:36466 [sender.py:send_request_defer():388] handle sender defer: 8
+2022-02-26 15:00:49,032 INFO    SenderThread:36466 [sender.py:transition_state():392] send defer: 9
+2022-02-26 15:00:49,032 DEBUG   HandlerThread:36466 [handler.py:handle_request():131] handle_request: defer
+2022-02-26 15:00:49,033 DEBUG   SenderThread:36466 [sender.py:send():235] send: final
+2022-02-26 15:00:49,033 INFO    HandlerThread:36466 [handler.py:handle_request_defer():154] handle defer: 9
+2022-02-26 15:00:49,033 DEBUG   SenderThread:36466 [sender.py:send():235] send: footer
+2022-02-26 15:00:49,033 DEBUG   SenderThread:36466 [sender.py:send_request():249] send_request: defer
+2022-02-26 15:00:49,033 INFO    SenderThread:36466 [sender.py:send_request_defer():388] handle sender defer: 9
+2022-02-26 15:00:49,132 DEBUG   HandlerThread:36466 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-26 15:00:49,133 DEBUG   SenderThread:36466 [sender.py:send_request():249] send_request: poll_exit
+2022-02-26 15:00:49,133 INFO    SenderThread:36466 [file_pusher.py:join():182] waiting for file pusher
+2022-02-26 15:00:49,768 DEBUG   HandlerThread:36466 [handler.py:handle_request():131] handle_request: get_summary
+2022-02-26 15:00:49,769 DEBUG   HandlerThread:36466 [handler.py:handle_request():131] handle_request: sampled_history
+2022-02-26 15:00:49,771 DEBUG   HandlerThread:36466 [handler.py:handle_request():131] handle_request: shutdown
+2022-02-26 15:00:49,771 INFO    HandlerThread:36466 [handler.py:finish():739] shutting down handler
+2022-02-26 15:00:50,033 INFO    WriterThread:36466 [datastore.py:close():281] close: /home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/wandb/run-20220226_145819-2skva0cq/run-2skva0cq.wandb
+2022-02-26 15:00:50,767 INFO    SenderThread:36466 [sender.py:finish():1075] shutting down sender
+2022-02-26 15:00:50,767 INFO    SenderThread:36466 [file_pusher.py:finish():177] shutting down file pusher
+2022-02-26 15:00:50,767 INFO    SenderThread:36466 [file_pusher.py:join():182] waiting for file pusher
+2022-02-26 15:00:50,770 INFO    MainThread:36466 [internal.py:handle_exit():79] Internal process exited

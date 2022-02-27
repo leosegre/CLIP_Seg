@@ -1,0 +1,37 @@
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      1
+        Learning rate:   1e-05
+        Training size:   1318
+        Validation size: 146
+        Checkpoints:     True
+        Device:          cpu
+        Images scaling:  0.5
+        Mixed Precision: False
+Epoch 1/5:   0%|                                                           | 0/1318 [00:00<?, ?img/s]
+Traceback (most recent call last):
+  File "train.py", line 198, in <module>
+    train_net(net=net,
+  File "train.py", line 89, in train_net
+    for batch in train_loader:
+  File "/home/dvir_proj_1/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 435, in __next__
+    data = self._next_data()
+  File "/home/dvir_proj_1/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1085, in _next_data
+    return self._process_data(data)
+  File "/home/dvir_proj_1/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1111, in _process_data
+    data.reraise()
+  File "/home/dvir_proj_1/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torch/_utils.py", line 428, in reraise
+    raise self.exc_type(msg)
+TypeError: Caught TypeError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/dvir_proj_1/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torch/utils/data/_utils/worker.py", line 198, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/home/dvir_proj_1/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 47, in fetch
+    return self.collate_fn(data)
+  File "/home/dvir_proj_1/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torch/utils/data/_utils/collate.py", line 83, in default_collate
+    return [default_collate(samples) for samples in transposed]
+  File "/home/dvir_proj_1/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torch/utils/data/_utils/collate.py", line 83, in <listcomp>
+    return [default_collate(samples) for samples in transposed]
+  File "/home/dvir_proj_1/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torch/utils/data/_utils/collate.py", line 85, in default_collate
+    raise TypeError(default_collate_err_msg_format.format(elem_type))
+TypeError: default_collate: batch must contain tensors, numpy arrays, numbers, dicts or lists; found <class 'PIL.PngImagePlugin.PngImageFile'>

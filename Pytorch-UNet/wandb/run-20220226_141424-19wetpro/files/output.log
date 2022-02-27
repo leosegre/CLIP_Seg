@@ -1,0 +1,17 @@
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      1
+        Learning rate:   1e-05
+        Training size:   1464
+        Validation size: 1449
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  0.5
+        Mixed Precision: True
+Epoch 1/5:   0%|                                                                    | 0/1464 [00:00<?, ?img/s]
+Traceback (most recent call last):
+  File "train.py", line 327, in <module>
+    amp=args.amp)
+  File "train.py", line 213, in train_net
+    R_image[i] = interpret(model=clip_model, image=clip_img, texts=text, device=device)
+RuntimeError: The expanded size of the tensor (224) must match the existing size (49) at non-singleton dimension 1.  Target sizes: [224, 224].  Tensor sizes: [49]

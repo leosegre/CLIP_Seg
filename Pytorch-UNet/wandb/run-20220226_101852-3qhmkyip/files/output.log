@@ -1,0 +1,41 @@
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      1
+        Learning rate:   1e-05
+        Training size:   1318
+        Validation size: 146
+        Checkpoints:     True
+        Device:          cpu
+        Images scaling:  0.5
+        Mixed Precision: False
+Epoch 1/5:   0%|                                                           | 0/1318 [00:00<?, ?img/s]
+Traceback (most recent call last):
+  File "train.py", line 205, in <module>
+    train_net(net=net,
+  File "train.py", line 96, in train_net
+    for batch in train_loader:
+  File "/home/dvir_proj_1/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 435, in __next__
+    data = self._next_data()
+  File "/home/dvir_proj_1/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1085, in _next_data
+    return self._process_data(data)
+  File "/home/dvir_proj_1/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1111, in _process_data
+    data.reraise()
+  File "/home/dvir_proj_1/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torch/_utils.py", line 428, in reraise
+    raise self.exc_type(msg)
+AttributeError: Caught AttributeError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/dvir_proj_1/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torch/utils/data/_utils/worker.py", line 198, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/home/dvir_proj_1/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/dvir_proj_1/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/dvir_proj_1/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torch/utils/data/dataset.py", line 272, in __getitem__
+    return self.dataset[self.indices[idx]]
+  File "/home/dvir_proj_1/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torchvision/datasets/voc.py", line 125, in __getitem__
+    img = self.transform(img)
+  File "/home/dvir_proj_1/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torchvision/transforms/transforms.py", line 60, in __call__
+    img = t(img)
+  File "/home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/transforms.py", line 79, in __call__
+    image = F.pil_to_tensor(image)
+AttributeError: module 'torchvision.transforms.functional' has no attribute 'pil_to_tensor'

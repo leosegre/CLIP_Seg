@@ -1,0 +1,17 @@
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      1
+        Learning rate:   1e-05
+        Training size:   1464
+        Validation size: 1449
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  0.5
+        Mixed Precision: True
+Epoch 1/5:   0%|                                                                    | 0/1464 [00:00<?, ?img/s]
+Traceback (most recent call last):
+  File "train.py", line 282, in <module>
+    amp=args.amp)
+  File "train.py", line 165, in train_net
+    clip_img = clip_preprocess(transform(images[i])).unsqueeze(0).to(device)
+TypeError: __call__() missing 1 required positional argument: 'target'

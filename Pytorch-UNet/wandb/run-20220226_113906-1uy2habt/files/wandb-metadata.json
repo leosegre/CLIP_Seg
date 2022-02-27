@@ -1,0 +1,24 @@
+{
+    "os": "Linux-5.4.0-54-generic-x86_64-with-debian-buster-sid",
+    "python": "3.7.6",
+    "heartbeatAt": "2022-02-26T09:39:08.750362",
+    "startedAt": "2022-02-26T09:39:06.693449",
+    "docker": null,
+    "gpu": "GeForce RTX 2080 Ti",
+    "gpu_count": 8,
+    "cpu_count": 40,
+    "cuda": "10.2.89",
+    "args": [],
+    "state": "running",
+    "program": "train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": "https://github.com/milesial/Pytorch-UNet.git",
+        "commit": "9a6ee84c50390306e24bb369d1c24d2fdd9d7e60"
+    },
+    "email": "leosegre@gmail.com",
+    "root": "/home/dvir_proj_1/CLIP_Seg/Pytorch-UNet",
+    "host": "G291-281-00",
+    "username": "dvir_proj_1",
+    "executable": "/home/dvir_proj_1/anaconda3/bin/python"
+}

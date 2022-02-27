@@ -1,0 +1,21 @@
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      1
+        Learning rate:   1e-05
+        Training size:   1464
+        Validation size: 1449
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  0.5
+        Mixed Precision: True
+Epoch 1/5:   0%|                                                                    | 0/1464 [00:00<?, ?img/s]
+Traceback (most recent call last):
+  File "train.py", line 281, in <module>
+    amp=args.amp)
+  File "train.py", line 164, in train_net
+    clip_img = clip_preprocess(images[i]).unsqueeze(0).to(device)
+  File "/home/dvir_proj_1/anaconda3/lib/python3.7/site-packages/torchvision/transforms/transforms.py", line 67, in __call__
+    img = t(img)
+  File "/home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/Transformer_MM_Explainability/CLIP/clip/clip.py", line 62, in <lambda>
+    lambda image: image.convert("RGB"),
+AttributeError: 'Tensor' object has no attribute 'convert'

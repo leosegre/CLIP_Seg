@@ -1,0 +1,35 @@
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      1
+        Learning rate:   1e-05
+        Training size:   1464
+        Validation size: 1449
+        Checkpoints:     True
+        Device:          cpu
+        Images scaling:  0.5
+        Mixed Precision: False
+Epoch 1/5:   0%|                                                           | 0/1464 [00:00<?, ?img/s]
+Traceback (most recent call last):
+  File "train.py", line 212, in <module>
+    train_net(net=net,
+  File "train.py", line 103, in train_net
+    for (images, true_masks) in train_loader:
+  File "/home/dvir_proj_1/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 521, in __next__
+    data = self._next_data()
+  File "/home/dvir_proj_1/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1203, in _next_data
+    return self._process_data(data)
+  File "/home/dvir_proj_1/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1229, in _process_data
+    data.reraise()
+  File "/home/dvir_proj_1/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torch/_utils.py", line 425, in reraise
+    raise self.exc_type(msg)
+TypeError: Caught TypeError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/dvir_proj_1/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torch/utils/data/_utils/worker.py", line 287, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/home/dvir_proj_1/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/dvir_proj_1/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/dvir_proj_1/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torchvision/datasets/voc.py", line 167, in __getitem__
+    img, target = self.transforms(img, target)
+TypeError: __call__() takes 2 positional arguments but 3 were given

@@ -1,0 +1,19 @@
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      1
+        Learning rate:   1e-05
+        Training size:   1464
+        Validation size: 1449
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  0.5
+        Mixed Precision: True
+Epoch 1/5:   0%|                                                                    | 0/1464 [00:00<?, ?img/s]
+Traceback (most recent call last):
+  File "train.py", line 282, in <module>
+    amp=args.amp)
+  File "train.py", line 169, in train_net
+    R_image = interpret.interpret(model=clip.model, image=clip_img, texts=text, device=device)
+  File "/home/dvir_proj_1/CLIP_Seg/Pytorch-UNet/Transformer_MM_Explainability/interpret.py", line 15, in interpret
+    logits_per_image, logits_per_text = model(images, texts)
+TypeError: 'module' object is not callable

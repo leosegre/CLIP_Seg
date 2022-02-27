@@ -1,0 +1,295 @@
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      1
+        Learning rate:   1e-05
+        Training size:   1464
+        Validation size: 1449
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  0.5
+        Mixed Precision: True
+Epoch 1/5:   0%|                                                                    | 0/1464 [00:00<?, ?img/s]/home/dvir_proj_1/anaconda3/lib/python3.7/site-packages/torchvision/transforms/functional.py:127: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+  img = torch.as_tensor(np.asarray(pic))
+/home/dvir_proj_1/anaconda3/lib/python3.7/site-packages/torchvision/transforms/functional.py:127: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+  img = torch.as_tensor(np.asarray(pic))
+/home/dvir_proj_1/anaconda3/lib/python3.7/site-packages/torchvision/transforms/functional.py:127: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+  img = torch.as_tensor(np.asarray(pic))
+/home/dvir_proj_1/anaconda3/lib/python3.7/site-packages/torchvision/transforms/functional.py:127: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+  img = torch.as_tensor(np.asarray(pic))
+
+
+
+
+
+
+
+
+
+Epoch 1/5:  40%|███████████████▏                      | 584/1464 [00:20<00:30, 28.80img/s, loss (batch)=0.941]/home/dvir_proj_1/anaconda3/lib/python3.7/site-packages/torchvision/transforms/functional.py:127: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+  img = torch.as_tensor(np.asarray(pic))                                           | 0/363 [00:00<?, ?batch/s]
+/home/dvir_proj_1/anaconda3/lib/python3.7/site-packages/torchvision/transforms/functional.py:127: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+  img = torch.as_tensor(np.asarray(pic))
+/home/dvir_proj_1/anaconda3/lib/python3.7/site-packages/torchvision/transforms/functional.py:127: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+  img = torch.as_tensor(np.asarray(pic))
+/home/dvir_proj_1/anaconda3/lib/python3.7/site-packages/torchvision/transforms/functional.py:127: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+  img = torch.as_tensor(np.asarray(pic))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Validation round:  93%|██████████████████████████████████████████████▋   | 339/363 [00:26<00:01, 12.98batch/s]
+
+
+
+
+
+
+
+
+
+Epoch 1/5:  80%|██████████████████████████████▎       | 1168/1464 [01:09<00:10, 29.08img/s, loss (batch)=1.14]/home/dvir_proj_1/anaconda3/lib/python3.7/site-packages/torchvision/transforms/functional.py:127: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+  img = torch.as_tensor(np.asarray(pic))                                           | 0/363 [00:00<?, ?batch/s]
+/home/dvir_proj_1/anaconda3/lib/python3.7/site-packages/torchvision/transforms/functional.py:127: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+  img = torch.as_tensor(np.asarray(pic))
+/home/dvir_proj_1/anaconda3/lib/python3.7/site-packages/torchvision/transforms/functional.py:127: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+  img = torch.as_tensor(np.asarray(pic))
+/home/dvir_proj_1/anaconda3/lib/python3.7/site-packages/torchvision/transforms/functional.py:127: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+  img = torch.as_tensor(np.asarray(pic))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 1/5: 100%|█████████████████████████████████████| 1464/1464 [01:49<00:00, 13.37img/s, loss (batch)=0.859]
+INFO: Checkpoint 1 saved!
+Epoch 2/5:   0%|                                                                    | 0/1464 [00:00<?, ?img/s]/home/dvir_proj_1/anaconda3/lib/python3.7/site-packages/torchvision/transforms/functional.py:127: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+  img = torch.as_tensor(np.asarray(pic))
+/home/dvir_proj_1/anaconda3/lib/python3.7/site-packages/torchvision/transforms/functional.py:127: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+  img = torch.as_tensor(np.asarray(pic))
+/home/dvir_proj_1/anaconda3/lib/python3.7/site-packages/torchvision/transforms/functional.py:127: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+  img = torch.as_tensor(np.asarray(pic))
+/home/dvir_proj_1/anaconda3/lib/python3.7/site-packages/torchvision/transforms/functional.py:127: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+  img = torch.as_tensor(np.asarray(pic))
+
+
+
+
+Epoch 2/5:  20%|███████▍                              | 288/1464 [00:10<00:40, 29.19img/s, loss (batch)=0.961]/home/dvir_proj_1/anaconda3/lib/python3.7/site-packages/torchvision/transforms/functional.py:127: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+  img = torch.as_tensor(np.asarray(pic))                                           | 0/363 [00:00<?, ?batch/s]
+/home/dvir_proj_1/anaconda3/lib/python3.7/site-packages/torchvision/transforms/functional.py:127: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+  img = torch.as_tensor(np.asarray(pic))
+/home/dvir_proj_1/anaconda3/lib/python3.7/site-packages/torchvision/transforms/functional.py:127: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+  img = torch.as_tensor(np.asarray(pic))
+/home/dvir_proj_1/anaconda3/lib/python3.7/site-packages/torchvision/transforms/functional.py:127: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+  img = torch.as_tensor(np.asarray(pic))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 2/5:  60%|██████████████████████▋               | 872/1464 [00:59<00:20, 29.13img/s, loss (batch)=0.872]/home/dvir_proj_1/anaconda3/lib/python3.7/site-packages/torchvision/transforms/functional.py:127: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+  img = torch.as_tensor(np.asarray(pic))                                           | 0/363 [00:00<?, ?batch/s]
+/home/dvir_proj_1/anaconda3/lib/python3.7/site-packages/torchvision/transforms/functional.py:127: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+  img = torch.as_tensor(np.asarray(pic))
+/home/dvir_proj_1/anaconda3/lib/python3.7/site-packages/torchvision/transforms/functional.py:127: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+  img = torch.as_tensor(np.asarray(pic))
+/home/dvir_proj_1/anaconda3/lib/python3.7/site-packages/torchvision/transforms/functional.py:127: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+  img = torch.as_tensor(np.asarray(pic))
+
+
+
+
+
+
+
+
+
+
+
+
+
+Validation round:  92%|██████████████████████████████████████████████▏   | 335/363 [00:25<00:02, 13.12batch/s]
+
+
+
+
+
+
+
+
+
+Epoch 2/5:  99%|████████████████████████████████████▊| 1456/1464 [01:48<00:00, 28.99img/s, loss (batch)=0.774]/home/dvir_proj_1/anaconda3/lib/python3.7/site-packages/torchvision/transforms/functional.py:127: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+  img = torch.as_tensor(np.asarray(pic))                                           | 0/363 [00:00<?, ?batch/s]
+/home/dvir_proj_1/anaconda3/lib/python3.7/site-packages/torchvision/transforms/functional.py:127: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+  img = torch.as_tensor(np.asarray(pic))
+/home/dvir_proj_1/anaconda3/lib/python3.7/site-packages/torchvision/transforms/functional.py:127: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+  img = torch.as_tensor(np.asarray(pic))
+/home/dvir_proj_1/anaconda3/lib/python3.7/site-packages/torchvision/transforms/functional.py:127: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+  img = torch.as_tensor(np.asarray(pic))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 2/5: 100%|█████████████████████████████████████| 1464/1464 [02:17<00:00, 10.61img/s, loss (batch)=0.823]
+INFO: Checkpoint 2 saved!
+Epoch 3/5:   0%|                                                                    | 0/1464 [00:00<?, ?img/s]/home/dvir_proj_1/anaconda3/lib/python3.7/site-packages/torchvision/transforms/functional.py:127: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+  img = torch.as_tensor(np.asarray(pic))
+/home/dvir_proj_1/anaconda3/lib/python3.7/site-packages/torchvision/transforms/functional.py:127: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+  img = torch.as_tensor(np.asarray(pic))
+/home/dvir_proj_1/anaconda3/lib/python3.7/site-packages/torchvision/transforms/functional.py:127: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+  img = torch.as_tensor(np.asarray(pic))
+/home/dvir_proj_1/anaconda3/lib/python3.7/site-packages/torchvision/transforms/functional.py:127: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+  img = torch.as_tensor(np.asarray(pic))
+
+
+
+
+
+
+
+
+
+Epoch 3/5:  39%|███████████████▎                       | 576/1464 [00:20<00:30, 29.16img/s, loss (batch)=1.18]/home/dvir_proj_1/anaconda3/lib/python3.7/site-packages/torchvision/transforms/functional.py:127: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+  img = torch.as_tensor(np.asarray(pic))                                           | 0/363 [00:00<?, ?batch/s]
+/home/dvir_proj_1/anaconda3/lib/python3.7/site-packages/torchvision/transforms/functional.py:127: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+  img = torch.as_tensor(np.asarray(pic))
+/home/dvir_proj_1/anaconda3/lib/python3.7/site-packages/torchvision/transforms/functional.py:127: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+  img = torch.as_tensor(np.asarray(pic))
+/home/dvir_proj_1/anaconda3/lib/python3.7/site-packages/torchvision/transforms/functional.py:127: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+  img = torch.as_tensor(np.asarray(pic))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 3/5:  79%|██████████████████████████████        | 1160/1464 [01:09<00:10, 29.07img/s, loss (batch)=1.02]/home/dvir_proj_1/anaconda3/lib/python3.7/site-packages/torchvision/transforms/functional.py:127: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+  img = torch.as_tensor(np.asarray(pic))                                           | 0/363 [00:00<?, ?batch/s]
+/home/dvir_proj_1/anaconda3/lib/python3.7/site-packages/torchvision/transforms/functional.py:127: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+  img = torch.as_tensor(np.asarray(pic))
+/home/dvir_proj_1/anaconda3/lib/python3.7/site-packages/torchvision/transforms/functional.py:127: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+  img = torch.as_tensor(np.asarray(pic))
+/home/dvir_proj_1/anaconda3/lib/python3.7/site-packages/torchvision/transforms/functional.py:127: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+  img = torch.as_tensor(np.asarray(pic))
+Validation round:  11%|█████▊                                             | 41/363 [00:03<00:24, 13.07batch/s]
+Validation round:  18%|█████████▍                                         | 67/363 [00:05<00:22, 13.09batch/s]
+Validation round:  26%|█████████████                                      | 93/363 [00:07<00:20, 13.10batch/s]
+Validation round:  33%|████████████████▍                                 | 119/363 [00:09<00:18, 13.01batch/s]
+Validation round:  40%|███████████████████▉                              | 145/363 [00:11<00:16, 13.03batch/s]
+Validation round:  47%|███████████████████████▌                          | 171/363 [00:13<00:14, 12.89batch/s]
+Validation round:  54%|███████████████████████████▏                      | 197/363 [00:15<00:12, 13.06batch/s]
+Validation round:  62%|██████████████████████████████▉                   | 225/363 [00:17<00:10, 13.35batch/s]
+Validation round:  69%|██████████████████████████████████▌               | 251/363 [00:19<00:08, 13.12batch/s]
+Validation round:  76%|██████████████████████████████████████▏           | 277/363 [00:21<00:06, 13.12batch/s]
+Validation round:  83%|█████████████████████████████████████████▋        | 303/363 [00:23<00:04, 13.11batch/s]
+Validation round:  91%|█████████████████████████████████████████████▎    | 329/363 [00:25<00:02, 12.84batch/s]
+Validation round:  98%|████████████████████████████████████████████████▉ | 355/363 [00:27<00:00, 12.91batch/s]
+Epoch 3/5:  82%|███████████████████████████████▏      | 1200/1464 [01:39<00:32,  8.10img/s, loss (batch)=1.01]
+Epoch 3/5:  86%|████████████████████████████████▌     | 1256/1464 [01:41<00:07, 27.71img/s, loss (batch)=1.05]
+Epoch 3/5:  90%|██████████████████████████████████    | 1312/1464 [01:43<00:05, 28.13img/s, loss (batch)=1.12]
+Epoch 3/5:  93%|██████████████████████████████████▌  | 1368/1464 [01:45<00:03, 28.62img/s, loss (batch)=0.927]
+Epoch 3/5:  98%|████████████████████████████████████ | 1428/1464 [01:47<00:01, 28.60img/s, loss (batch)=0.847]
+  img = torch.as_tensor(np.asarray(pic))7/site-packages/torchvision/transforms/functional.py:127: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+  img = torch.as_tensor(np.asarray(pic))7/site-packages/torchvision/transforms/functional.py:127: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+  img = torch.as_tensor(np.asarray(pic))7/site-packages/torchvision/transforms/functional.py:127: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+  img = torch.as_tensor(np.asarray(pic))7/site-packages/torchvision/transforms/functional.py:127: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+  img = torch.as_tensor(np.asarray(pic))7/site-packages/torchvision/transforms/functional.py:127: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+  img = torch.as_tensor(np.asarray(pic))7/site-packages/torchvision/transforms/functional.py:127: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+  img = torch.as_tensor(np.asarray(pic))7/site-packages/torchvision/transforms/functional.py:127: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+  img = torch.as_tensor(np.asarray(pic))7/site-packages/torchvision/transforms/functional.py:127: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+  img = torch.as_tensor(np.asarray(pic))7/site-packages/torchvision/transforms/functional.py:127: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+  img = torch.as_tensor(np.asarray(pic))7/site-packages/torchvision/transforms/functional.py:127: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+Epoch 4/5:  19%|███████▍                               | 280/1464 [00:20<00:40, 29.07img/s, loss (batch)=1.09] The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+Epoch 4/5:  19%|███████▍                               | 280/1464 [00:20<00:40, 29.07img/s, loss (batch)=1.09] The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+Epoch 4/5:  19%|███████▍                               | 280/1464 [00:20<00:40, 29.07img/s, loss (batch)=1.09] The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+Epoch 4/5:  19%|███████▍                               | 280/1464 [00:20<00:40, 29.07img/s, loss (batch)=1.09] The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+Epoch 4/5:  19%|███████▍                               | 280/1464 [00:20<00:40, 29.07img/s, loss (batch)=1.09] The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+Epoch 4/5:  19%|███████▍                               | 280/1464 [00:20<00:40, 29.07img/s, loss (batch)=1.09] The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+Epoch 4/5:  19%|███████▍                               | 280/1464 [00:20<00:40, 29.07img/s, loss (batch)=1.09] The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+Epoch 4/5:  19%|███████▍                               | 280/1464 [00:20<00:40, 29.07img/s, loss (batch)=1.09] The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+Epoch 4/5:  19%|███████▍                               | 280/1464 [00:20<00:40, 29.07img/s, loss (batch)=1.09] The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+Epoch 4/5:  19%|███████▍                               | 280/1464 [00:20<00:40, 29.07img/s, loss (batch)=1.09] The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+Epoch 4/5:  19%|███████▍                               | 280/1464 [00:20<00:40, 29.07img/s, loss (batch)=1.09]INFO: Validation Dice score: 0.25827088952064514orch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+Epoch 4/5:  19%|███████▍                               | 280/1464 [00:20<00:40, 29.07img/s, loss (batch)=1.09]INFO: Validation Dice score: 0.25827088952064514orch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+Epoch 4/5:  29%|███████████                           | 428/1464 [00:44<00:36, 28.70img/s, loss (batch)=0.892]INFO: Validation Dice score: 0.25827088952064514orch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+Epoch 4/5:  33%|████████████▋                         | 488/1464 [00:46<00:33, 29.09img/s, loss (batch)=0.981]INFO: Validation Dice score: 0.25827088952064514orch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+Epoch 4/5:  37%|██████████████                        | 544/1464 [00:48<00:31, 28.97img/s, loss (batch)=0.884]INFO: Validation Dice score: 0.25827088952064514orch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+Epoch 4/5:  41%|████████████████                       | 604/1464 [00:50<00:29, 28.99img/s, loss (batch)=1.09]INFO: Validation Dice score: 0.25827088952064514orch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+Epoch 4/5:  45%|█████████████████▏                    | 660/1464 [00:52<00:27, 29.08img/s, loss (batch)=0.917]INFO: Validation Dice score: 0.25827088952064514orch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+Epoch 4/5:  49%|████████████████████▋                     | 720/1464 [00:54<00:25, 29.08img/s, loss (batch)=1]INFO: Validation Dice score: 0.25827088952064514orch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+Epoch 4/5:  53%|████████████████████▊                  | 780/1464 [00:56<00:23, 29.19img/s, loss (batch)=1.56]INFO: Validation Dice score: 0.25827088952064514orch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+Epoch 4/5:  57%|█████████████████████▍                | 828/1464 [00:57<00:44, 14.28img/s, loss (batch)=0.831]INFO: Validation Dice score: 0.25827088952064514orch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+INFO: Saved interrupt████████████████▍                | 828/1464 [00:57<00:44, 14.28img/s, loss (batch)=0.831]INFO: Validation Dice score: 0.25827088952064514orch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+INFO: Saved interrupt████████████████▍                | 828/1464 [00:57<00:44, 14.28img/s, loss (batch)=0.831]INFO: Validation Dice score: 0.25827088952064514orch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)
+INFO: Saved interrupt████████████████▍                | 828/1464 [00:57<00:44, 14.28img/s, loss (batch)=0.831]INFO: Validation Dice score: 0.25827088952064514orch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:141.)

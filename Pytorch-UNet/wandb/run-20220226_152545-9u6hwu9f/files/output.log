@@ -1,0 +1,71 @@
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      128
+        Learning rate:   1e-05
+        Training size:   1464
+        Validation size: 1449
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  0.5
+        Mixed Precision: True
+Epoch 1/5:   0%|                                                                    | 0/1464 [00:00<?, ?img/s]/home/dvir_proj_1/anaconda3/lib/python3.7/site-packages/torch/nn/functional.py:3063: UserWarning: Default upsampling behavior when mode=bilinear is changed to align_corners=False since 0.4.0. Please specify align_corners=True if the old behavior is desired. See the documentation of nn.Upsample for details.
+  "See the documentation of nn.Upsample for details.".format(mode))
+
+
+
+
+
+
+
+
+
+Epoch 1/5:  96%|████████████████████████████████████▌ | 1408/1464 [01:54<00:03, 15.58img/s, loss (batch)=1.11]
+
+
+
+
+
+
+
+
+
+
+
+
+Validation round:  92%|███████████████████████████████████████████████▋    | 11/12 [01:18<00:06,  6.87s/batch]
+Epoch 1/5: 100%|██████████████████████████████████████| 1464/1464 [03:20<00:00,  7.31img/s, loss (batch)=1.13]
+INFO: Checkpoint 1 saved!
+
+
+
+
+
+
+
+
+
+
+Epoch 2/5:  87%|█████████████████████████████████▏    | 1280/1464 [01:14<00:10, 17.59img/s, loss (batch)=1.06]
+
+
+
+
+
+
+
+
+
+
+
+
+Validation round:  92%|███████████████████████████████████████████████▋    | 11/12 [01:18<00:07,  7.04s/batch]
+
+Epoch 2/5: 100%|██████████████████████████████████████| 1464/1464 [02:47<00:00,  8.76img/s, loss (batch)=1.04]
+INFO: Checkpoint 2 saved!
+
+
+
+
+
+Epoch 3/5:  35%|█████████████▋                         | 512/1464 [00:38<01:12, 13.13img/s, loss (batch)=1.04]
+INFO: Saved interrupt

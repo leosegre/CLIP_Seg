@@ -1,0 +1,19 @@
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      1
+        Learning rate:   1e-05
+        Training size:   1464
+        Validation size: 1449
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  0.5
+        Mixed Precision: True
+Epoch 1/5:   0%|                                                                    | 0/1464 [00:00<?, ?img/s]
+Traceback (most recent call last):
+  File "train.py", line 317, in <module>
+    amp=args.amp)
+  File "train.py", line 204, in train_net
+    R_image = interpret(model=clip_model.model, image=clip_img, texts=text, device=device)
+  File "/home/dvir_proj_1/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 779, in __getattr__
+    type(self).__name__, name))
+torch.nn.modules.module.ModuleAttributeError: 'CLIP' object has no attribute 'model'
