@@ -1,0 +1,19 @@
+INFO: Starting training:
+        Epochs:          50
+        Batch size:      32
+        Learning rate:   2e-07
+        Training size:   1464
+        Validation size: 1449
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  0.5
+        Mixed Precision: True
+Epoch 1/50:   0%|                                                          | 0/1464 [00:00<?, ?img/s]
+Traceback (most recent call last):
+  File "train.py", line 310, in <module>
+    train_net(net=torch.nn.DataParallel(net, device_ids=list(map(int, args.device_ids.split(",")))),
+  File "train.py", line 183, in train_net
+    texts = [voc12_template.format(texts) for template in voc12_template] #format with class
+  File "train.py", line 183, in <listcomp>
+    texts = [voc12_template.format(texts) for template in voc12_template] #format with class
+AttributeError: 'dict' object has no attribute 'format'

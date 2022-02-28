@@ -111,7 +111,7 @@ def train_net(net,
 
     # 4. Set up the optimizer, the loss, the learning rate scheduler and the loss scaling for AMP
     optimizer = optim.RMSprop(net.parameters(), lr=learning_rate, weight_decay=1e-8, momentum=0.9)
-    scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer, 'max', patience=2)  # goal: maximize Dice score
+    scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer, 'max', patience=20)  # goal: maximize Dice score
     grad_scaler = torch.cuda.amp.GradScaler(enabled=amp)
     criterion = nn.CrossEntropyLoss()
     global_step = 0
@@ -141,6 +141,27 @@ def train_net(net,
         100: 'an object'
     }
 
+    # voc12_template = [
+    #     'itap of a {}.',
+    #     'a bad photo of the {}.',
+    #     'a photo of the large {}.',
+    #     'art of the {}.',
+    #     'a photo of the small {}.',
+    #     'a photo of the nice {}.',
+    #     'a cropped photo of the {}.'
+    # ]
+
+    voc12_template = [
+        'A {} in the scene.',    
+        'a bad photo of the {}.',
+    ]
+
+    distractors_template = [
+        'A Fish in the scene.',    
+        'A picture of the moon.',
+        'A pineapple.',
+    ]
+
     # 5. Begin training
     for epoch in range(epochs):
         net.train()
@@ -150,7 +171,8 @@ def train_net(net,
                 # images = batch['image']
                 # true_masks = batch['mask']
 
-                R_image = torch.zeros_like(true_masks)
+                R_image = torch.zeros_like(true_masks, dtype=torch.float32)
+                # relevance_map = torch.zeros_like(true_masks, dtype=torch.uint8)
 
                 # print(images.unique())
                 for i in range(true_masks.size()[0]):
@@ -169,11 +191,27 @@ def train_net(net,
                     # CLIP Explainability
                     to_pil = transforms.ToPILImage()
                     clip_img = clip_preprocess(to_pil(images[i])).unsqueeze(0).to(device)
-                    texts = [labels_dict[element_to_mask]]
-                    text = clip.tokenize(texts).to(device)
+                    class_name = [labels_dict[element_to_mask]]
 
+                    texts = [template.format(class_name) for template in voc12_template] #format with class
+                    text = clip.tokenize(texts).to(device)
                     R_image_temp = interpret(model=clip_model, image=clip_img, texts=text, device=device)
+                    R_image_temp = R_image_temp.mean(axis=0)
+
+                    distractors_texts = [template for template in distractors_template] #format with class
+                    distractors_text = clip.tokenize(distractors_texts).to(device)
+                    distractors_R_image_temp = interpret(model=clip_model, image=clip_img, texts=distractors_text, device=device)
+                    distractors_R_image_temp = distractors_R_image_temp.mean(axis=0)
+
+                    R_image_temp -= distractors_R_image_temp
+                    # R_image_temp = torch.clamp(R_image_temp, min=0)
+
+
                     R_image[i] = R_img_resize(R_image_temp)
+                    # print(R_image[i])
+                    # relevance_map[i] = (255 * R_image[i]).to(torch.uint8)
+
+                    # relevance_map[i] = show_image_relevance(R_image[i], clip_img)
                 
 
                 # assert images.shape[1] == net.n_channels, \
@@ -219,14 +257,18 @@ def train_net(net,
                             histograms['Weights/' + tag] = wandb.Histogram(value.data.cpu())
                             histograms['Gradients/' + tag] = wandb.Histogram(value.grad.data.cpu())
 
-                        val_score = evaluate(net, val_loader, device, labels_dict, clip_model, clip_preprocess)
+                        val_score = evaluate(net, val_loader, device, labels_dict, voc12_template, distractors_template, clip_model, clip_preprocess)
                         scheduler.step(val_score)
 
                         logging.info('Validation Dice score: {}'.format(val_score))
+                        # print(R_image[0].unique())
                         experiment.log({
                             'learning rate': optimizer.param_groups[0]['lr'],
                             'validation Dice': val_score,
-                            'images': wandb.Image(orig_images[0].cpu()),
+                            'images': {
+                                'image': wandb.Image(orig_images[0].cpu()),
+                                'relevance_map':wandb.Image(R_image[0].float().cpu()),
+                            },
                             'masks': {
                                 'true': wandb.Image(true_masks[0].float().cpu()),
                                 'pred': wandb.Image(torch.softmax(masks_pred, dim=1).argmax(dim=1)[0].float().cpu()),
@@ -254,6 +296,7 @@ def get_args():
                         help='Percent of the data that is used as validation (0-100)')
     parser.add_argument('--amp', action='store_true', default=False, help='Use mixed precision')
     parser.add_argument('--bilinear', action='store_true', default=False, help='Use bilinear upsampling')
+    parser.add_argument('--device_ids', '-d', type=str, default=None, help='Device ids to use')
 
     return parser.parse_args()
 
@@ -281,7 +324,7 @@ if __name__ == '__main__':
 
     net.to(device=device)
     try:
-        train_net(net=torch.nn.DataParallel(net),
+        train_net(net=torch.nn.DataParallel(net, device_ids=list(map(int, args.device_ids.split(",")))),
                   epochs=args.epochs,
                   batch_size=args.batch_size,
                   learning_rate=args.lr,

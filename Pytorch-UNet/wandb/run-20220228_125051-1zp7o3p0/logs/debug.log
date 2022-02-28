@@ -1,0 +1,26 @@
+2022-02-28 12:50:51,828 INFO    MainThread:24302 [wandb_setup.py:_flush():75] Loading settings from /home/dvir/.config/wandb/settings
+2022-02-28 12:50:51,828 INFO    MainThread:24302 [wandb_setup.py:_flush():75] Loading settings from /home/dvir/CLIP_Seg/Pytorch-UNet/wandb/settings
+2022-02-28 12:50:51,828 INFO    MainThread:24302 [wandb_setup.py:_flush():75] Loading settings from environment variables: {}
+2022-02-28 12:50:51,828 INFO    MainThread:24302 [wandb_setup.py:_flush():75] Inferring run settings from compute environment: {'program_relpath': 'Pytorch-UNet/train.py', 'program': 'train.py'}
+2022-02-28 12:50:51,828 INFO    MainThread:24302 [wandb_setup.py:_flush():75] Applying login settings: {'anonymous': 'must'}
+2022-02-28 12:50:51,828 INFO    MainThread:24302 [wandb_init.py:_log_setup():386] Logging user logs to /home/dvir/CLIP_Seg/Pytorch-UNet/wandb/run-20220228_125051-1zp7o3p0/logs/debug.log
+2022-02-28 12:50:51,829 INFO    MainThread:24302 [wandb_init.py:_log_setup():387] Logging internal logs to /home/dvir/CLIP_Seg/Pytorch-UNet/wandb/run-20220228_125051-1zp7o3p0/logs/debug-internal.log
+2022-02-28 12:50:51,829 INFO    MainThread:24302 [wandb_init.py:init():420] calling init triggers
+2022-02-28 12:50:51,829 INFO    MainThread:24302 [wandb_init.py:init():425] wandb.init called with sweep_config: {}
+config: {}
+2022-02-28 12:50:51,829 INFO    MainThread:24302 [wandb_init.py:init():471] starting backend
+2022-02-28 12:50:51,830 INFO    MainThread:24302 [backend.py:_multiprocessing_setup():99] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-02-28 12:50:51,868 INFO    MainThread:24302 [backend.py:ensure_launched():219] starting backend process...
+2022-02-28 12:50:51,900 INFO    MainThread:24302 [backend.py:ensure_launched():224] started backend process with pid: 24476
+2022-02-28 12:50:51,901 INFO    MainThread:24302 [wandb_init.py:init():480] backend started and connected
+2022-02-28 12:50:51,905 INFO    MainThread:24302 [wandb_init.py:init():550] updated telemetry
+2022-02-28 12:50:51,986 INFO    MainThread:24302 [wandb_init.py:init():581] communicating current version
+2022-02-28 12:50:52,598 INFO    MainThread:24302 [wandb_init.py:init():586] got version response 
+2022-02-28 12:50:52,598 INFO    MainThread:24302 [wandb_init.py:init():596] communicating run to backend with 30 second timeout
+2022-02-28 12:50:53,356 INFO    MainThread:24302 [wandb_init.py:init():624] starting run threads in backend
+2022-02-28 12:50:54,222 INFO    MainThread:24302 [wandb_run.py:_console_start():1827] atexit reg
+2022-02-28 12:50:54,223 INFO    MainThread:24302 [wandb_run.py:_redirect():1701] redirect: SettingsConsole.REDIRECT
+2022-02-28 12:50:54,223 INFO    MainThread:24302 [wandb_run.py:_redirect():1706] Redirecting console.
+2022-02-28 12:50:54,226 INFO    MainThread:24302 [wandb_run.py:_redirect():1762] Redirects installed.
+2022-02-28 12:50:54,227 INFO    MainThread:24302 [wandb_init.py:init():651] run started, returning control to user process
+2022-02-28 12:50:54,228 INFO    MainThread:24302 [wandb_run.py:_config_callback():966] config_cb None None {'epochs': 5, 'batch_size': 16, 'learning_rate': 1e-07, 'val_percent': 0.1, 'save_checkpoint': True, 'img_scale': 0.5, 'amp': True}

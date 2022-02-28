@@ -1,0 +1,69 @@
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      32
+        Learning rate:   2e-07
+        Training size:   1464
+        Validation size: 1449
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  0.5
+        Mixed Precision: True
+Epoch 1/5:   0%|                                                           | 0/1464 [00:00<?, ?img/s]/home/dvir/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torch/nn/functional.py:3609: UserWarning: Default upsampling behavior when mode=bilinear is changed to align_corners=False since 0.4.0. Please specify align_corners=True if the old behavior is desired. See the documentation of nn.Upsample for details.
+  warnings.warn(
+/home/dvir/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torch/nn/functional.py:718: UserWarning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (Triggered internally at  /tmp/pip-req-build-pyrtjkcs/c10/core/TensorImpl.h:1156.)
+  return torch.max_pool2d(input, kernel_size, stride, padding, dilation, ceil_mode)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 1/5:  98%|████████████████████████████▌| 1440/1464 [00:43<00:00, 37.32img/s, loss (batch)=1.19]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 1/5:  98%|████████████████████████████▌| 1440/1464 [01:18<00:01, 18.28img/s, loss (batch)=1.19]
+Traceback (most recent call last):
+  File "train.py", line 290, in <module>
+    train_net(net=torch.nn.DataParallel(net, device_ids=list(map(int, args.device_ids.split(",")))),
+  File "train.py", line 237, in train_net
+    'relevance_map':wandb.Image(relevance_map[0].cpu())
+  File "/home/dvir/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/wandb/sdk/data_types.py", line 2079, in __init__
+    self._initialize_from_data(data_or_path, mode)
+  File "/home/dvir/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/wandb/sdk/data_types.py", line 2194, in _initialize_from_data
+    data = vis_util.make_grid(data, normalize=True)
+  File "/home/dvir/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torch/autograd/grad_mode.py", line 28, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/dvir/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torchvision/utils.py", line 87, in make_grid
+    norm_range(tensor, value_range)
+  File "/home/dvir/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torchvision/utils.py", line 81, in norm_range
+    norm_ip(t, float(t.min()), float(t.max()))
+  File "/home/dvir/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torchvision/utils.py", line 75, in norm_ip
+    img.sub_(low).div_(max(high - low, 1e-5))
+RuntimeError: result type Float can't be cast to the desired output type Byte

@@ -1,0 +1,28 @@
+INFO: Starting training:
+        Epochs:          50
+        Batch size:      16
+        Learning rate:   2e-07
+        Training size:   1464
+        Validation size: 1449
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  0.5
+        Mixed Precision: True
+Epoch 1/50:   0%|                                                          | 0/1464 [00:01<?, ?img/s]
+Traceback (most recent call last):
+  File "train.py", line 327, in <module>
+    train_net(net=torch.nn.DataParallel(net, device_ids=list(map(int, args.device_ids.split(",")))),
+  File "train.py", line 207, in train_net
+    R_image_temp = np.max(R_image_temp, 0)
+  File "<__array_function__ internals>", line 5, in amax
+  File "/home/dvir/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 2754, in amax
+    return _wrapreduction(a, np.maximum, 'max', axis, None, out,
+  File "/home/dvir/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 84, in _wrapreduction
+    return reduction(axis=axis, out=out, **passkwargs)
+TypeError: max() received an invalid combination of arguments - got (out=NoneType, axis=int, ), but expected one of:
+ * ()
+ * (Tensor other)
+ * (int dim, bool keepdim)
+      didn't match because some of the keywords were incorrect: out, axis
+ * (name dim, bool keepdim)
+      didn't match because some of the keywords were incorrect: out, axis

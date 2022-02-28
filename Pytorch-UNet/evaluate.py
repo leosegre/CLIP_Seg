@@ -15,7 +15,7 @@ from utils.dice_score import multiclass_dice_coeff, dice_coeff
 
 
 
-def evaluate(net, dataloader, device, labels_dict, clip_model, clip_preprocess):
+def evaluate(net, dataloader, device, labels_dict, voc12_template, distractors_template, clip_model, clip_preprocess):
     net.eval()
     num_val_batches = len(dataloader)
     dice_score = 0
@@ -25,7 +25,7 @@ def evaluate(net, dataloader, device, labels_dict, clip_model, clip_preprocess):
         # image, mask_true = batch['image'], batch['mask']
         # move images and labels to correct device and type
 
-        R_image = torch.zeros_like(mask_true)
+        R_image = torch.zeros_like(mask_true, dtype=torch.float32)
 
 
         for i in range(mask_true.size()[0]):
@@ -44,10 +44,22 @@ def evaluate(net, dataloader, device, labels_dict, clip_model, clip_preprocess):
             # CLIP Explainability
             to_pil = transforms.ToPILImage()
             clip_img = clip_preprocess(to_pil(image[i])).unsqueeze(0).to(device)
-            texts = [labels_dict[element_to_mask]]
-            text = clip.tokenize(texts).to(device)
+            class_name = [labels_dict[element_to_mask]]
+            # text = clip.tokenize(texts).to(device)
 
+            texts = [template.format(class_name) for template in voc12_template] #format with class
+            text = clip.tokenize(texts).to(device)
             R_image_temp = interpret(model=clip_model, image=clip_img, texts=text, device=device)
+            R_image_temp = R_image_temp.mean(axis=0)
+
+            distractors_texts = [template for template in distractors_template] #format with class
+            distractors_text = clip.tokenize(distractors_texts).to(device)
+            distractors_R_image_temp = interpret(model=clip_model, image=clip_img, texts=distractors_text, device=device)
+            distractors_R_image_temp = distractors_R_image_temp.mean(axis=0)
+
+            R_image_temp -= distractors_R_image_temp
+            # R_image_temp = torch.clamp(R_image_temp, min=0)
+
             R_image[i] = R_img_resize(R_image_temp)
 
         image = torch.cat((image, R_image.unsqueeze(axis=1)), axis=1)

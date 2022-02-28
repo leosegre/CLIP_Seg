@@ -1,0 +1,122 @@
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      16
+        Learning rate:   1e-07
+        Training size:   1464
+        Validation size: 1449
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  0.5
+        Mixed Precision: True
+Epoch 1/5:   0%|                                                           | 0/1464 [00:00<?, ?img/s]/home/dvir/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torch/nn/functional.py:3609: UserWarning: Default upsampling behavior when mode=bilinear is changed to align_corners=False since 0.4.0. Please specify align_corners=True if the old behavior is desired. See the documentation of nn.Upsample for details.
+  warnings.warn(
+/home/dvir/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torch/nn/functional.py:718: UserWarning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (Triggered internally at  /tmp/pip-req-build-pyrtjkcs/c10/core/TensorImpl.h:1156.)
+  return torch.max_pool2d(input, kernel_size, stride, padding, dilation, ceil_mode)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 1/5:  99%|████████████████████████████▊| 1456/1464 [00:46<00:00, 34.86img/s, loss (batch)=1.42]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 1/5: 100%|█████████████████████████████| 1464/1464 [01:24<00:00, 17.26img/s, loss (batch)=1.29]
+INFO: Checkpoint 1 saved!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 2/5:  98%|████████████████████████████▌| 1440/1464 [00:42<00:00, 34.41img/s, loss (batch)=1.35]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 2/5: 100%|█████████████████████████████| 1464/1464 [01:21<00:00, 17.87img/s, loss (batch)=1.31]
+INFO: Checkpoint 2 saved!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 3/5:  97%|████████████████████████████▏| 1424/1464 [00:42<00:01, 34.21img/s, loss (batch)=1.42]
+
+
+Validation round:   4%|█▉                                          | 4/91 [00:01<00:39,  2.19batch/s]
+INFO: Saved interrupt

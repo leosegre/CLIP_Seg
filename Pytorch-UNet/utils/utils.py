@@ -1,11 +1,28 @@
 import matplotlib.pyplot as plt
 import torch
 import numpy as np
+# import cv2
 
 #@title Control context expansion (number of attention layers to consider)
 num_layers =  10#@param {type:"number"}
 
+# def show_image_relevance(image_relevance, image):
+#     # create heatmap from mask on image
+#     def show_cam_on_image(img, mask):
+#         heatmap = cv2.applyColorMap(np.uint8(255 * mask), cv2.COLORMAP_JET)
+#         heatmap = np.float32(heatmap) / 255
+#         cam = heatmap + np.float32(img)
+#         cam = cam / np.max(cam)
+#         return cam
 
+
+#     image = image[0].permute(1, 2, 0).data.cpu().numpy()
+#     image = (image - image.min()) / (image.max() - image.min())
+#     vis = show_cam_on_image(image, image_relevance)
+#     vis = np.uint8(255 * vis)
+#     vis = cv2.cvtColor(np.array(vis), cv2.COLOR_RGB2BGR)
+#     # plt.imshow(vis)
+#     return vis
 
 def plot_img_and_mask(img, mask):
     classes = mask.shape[0] if len(mask.shape) > 2 else 1

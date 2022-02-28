@@ -1,0 +1,19 @@
+INFO: Starting training:
+        Epochs:          50
+        Batch size:      16
+        Learning rate:   2e-07
+        Training size:   1464
+        Validation size: 1449
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  0.5
+        Mixed Precision: True
+Epoch 1/50:   0%|                                                          | 0/1464 [00:01<?, ?img/s]
+Traceback (most recent call last):
+  File "train.py", line 327, in <module>
+    train_net(net=torch.nn.DataParallel(net, device_ids=list(map(int, args.device_ids.split(",")))),
+  File "train.py", line 207, in train_net
+    R_image_temp = np.maximum(R_image_temp, 0)
+  File "/home/dvir/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torch/_tensor.py", line 643, in __array__
+    return self.numpy()
+TypeError: can't convert cuda:0 device type tensor to numpy. Use Tensor.cpu() to copy the tensor to host memory first.
