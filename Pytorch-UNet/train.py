@@ -52,8 +52,10 @@ def train_net(net,
     # # 1. Create dataset
     transform = T.Compose([
     # you can add other transformations in this list
-    T.RandomCrop(224),
-    T.PILToTensor()
+    T.RandomResize(224),
+    T.PILToTensor(),
+    T.ConvertImageDtype(torch.float32),
+    T.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
     ])
 
 
@@ -179,6 +181,7 @@ def train_net(net,
                     # f'but loaded images have {images.shape[1]} channels. Please check that ' \
                     # 'the images are loaded correctly.'
 
+                orig_images = images.clone()
                 images = torch.cat((images, R_image.unsqueeze(axis=1)), axis=1)
                 # print(images.size())
                 images = images.to(device=device, dtype=torch.float32)
@@ -223,7 +226,7 @@ def train_net(net,
                         experiment.log({
                             'learning rate': optimizer.param_groups[0]['lr'],
                             'validation Dice': val_score,
-                            'images': wandb.Image(images[0][:2].cpu()),
+                            'images': wandb.Image(orig_images[0].cpu()),
                             'masks': {
                                 'true': wandb.Image(true_masks[0].float().cpu()),
                                 'pred': wandb.Image(torch.softmax(masks_pred, dim=1).argmax(dim=1)[0].float().cpu()),

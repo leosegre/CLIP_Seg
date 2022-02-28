@@ -35,8 +35,8 @@ class RandomResize:
 
     def __call__(self, image, target):
         size = random.randint(self.min_size, self.max_size)
-        image = F.resize(image, size)
-        target = F.resize(target, size, interpolation=T.InterpolationMode.NEAREST)
+        image = F.resize(image, (size, size))
+        target = F.resize(target, (size, size), interpolation=T.InterpolationMode.NEAREST)
         return image, target
 
 
@@ -89,6 +89,10 @@ class ConvertImageDtype:
         image = F.convert_image_dtype(image, self.dtype)
         return image, target
 
+class Normalize_lite:
+    def __call__(self, image, target):
+        image = image / 255
+        return image, target
 
 class Normalize:
     def __init__(self, mean, std):
