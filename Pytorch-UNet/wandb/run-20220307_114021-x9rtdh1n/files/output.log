@@ -1,0 +1,19 @@
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      128
+        Learning rate:   1e-05
+        Training size:   1464
+        Validation size: 1449
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  0.5
+        Mixed Precision: True
+Epoch 1/5:   0%|                                                           | 0/1464 [00:04<?, ?img/s]
+Traceback (most recent call last):
+  File "train.py", line 332, in <module>
+    train_net(net=torch.nn.DataParallel(net, device_ids=device_ids),
+  File "train.py", line 198, in train_net
+    R_image_temp = interpret(model=clip_model, image=clip_img, texts=text, device=device)
+  File "/home/dginzburg/CLIP_Seg/Pytorch-UNet/utils/utils.py", line 51, in interpret
+    one_hot = torch.sum(one_hot.cuda() * logits_per_image)
+RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cuda:0 and cuda:6!

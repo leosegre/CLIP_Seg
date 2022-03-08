@@ -1,0 +1,783 @@
+INFO: Starting training:
+        Epochs:          50
+        Batch size:      256
+        Learning rate:   1e-05
+        Training size:   1464
+        Validation size: 1449
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  0.5
+        Mixed Precision: True
+Epoch 1/50:   0%|                                                          | 0/1464 [00:00<?, ?img/s]/home/dginzburg/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torch/nn/functional.py:3609: UserWarning: Default upsampling behavior when mode=bilinear is changed to align_corners=False since 0.4.0. Please specify align_corners=True if the old behavior is desired. See the documentation of nn.Upsample for details.
+  warnings.warn(
+/home/dginzburg/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torch/nn/functional.py:718: UserWarning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (Triggered internally at  /pytorch/c10/core/TensorImpl.h:1156.)
+  return torch.max_pool2d(input, kernel_size, stride, padding, dilation, ceil_mode)
+
+
+
+Epoch 1/50:  87%|█████████████████████████▎   | 1280/1464 [01:04<00:09, 19.32img/s, loss (batch)=1.2]
+
+
+
+
+
+
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [00:58<00:11, 11.75s/batch]
+Epoch 1/50: 100%|████████████████████████████| 1464/1464 [02:19<00:00, 10.46img/s, loss (batch)=1.19]
+INFO: Checkpoint 1 saved!
+
+
+
+Epoch 2/50:  70%|███████████████████▌        | 1024/1464 [00:49<00:21, 20.14img/s, loss (batch)=1.08]
+
+
+
+
+
+
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [00:58<00:11, 11.90s/batch]
+Epoch 2/50: 100%|████████████████████████████| 1464/1464 [02:18<00:00, 10.55img/s, loss (batch)=1.02]
+INFO: Checkpoint 2 saved!
+
+
+
+Epoch 3/50:  52%|███████████████▏             | 768/1464 [00:42<00:40, 17.21img/s, loss (batch)=1.04]
+
+
+
+
+
+
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [01:02<00:12, 12.39s/batch]
+
+Epoch 3/50: 100%|███████████████████████████| 1464/1464 [02:27<00:00,  9.94img/s, loss (batch)=0.993]
+INFO: Checkpoint 3 saved!
+
+Epoch 4/50:  35%|█████████▊                  | 512/1464 [00:26<00:49, 19.15img/s, loss (batch)=0.996]
+
+
+
+
+
+
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [01:01<00:12, 12.30s/batch]
+
+
+
+Epoch 4/50: 100%|███████████████████████████| 1464/1464 [02:23<00:00, 10.23img/s, loss (batch)=0.984]
+INFO: Checkpoint 4 saved!
+
+Epoch 5/50:  17%|████▉                       | 256/1464 [00:16<01:16, 15.79img/s, loss (batch)=0.967]
+
+
+
+
+
+
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [01:02<00:12, 12.54s/batch]
+
+
+
+Epoch 5/50: 100%|███████████████████████████| 1464/1464 [02:29<00:00, 13.58img/s, loss (batch)=0.967]
+
+
+
+
+
+
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [00:58<00:11, 11.85s/batch]
+Epoch 5/50: 100%|███████████████████████████| 1464/1464 [03:36<00:00,  6.76img/s, loss (batch)=0.967]
+INFO: Checkpoint 5 saved!
+
+
+
+
+
+Epoch 6/50:  87%|███████████████████████▌   | 1280/1464 [01:03<00:09, 19.99img/s, loss (batch)=0.939]
+
+
+
+
+
+
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [01:00<00:12, 12.16s/batch]
+Epoch 6/50: 100%|████████████████████████████| 1464/1464 [02:21<00:00, 10.36img/s, loss (batch)=0.94]
+INFO: Checkpoint 6 saved!
+
+
+
+Epoch 7/50:  70%|██████████████████▉        | 1024/1464 [00:50<00:22, 19.91img/s, loss (batch)=0.912]
+
+
+
+
+
+
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [01:03<00:12, 12.83s/batch]
+Epoch 7/50: 100%|███████████████████████████| 1464/1464 [02:24<00:00, 10.10img/s, loss (batch)=0.904]
+INFO: Checkpoint 7 saved!
+
+
+
+Epoch 8/50:  52%|██████████████▋             | 768/1464 [00:39<00:36, 18.90img/s, loss (batch)=0.888]
+
+
+
+
+
+
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [01:01<00:12, 12.34s/batch]
+
+
+Epoch 8/50: 100%|███████████████████████████| 1464/1464 [02:23<00:00, 10.22img/s, loss (batch)=0.895]
+INFO: Checkpoint 8 saved!
+
+Epoch 9/50:  35%|█████████▊                  | 512/1464 [00:26<00:50, 18.96img/s, loss (batch)=0.893]
+
+
+
+
+
+
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [01:01<00:12, 12.24s/batch]
+
+
+Epoch 9/50: 100%|███████████████████████████| 1464/1464 [02:21<00:00, 10.34img/s, loss (batch)=0.877]
+INFO: Checkpoint 9 saved!
+
+Epoch 10/50:  17%|████▋                      | 256/1464 [00:13<01:05, 18.44img/s, loss (batch)=0.885]
+
+
+
+
+
+
+
+Validation round: 100%|█████████████████████████████████████████████| 6/6 [01:09<00:00, 11.27s/batch]
+
+
+
+
+Epoch 10/50: 100%|██████████████████████████| 1464/1464 [02:24<00:00, 14.34img/s, loss (batch)=0.865]
+
+
+
+
+
+
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [00:59<00:11, 11.92s/batch]
+Epoch 10/50: 100%|██████████████████████████| 1464/1464 [03:32<00:00,  6.88img/s, loss (batch)=0.865]
+INFO: Checkpoint 10 saved!
+
+
+
+
+Epoch 11/50:  87%|██████████████████████▋   | 1280/1464 [01:04<00:09, 19.77img/s, loss (batch)=0.845]
+
+
+
+
+
+
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [00:59<00:12, 12.07s/batch]
+Epoch 11/50: 100%|██████████████████████████| 1464/1464 [02:21<00:00, 10.32img/s, loss (batch)=0.836]
+INFO: Checkpoint 11 saved!
+
+
+
+
+Epoch 12/50:  70%|██████████████████▏       | 1024/1464 [00:50<00:22, 19.59img/s, loss (batch)=0.847]
+
+
+
+
+
+
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [01:01<00:12, 12.38s/batch]
+
+Epoch 12/50: 100%|██████████████████████████| 1464/1464 [02:23<00:00, 10.19img/s, loss (batch)=0.845]
+INFO: Checkpoint 12 saved!
+
+
+
+Epoch 13/50:  52%|██████████████▏            | 768/1464 [00:39<00:36, 18.91img/s, loss (batch)=0.834]
+
+
+
+
+
+
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [00:59<00:11, 11.85s/batch]
+
+
+Epoch 13/50: 100%|██████████████████████████| 1464/1464 [02:20<00:00, 10.44img/s, loss (batch)=0.824]
+INFO: Checkpoint 13 saved!
+
+
+Epoch 14/50:  35%|█████████▍                 | 512/1464 [00:27<00:52, 18.11img/s, loss (batch)=0.821]
+
+
+
+
+
+
+
+Validation round: 100%|█████████████████████████████████████████████| 6/6 [01:07<00:00, 10.94s/batch]
+
+
+
+Epoch 14/50: 100%|██████████████████████████| 1464/1464 [02:22<00:00, 10.27img/s, loss (batch)=0.828]
+INFO: Checkpoint 14 saved!
+Epoch 15/50:  17%|████▋                      | 256/1464 [00:14<01:07, 17.89img/s, loss (batch)=0.806]
+
+
+
+
+
+
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [01:01<00:12, 12.43s/batch]
+
+
+
+Epoch 15/50: 100%|███████████████████████████| 1464/1464 [02:20<00:00, 14.56img/s, loss (batch)=0.81]
+
+
+
+
+
+Epoch 15/50: 100%|███████████████████████████| 1464/1464 [03:28<00:00,  7.02img/s, loss (batch)=0.81]
+INFO: Checkpoint 15 saved!
+
+
+
+
+
+
+Epoch 16/50:  87%|██████████████████████▋   | 1280/1464 [01:06<00:09, 19.10img/s, loss (batch)=0.798]
+
+
+
+
+
+
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [01:01<00:12, 12.44s/batch]
+Epoch 16/50: 100%|██████████████████████████| 1464/1464 [02:25<00:00, 10.07img/s, loss (batch)=0.781]
+INFO: Checkpoint 16 saved!
+
+
+
+
+
+Epoch 17/50:  70%|██████████████████▏       | 1024/1464 [00:51<00:22, 19.78img/s, loss (batch)=0.787]
+
+
+
+
+
+
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [00:59<00:12, 12.04s/batch]
+
+Epoch 17/50: 100%|██████████████████████████| 1464/1464 [02:21<00:00, 10.35img/s, loss (batch)=0.791]
+INFO: Checkpoint 17 saved!
+
+
+Epoch 18/50:  52%|██████████████▏            | 768/1464 [00:38<00:35, 19.38img/s, loss (batch)=0.793]
+
+
+
+
+
+
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [00:58<00:11, 11.69s/batch]
+
+Epoch 18/50: 100%|███████████████████████████| 1464/1464 [02:18<00:00, 10.57img/s, loss (batch)=0.81]
+INFO: Checkpoint 18 saved!
+
+
+Epoch 19/50:  35%|█████████▍                 | 512/1464 [00:27<00:52, 18.08img/s, loss (batch)=0.773]
+
+
+
+
+
+
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [00:59<00:11, 11.94s/batch]
+
+
+
+Epoch 19/50: 100%|██████████████████████████| 1464/1464 [02:23<00:00, 10.20img/s, loss (batch)=0.741]
+INFO: Checkpoint 19 saved!
+
+Epoch 20/50:  17%|████▉                       | 256/1464 [00:15<01:11, 16.78img/s, loss (batch)=0.75]
+
+
+
+
+
+
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [01:04<00:12, 12.88s/batch]
+
+
+
+Epoch 20/50: 100%|██████████████████████████| 1464/1464 [02:27<00:00, 14.10img/s, loss (batch)=0.747]
+
+
+
+
+
+
+Epoch 20/50: 100%|██████████████████████████| 1464/1464 [03:37<00:00,  6.73img/s, loss (batch)=0.747]
+INFO: Checkpoint 20 saved!
+
+
+
+
+
+
+Epoch 21/50:  87%|██████████████████████▋   | 1280/1464 [01:05<00:09, 19.16img/s, loss (batch)=0.766]
+
+
+
+
+
+
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [01:00<00:12, 12.27s/batch]
+Epoch 21/50: 100%|██████████████████████████| 1464/1464 [02:23<00:00, 10.22img/s, loss (batch)=0.774]
+INFO: Checkpoint 21 saved!
+
+
+
+
+Epoch 22/50:  70%|██████████████████▏       | 1024/1464 [00:52<00:22, 19.31img/s, loss (batch)=0.736]
+
+
+
+
+
+
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [01:01<00:12, 12.38s/batch]
+Epoch 22/50: 100%|██████████████████████████| 1464/1464 [02:22<00:00, 10.25img/s, loss (batch)=0.726]
+INFO: Checkpoint 22 saved!
+
+
+
+Epoch 23/50:  52%|██████████████▏            | 768/1464 [00:38<00:35, 19.34img/s, loss (batch)=0.758]
+
+
+
+
+
+
+
+Validation round: 100%|█████████████████████████████████████████████| 6/6 [01:08<00:00, 10.74s/batch]
+
+Epoch 23/50: 100%|██████████████████████████| 1464/1464 [02:20<00:00, 10.42img/s, loss (batch)=0.768]
+INFO: Checkpoint 23 saved!
+
+
+Epoch 24/50:  35%|█████████▍                 | 512/1464 [00:25<00:48, 19.64img/s, loss (batch)=0.722]
+
+
+
+
+
+
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [01:00<00:12, 12.32s/batch]
+
+
+Epoch 24/50: 100%|██████████████████████████| 1464/1464 [02:21<00:00, 10.31img/s, loss (batch)=0.726]
+INFO: Checkpoint 24 saved!
+Epoch 25/50:  17%|████▋                      | 256/1464 [00:14<01:06, 18.06img/s, loss (batch)=0.752]
+
+
+
+
+
+
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [01:01<00:12, 12.40s/batch]
+
+
+
+Epoch 25/50: 100%|██████████████████████████| 1464/1464 [02:20<00:00, 14.78img/s, loss (batch)=0.741]
+
+
+
+
+
+Epoch 25/50: 100%|██████████████████████████| 1464/1464 [03:28<00:00,  7.01img/s, loss (batch)=0.741]
+INFO: Checkpoint 25 saved!
+
+
+
+
+
+Epoch 26/50:  87%|██████████████████████▋   | 1280/1464 [01:01<00:08, 20.49img/s, loss (batch)=0.727]
+
+
+
+
+
+
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [01:01<00:12, 12.45s/batch]
+Epoch 26/50: 100%|██████████████████████████| 1464/1464 [02:20<00:00, 10.39img/s, loss (batch)=0.744]
+INFO: Checkpoint 26 saved!
+
+
+
+Epoch 27/50:  70%|██████████████████▏       | 1024/1464 [00:51<00:22, 19.57img/s, loss (batch)=0.693]
+
+
+
+
+
+
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [01:00<00:12, 12.10s/batch]
+Epoch 27/50: 100%|██████████████████████████| 1464/1464 [02:20<00:00, 10.40img/s, loss (batch)=0.703]
+INFO: Checkpoint 27 saved!
+Epoch 28/50:  17%|████▋                      | 256/1464 [00:13<01:05, 18.53img/s, loss (batch)=0.701]
+Epoch 28/50:  35%|█████████▍                 | 512/1464 [00:25<00:49, 19.31img/s, loss (batch)=0.685]
+Epoch 28/50:  52%|██████████████▏            | 768/1464 [00:37<00:34, 19.94img/s, loss (batch)=0.715]
+Epoch 28/50:  52%|██████████████▏            | 768/1464 [00:51<00:34, 19.94img/s, loss (batch)=0.715]
+Epoch 28/50:  52%|██████████████▏            | 768/1464 [00:51<00:34, 19.94img/s, loss (batch)=0.715]
+Epoch 28/50:  52%|██████████████▏            | 768/1464 [00:51<00:34, 19.94img/s, loss (batch)=0.715]
+Epoch 28/50:  52%|██████████████▏            | 768/1464 [00:51<00:34, 19.94img/s, loss (batch)=0.715]
+Epoch 28/50:  52%|██████████████▏            | 768/1464 [00:51<00:34, 19.94img/s, loss (batch)=0.715]
+Epoch 28/50:  52%|██████████████▏            | 768/1464 [00:51<00:34, 19.94img/s, loss (batch)=0.715]INFO: Validation Dice score: 0.3823917508125305
+Epoch 28/50:  52%|██████████████▏            | 768/1464 [00:51<00:34, 19.94img/s, loss (batch)=0.715]INFO: Validation Dice score: 0.3823917508125305
+Epoch 28/50:  52%|██████████████▏            | 768/1464 [00:51<00:34, 19.94img/s, loss (batch)=0.715]INFO: Validation Dice score: 0.3823917508125305
+INFO: Checkpoint 28 saved!██████▏            | 768/1464 [00:51<00:34, 19.94img/s, loss (batch)=0.715]INFO: Validation Dice score: 0.3823917508125305
+INFO: Checkpoint 28 saved!██████▏            | 768/1464 [00:51<00:34, 19.94img/s, loss (batch)=0.715]INFO: Validation Dice score: 0.3823917508125305
+INFO: Checkpoint 28 saved!██████▏            | 768/1464 [00:51<00:34, 19.94img/s, loss (batch)=0.715]INFO: Validation Dice score: 0.3823917508125305
+Validation round:   0%|                                                     | 0/6 [00:00<?, ?batch/s]INFO: Validation Dice score: 0.3823917508125305
+Validation round:  17%|███████▌                                     | 1/6 [00:13<01:05, 13.15s/batch]INFO: Validation Dice score: 0.3823917508125305
+Validation round:  17%|███████▌                                     | 1/6 [00:13<01:05, 13.15s/batch]INFO: Validation Dice score: 0.3823917508125305
+Validation round:  33%|███████████████                              | 2/6 [00:25<00:51, 12.87s/batch]INFO: Validation Dice score: 0.3823917508125305
+Validation round:  50%|██████████████████████▌                      | 3/6 [00:36<00:37, 12.37s/batch]INFO: Validation Dice score: 0.3823917508125305
+Validation round:  67%|██████████████████████████████               | 4/6 [00:48<00:24, 12.26s/batch]INFO: Validation Dice score: 0.3823917508125305
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [01:00<00:12, 12.10s/batch]INFO: Validation Dice score: 0.3823917508125305
+                                                                                                     INFO: Validation Dice score: 0.3823917508125305
+Epoch 29/50:  52%|██████████████▏            | 768/1464 [01:47<01:31,  7.58img/s, loss (batch)=0.689]INFO: Validation Dice score: 0.3823917508125305
+Epoch 29/50:  70%|██████████████████▏       | 1024/1464 [01:59<00:46,  9.38img/s, loss (batch)=0.665]INFO: Validation Dice score: 0.3823917508125305
+Epoch 29/50:  87%|██████████████████████▋   | 1280/1464 [02:13<00:16, 11.02img/s, loss (batch)=0.713]INFO: Validation Dice score: 0.3823917508125305
+Epoch 29/50: 100%|██████████████████████████| 1464/1464 [02:22<00:00, 10.25img/s, loss (batch)=0.695]INFO: Validation Dice score: 0.3823917508125305
+Epoch 30/50:   0%|                                                         | 0/1464 [00:00<?, ?img/s]INFO: Validation Dice score: 0.3823917508125305
+Epoch 30/50:  17%|████▋                      | 256/1464 [00:14<01:07, 17.80img/s, loss (batch)=0.664]INFO: Validation Dice score: 0.3823917508125305
+Epoch 30/50:  17%|████▋                      | 256/1464 [00:14<01:07, 17.80img/s, loss (batch)=0.664]INFO: Validation Dice score: 0.3823917508125305
+Epoch 30/50:  17%|████▋                      | 256/1464 [00:30<01:07, 17.80img/s, loss (batch)=0.664]INFO: Validation Dice score: 0.3823917508125305
+Epoch 30/50:  17%|████▋                      | 256/1464 [00:30<01:07, 17.80img/s, loss (batch)=0.664]INFO: Validation Dice score: 0.3823917508125305
+Epoch 30/50:  17%|████▋                      | 256/1464 [00:30<01:07, 17.80img/s, loss (batch)=0.664]INFO: Validation Dice score: 0.3823917508125305
+Epoch 30/50:  17%|████▋                      | 256/1464 [00:30<01:07, 17.80img/s, loss (batch)=0.664]INFO: Validation Dice score: 0.3823917508125305
+Epoch 30/50:  17%|████▋                      | 256/1464 [00:30<01:07, 17.80img/s, loss (batch)=0.664]INFO: Validation Dice score: 0.3823917508125305
+Epoch 30/50:  17%|████▋                      | 256/1464 [00:30<01:07, 17.80img/s, loss (batch)=0.664]INFO: Validation Dice score: 0.3276742994785309
+Epoch 30/50:  17%|████▋                      | 256/1464 [00:30<01:07, 17.80img/s, loss (batch)=0.664]INFO: Validation Dice score: 0.3276742994785309
+Epoch 30/50:  17%|████▋                      | 256/1464 [00:30<01:07, 17.80img/s, loss (batch)=0.664]INFO: Validation Dice score: 0.3276742994785309
+Epoch 30/50:  17%|████▋                      | 256/1464 [00:30<01:07, 17.80img/s, loss (batch)=0.664]INFO: Validation Dice score: 0.3276742994785309
+Epoch 30/50:  17%|████▋                      | 256/1464 [00:30<01:07, 17.80img/s, loss (batch)=0.664]INFO: Validation Dice score: 0.3276742994785309
+Validation round:   0%|                                                     | 0/6 [00:00<?, ?batch/s]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  17%|███████▌                                     | 1/6 [00:14<01:11, 14.33s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  17%|███████▌                                     | 1/6 [00:14<01:11, 14.33s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  33%|███████████████                              | 2/6 [00:27<00:55, 13.98s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  50%|██████████████████████▌                      | 3/6 [00:39<00:39, 13.25s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  67%|██████████████████████████████               | 4/6 [00:50<00:25, 12.58s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [01:01<00:12, 12.35s/batch]INFO: Validation Dice score: 0.3276742994785309
+Epoch 31/50:   0%|                                                         | 0/1464 [00:00<?, ?img/s]INFO: Validation Dice score: 0.3276742994785309
+Epoch 31/50:  17%|████▋                      | 256/1464 [00:14<01:10, 17.21img/s, loss (batch)=0.692]INFO: Validation Dice score: 0.3276742994785309
+Epoch 31/50:  35%|█████████▊                  | 512/1464 [00:27<00:52, 18.03img/s, loss (batch)=0.66]INFO: Validation Dice score: 0.3276742994785309
+Epoch 31/50:  52%|██████████████▏            | 768/1464 [00:39<00:36, 18.97img/s, loss (batch)=0.717]INFO: Validation Dice score: 0.3276742994785309
+Epoch 31/50:  70%|██████████████████▏       | 1024/1464 [00:51<00:22, 19.55img/s, loss (batch)=0.664]INFO: Validation Dice score: 0.3276742994785309
+Epoch 31/50:  87%|██████████████████████▋   | 1280/1464 [01:03<00:09, 20.02img/s, loss (batch)=0.685]INFO: Validation Dice score: 0.3276742994785309
+Epoch 31/50:  87%|██████████████████████▋   | 1280/1464 [01:03<00:09, 20.02img/s, loss (batch)=0.685]INFO: Validation Dice score: 0.3276742994785309
+Epoch 31/50:  87%|██████████████████████▋   | 1280/1464 [01:14<00:09, 20.02img/s, loss (batch)=0.685]INFO: Validation Dice score: 0.3276742994785309
+Epoch 31/50:  87%|██████████████████████▋   | 1280/1464 [01:14<00:09, 20.02img/s, loss (batch)=0.685]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  33%|███████████████                              | 2/6 [00:25<00:53, 13.28s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  50%|██████████████████████▌                      | 3/6 [00:36<00:37, 12.66s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  67%|██████████████████████████████               | 4/6 [00:48<00:24, 12.33s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [00:59<00:12, 12.11s/batch]INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+INFO: Checkpoint 31 saved!                                                                           INFO: Validation Dice score: 0.3276742994785309
+INFO: Checkpoint 31 saved!                                                                           INFO: Validation Dice score: 0.3276742994785309
+INFO: Checkpoint 31 saved!                                                                           INFO: Validation Dice score: 0.3276742994785309
+INFO: Checkpoint 31 saved!                                                                           INFO: Validation Dice score: 0.3276742994785309
+Validation round:   0%|                                                     | 0/6 [00:00<?, ?batch/s]INFO: Validation Dice score: 0.3276742994785309
+Validation round:   0%|                                                     | 0/6 [00:00<?, ?batch/s]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  17%|███████▌                                     | 1/6 [00:13<01:08, 13.75s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  33%|███████████████                              | 2/6 [00:25<00:52, 13.12s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  50%|██████████████████████▌                      | 3/6 [00:37<00:38, 12.83s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  67%|██████████████████████████████               | 4/6 [00:49<00:25, 12.53s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [01:02<00:12, 12.62s/batch]INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+INFO: Checkpoint 32 saved!                                                                           INFO: Validation Dice score: 0.3276742994785309
+INFO: Checkpoint 32 saved!                                                                           INFO: Validation Dice score: 0.3276742994785309
+INFO: Checkpoint 32 saved!                                                                           INFO: Validation Dice score: 0.3276742994785309
+INFO: Checkpoint 32 saved!                                                                           INFO: Validation Dice score: 0.3276742994785309
+Validation round:   0%|                                                     | 0/6 [00:00<?, ?batch/s]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  17%|███████▌                                     | 1/6 [00:13<01:07, 13.54s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  17%|███████▌                                     | 1/6 [00:13<01:07, 13.54s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  33%|███████████████                              | 2/6 [00:25<00:52, 13.07s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  50%|██████████████████████▌                      | 3/6 [00:38<00:38, 12.98s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  67%|██████████████████████████████               | 4/6 [00:51<00:26, 13.03s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [01:03<00:12, 12.79s/batch]INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+INFO: Checkpoint 33 saved!                                                                           INFO: Validation Dice score: 0.3276742994785309
+INFO: Checkpoint 33 saved!                                                                           INFO: Validation Dice score: 0.3276742994785309
+Validation round:   0%|                                                     | 0/6 [00:00<?, ?batch/s]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  17%|███████▌                                     | 1/6 [00:13<01:07, 13.56s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  33%|███████████████                              | 2/6 [00:25<00:52, 13.10s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  50%|██████████████████████▌                      | 3/6 [00:37<00:38, 12.69s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  67%|██████████████████████████████               | 4/6 [00:48<00:24, 12.23s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [00:59<00:11, 11.93s/batch]INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+INFO: Checkpoint 34 saved!                                                                           INFO: Validation Dice score: 0.3276742994785309
+INFO: Checkpoint 34 saved!                                                                           INFO: Validation Dice score: 0.3276742994785309
+Validation round:   0%|                                                     | 0/6 [00:00<?, ?batch/s]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  17%|███████▌                                     | 1/6 [00:13<01:08, 13.63s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  17%|███████▌                                     | 1/6 [00:13<01:08, 13.63s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  33%|███████████████                              | 2/6 [00:25<00:52, 13.06s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  50%|██████████████████████▌                      | 3/6 [00:37<00:38, 12.75s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  67%|██████████████████████████████               | 4/6 [00:49<00:25, 12.51s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [01:01<00:12, 12.34s/batch]INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+Validation round:   0%|                                                     | 0/6 [00:00<?, ?batch/s]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  17%|███████▌                                     | 1/6 [00:13<01:06, 13.23s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  17%|███████▌                                     | 1/6 [00:13<01:06, 13.23s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  33%|███████████████                              | 2/6 [00:24<00:50, 12.73s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  50%|██████████████████████▌                      | 3/6 [00:36<00:36, 12.32s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  67%|██████████████████████████████               | 4/6 [00:47<00:24, 12.13s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [00:59<00:11, 11.99s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round: 100%|█████████████████████████████████████████████| 6/6 [01:07<00:00, 10.81s/batch]INFO: Validation Dice score: 0.3276742994785309
+Epoch 36/50:   0%|                                                         | 0/1464 [00:00<?, ?img/s]INFO: Validation Dice score: 0.3276742994785309
+Epoch 36/50:  17%|████▋                      | 256/1464 [00:14<01:06, 18.07img/s, loss (batch)=0.627]INFO: Validation Dice score: 0.3276742994785309
+Epoch 36/50:  17%|████▋                      | 256/1464 [00:14<01:06, 18.07img/s, loss (batch)=0.627]INFO: Validation Dice score: 0.3276742994785309
+Epoch 36/50:  17%|████▋                      | 256/1464 [00:14<01:06, 18.07img/s, loss (batch)=0.627]INFO: Validation Dice score: 0.3276742994785309
+Epoch 36/50:  17%|████▋                      | 256/1464 [00:14<01:06, 18.07img/s, loss (batch)=0.627]INFO: Validation Dice score: 0.3276742994785309
+Epoch 36/50:  17%|████▋                      | 256/1464 [00:14<01:06, 18.07img/s, loss (batch)=0.627]INFO: Validation Dice score: 0.3276742994785309
+Validation round:   0%|                                                     | 0/6 [00:00<?, ?batch/s]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  17%|███████▌                                     | 1/6 [00:13<01:08, 13.75s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  17%|███████▌                                     | 1/6 [00:13<01:08, 13.75s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  33%|███████████████                              | 2/6 [00:25<00:52, 13.17s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  50%|██████████████████████▌                      | 3/6 [00:37<00:38, 12.77s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  67%|██████████████████████████████               | 4/6 [00:48<00:24, 12.26s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [00:59<00:12, 12.03s/batch]INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+INFO: Checkpoint 36 saved!                                                                           INFO: Validation Dice score: 0.3276742994785309
+INFO: Checkpoint 36 saved!                                                                           INFO: Validation Dice score: 0.3276742994785309
+INFO: Checkpoint 36 saved!                                                                           INFO: Validation Dice score: 0.3276742994785309
+INFO: Checkpoint 36 saved!                                                                           INFO: Validation Dice score: 0.3276742994785309
+Validation round:   0%|                                                     | 0/6 [00:00<?, ?batch/s]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  17%|███████▌                                     | 1/6 [00:13<01:07, 13.50s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  17%|███████▌                                     | 1/6 [00:13<01:07, 13.50s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  33%|███████████████                              | 2/6 [00:24<00:51, 12.79s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  50%|██████████████████████▌                      | 3/6 [00:35<00:36, 12.32s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  67%|██████████████████████████████               | 4/6 [00:46<00:23, 11.94s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [00:57<00:11, 11.67s/batch]INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+INFO: Checkpoint 37 saved!                                                                           INFO: Validation Dice score: 0.3276742994785309
+INFO: Checkpoint 37 saved!                                                                           INFO: Validation Dice score: 0.3276742994785309
+INFO: Checkpoint 37 saved!                                                                           INFO: Validation Dice score: 0.3276742994785309
+INFO: Checkpoint 37 saved!                                                                           INFO: Validation Dice score: 0.3276742994785309
+Validation round:   0%|                                                     | 0/6 [00:00<?, ?batch/s]INFO: Validation Dice score: 0.3276742994785309
+Validation round:   0%|                                                     | 0/6 [00:00<?, ?batch/s]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  17%|███████▌                                     | 1/6 [00:13<01:09, 13.98s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  33%|███████████████                              | 2/6 [00:24<00:52, 13.01s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  50%|██████████████████████▌                      | 3/6 [00:37<00:39, 13.02s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  67%|██████████████████████████████               | 4/6 [00:48<00:24, 12.38s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [00:59<00:12, 12.05s/batch]INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+Epoch 39/50:   0%|                                                         | 0/1464 [00:00<?, ?img/s]INFO: Validation Dice score: 0.3276742994785309
+Epoch 39/50:   0%|                                                         | 0/1464 [00:00<?, ?img/s]INFO: Validation Dice score: 0.3276742994785309
+Validation round:   0%|                                                     | 0/6 [00:00<?, ?batch/s]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  17%|███████▌                                     | 1/6 [00:13<01:06, 13.28s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  33%|███████████████                              | 2/6 [00:25<00:51, 12.83s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  50%|██████████████████████▌                      | 3/6 [00:37<00:38, 12.74s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  67%|██████████████████████████████               | 4/6 [00:48<00:24, 12.30s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [01:01<00:12, 12.27s/batch]INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+INFO: Checkpoint 39 saved!                                                                           INFO: Validation Dice score: 0.3276742994785309
+Validation round:   0%|                                                     | 0/6 [00:00<?, ?batch/s]INFO: Validation Dice score: 0.3276742994785309
+Validation round:   0%|                                                     | 0/6 [00:00<?, ?batch/s]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  17%|███████▌                                     | 1/6 [00:13<01:05, 13.18s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  33%|███████████████                              | 2/6 [00:25<00:51, 12.80s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  50%|██████████████████████▌                      | 3/6 [00:36<00:37, 12.52s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  67%|██████████████████████████████               | 4/6 [00:48<00:24, 12.27s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [01:00<00:12, 12.12s/batch]INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+Validation round:   0%|                                                     | 0/6 [00:00<?, ?batch/s]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  17%|███████▌                                     | 1/6 [00:14<01:10, 14.16s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  33%|███████████████                              | 2/6 [00:26<00:54, 13.53s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  50%|██████████████████████▌                      | 3/6 [00:38<00:39, 13.03s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  67%|██████████████████████████████               | 4/6 [00:50<00:25, 12.75s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [01:02<00:12, 12.51s/batch]INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+INFO: Checkpoint 40 saved!                                                                           INFO: Validation Dice score: 0.3276742994785309
+INFO: Checkpoint 40 saved!                                                                           INFO: Validation Dice score: 0.3276742994785309
+INFO: Checkpoint 40 saved!                                                                           INFO: Validation Dice score: 0.3276742994785309
+INFO: Checkpoint 40 saved!                                                                           INFO: Validation Dice score: 0.3276742994785309
+INFO: Checkpoint 40 saved!                                                                           INFO: Validation Dice score: 0.3276742994785309
+INFO: Checkpoint 40 saved!                                                                           INFO: Validation Dice score: 0.3276742994785309
+Validation round:   0%|                                                     | 0/6 [00:00<?, ?batch/s]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  17%|███████▌                                     | 1/6 [00:13<01:05, 13.09s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  17%|███████▌                                     | 1/6 [00:13<01:05, 13.09s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  33%|███████████████                              | 2/6 [00:24<00:50, 12.52s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  50%|██████████████████████▌                      | 3/6 [00:35<00:36, 12.16s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  67%|██████████████████████████████               | 4/6 [00:47<00:23, 11.94s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [00:58<00:11, 11.69s/batch]INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+INFO: Checkpoint 41 saved!                                                                           INFO: Validation Dice score: 0.3276742994785309
+INFO: Checkpoint 41 saved!                                                                           INFO: Validation Dice score: 0.3276742994785309
+INFO: Checkpoint 41 saved!                                                                           INFO: Validation Dice score: 0.3276742994785309
+INFO: Checkpoint 41 saved!                                                                           INFO: Validation Dice score: 0.3276742994785309
+Validation round:   0%|                                                     | 0/6 [00:00<?, ?batch/s]INFO: Validation Dice score: 0.3276742994785309
+Validation round:   0%|                                                     | 0/6 [00:00<?, ?batch/s]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  17%|███████▌                                     | 1/6 [00:13<01:07, 13.48s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  33%|███████████████                              | 2/6 [00:26<00:52, 13.24s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  50%|██████████████████████▌                      | 3/6 [00:38<00:38, 12.84s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  67%|██████████████████████████████               | 4/6 [00:48<00:24, 12.20s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [01:00<00:12, 12.04s/batch]INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+INFO: Checkpoint 42 saved!                                                                           INFO: Validation Dice score: 0.3276742994785309
+INFO: Checkpoint 42 saved!                                                                           INFO: Validation Dice score: 0.3276742994785309
+INFO: Checkpoint 42 saved!                                                                           INFO: Validation Dice score: 0.3276742994785309
+Validation round:   0%|                                                     | 0/6 [00:00<?, ?batch/s]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  17%|███████▌                                     | 1/6 [00:13<01:05, 13.08s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  33%|███████████████                              | 2/6 [00:24<00:49, 12.49s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  50%|██████████████████████▌                      | 3/6 [00:35<00:36, 12.13s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  67%|██████████████████████████████               | 4/6 [00:46<00:23, 11.86s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [00:58<00:11, 11.87s/batch]INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+INFO: Checkpoint 43 saved!                                                                           INFO: Validation Dice score: 0.3276742994785309
+INFO: Checkpoint 43 saved!                                                                           INFO: Validation Dice score: 0.3276742994785309
+Validation round:   0%|                                                     | 0/6 [00:00<?, ?batch/s]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  17%|███████▌                                     | 1/6 [00:13<01:06, 13.30s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  17%|███████▌                                     | 1/6 [00:13<01:06, 13.30s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  33%|███████████████                              | 2/6 [00:24<00:50, 12.72s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  50%|██████████████████████▌                      | 3/6 [00:37<00:37, 12.63s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  67%|██████████████████████████████               | 4/6 [00:48<00:24, 12.15s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [00:59<00:11, 11.86s/batch]INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+INFO: Checkpoint 44 saved!                                                                           INFO: Validation Dice score: 0.3276742994785309
+Validation round:   0%|                                                     | 0/6 [00:00<?, ?batch/s]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  17%|███████▌                                     | 1/6 [00:13<01:06, 13.30s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  33%|███████████████                              | 2/6 [00:24<00:50, 12.62s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  50%|██████████████████████▌                      | 3/6 [00:35<00:36, 12.10s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  67%|██████████████████████████████               | 4/6 [00:46<00:23, 11.87s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [00:59<00:12, 12.08s/batch]INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+Validation round:   0%|                                                     | 0/6 [00:00<?, ?batch/s]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  17%|███████▌                                     | 1/6 [00:13<01:08, 13.67s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  17%|███████▌                                     | 1/6 [00:13<01:08, 13.67s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  33%|███████████████                              | 2/6 [00:26<00:53, 13.40s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  50%|██████████████████████▌                      | 3/6 [00:38<00:39, 13.14s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  67%|██████████████████████████████               | 4/6 [00:50<00:25, 12.80s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [01:02<00:12, 12.47s/batch]INFO: Validation Dice score: 0.3276742994785309
+Epoch 46/50:   0%|                                                         | 0/1464 [00:00<?, ?img/s]INFO: Validation Dice score: 0.3276742994785309
+Epoch 46/50:  17%|████▋                      | 256/1464 [00:16<01:15, 15.92img/s, loss (batch)=0.602]INFO: Validation Dice score: 0.3276742994785309
+Epoch 46/50:  17%|████▋                      | 256/1464 [00:16<01:15, 15.92img/s, loss (batch)=0.602]INFO: Validation Dice score: 0.3276742994785309
+Epoch 46/50:  17%|████▋                      | 256/1464 [00:16<01:15, 15.92img/s, loss (batch)=0.602]INFO: Validation Dice score: 0.3276742994785309
+Epoch 46/50:  17%|████▋                      | 256/1464 [00:16<01:15, 15.92img/s, loss (batch)=0.602]INFO: Validation Dice score: 0.3276742994785309
+Epoch 46/50:  17%|████▋                      | 256/1464 [00:16<01:15, 15.92img/s, loss (batch)=0.602]INFO: Validation Dice score: 0.3276742994785309
+Validation round:   0%|                                                     | 0/6 [00:00<?, ?batch/s]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  17%|███████▌                                     | 1/6 [00:12<01:03, 12.72s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  17%|███████▌                                     | 1/6 [00:12<01:03, 12.72s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  33%|███████████████                              | 2/6 [00:25<00:50, 12.71s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  50%|██████████████████████▌                      | 3/6 [00:36<00:36, 12.19s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  67%|██████████████████████████████               | 4/6 [00:47<00:23, 11.83s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [00:58<00:11, 11.75s/batch]INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+INFO: Checkpoint 46 saved!                                                                           INFO: Validation Dice score: 0.3276742994785309
+INFO: Checkpoint 46 saved!                                                                           INFO: Validation Dice score: 0.3276742994785309
+INFO: Checkpoint 46 saved!                                                                           INFO: Validation Dice score: 0.3276742994785309
+INFO: Checkpoint 46 saved!                                                                           INFO: Validation Dice score: 0.3276742994785309
+Validation round:   0%|                                                     | 0/6 [00:00<?, ?batch/s]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  17%|███████▌                                     | 1/6 [00:14<01:10, 14.00s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  17%|███████▌                                     | 1/6 [00:14<01:10, 14.00s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  33%|███████████████                              | 2/6 [00:25<00:53, 13.40s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  50%|██████████████████████▌                      | 3/6 [00:38<00:38, 12.99s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  67%|██████████████████████████████               | 4/6 [00:50<00:25, 12.70s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [01:02<00:12, 12.65s/batch]INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+INFO: Checkpoint 47 saved!                                                                           INFO: Validation Dice score: 0.3276742994785309
+INFO: Checkpoint 47 saved!                                                                           INFO: Validation Dice score: 0.3276742994785309
+INFO: Checkpoint 47 saved!                                                                           INFO: Validation Dice score: 0.3276742994785309
+INFO: Checkpoint 47 saved!                                                                           INFO: Validation Dice score: 0.3276742994785309
+Validation round:   0%|                                                     | 0/6 [00:00<?, ?batch/s]INFO: Validation Dice score: 0.3276742994785309
+Validation round:   0%|                                                     | 0/6 [00:00<?, ?batch/s]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  17%|███████▌                                     | 1/6 [00:13<01:08, 13.64s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  33%|███████████████                              | 2/6 [00:24<00:51, 12.90s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  50%|██████████████████████▌                      | 3/6 [00:36<00:37, 12.66s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  67%|██████████████████████████████               | 4/6 [00:47<00:23, 11.97s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [00:57<00:11, 11.50s/batch]INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+INFO: Checkpoint 48 saved!                                                                           INFO: Validation Dice score: 0.3276742994785309
+INFO: Checkpoint 48 saved!                                                                           INFO: Validation Dice score: 0.3276742994785309
+Validation round:   0%|                                                     | 0/6 [00:00<?, ?batch/s]INFO: Validation Dice score: 0.3276742994785309
+Validation round:   0%|                                                     | 0/6 [00:00<?, ?batch/s]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  17%|███████▌                                     | 1/6 [00:13<01:09, 13.96s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  33%|███████████████                              | 2/6 [00:26<00:53, 13.49s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  50%|██████████████████████▌                      | 3/6 [00:37<00:38, 12.91s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  67%|██████████████████████████████               | 4/6 [00:48<00:24, 12.36s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [01:00<00:11, 11.98s/batch]INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+INFO: Checkpoint 49 saved!                                                                           INFO: Validation Dice score: 0.3276742994785309
+INFO: Checkpoint 49 saved!                                                                           INFO: Validation Dice score: 0.3276742994785309
+Validation round:   0%|                                                     | 0/6 [00:00<?, ?batch/s]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  17%|███████▌                                     | 1/6 [00:13<01:06, 13.37s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  17%|███████▌                                     | 1/6 [00:13<01:06, 13.37s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  33%|███████████████                              | 2/6 [00:26<00:52, 13.24s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  50%|██████████████████████▌                      | 3/6 [00:40<00:40, 13.49s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  67%|██████████████████████████████               | 4/6 [00:52<00:26, 13.06s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [01:06<00:13, 13.34s/batch]INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+                                                                                                     INFO: Validation Dice score: 0.3276742994785309
+Validation round:   0%|                                                     | 0/6 [00:00<?, ?batch/s]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  17%|███████▌                                     | 1/6 [00:13<01:06, 13.23s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  17%|███████▌                                     | 1/6 [00:13<01:06, 13.23s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  33%|███████████████                              | 2/6 [00:24<00:50, 12.57s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  50%|██████████████████████▌                      | 3/6 [00:34<00:35, 11.96s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  67%|██████████████████████████████               | 4/6 [00:46<00:23, 11.98s/batch]INFO: Validation Dice score: 0.3276742994785309
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [01:00<00:12, 12.40s/batch]INFO: Validation Dice score: 0.3276742994785309
+Epoch 50/50: 100%|██████████████████████████| 1464/1464 [03:42<00:00,  6.58img/s, loss (batch)=0.624]INFO: Validation Dice score: 0.3276742994785309
+Epoch 50/50: 100%|██████████████████████████| 1464/1464 [03:42<00:00,  6.58img/s, loss (batch)=0.624]INFO: Validation Dice score: 0.3276742994785309
+Epoch 50/50: 100%|██████████████████████████| 1464/1464 [03:42<00:00,  6.58img/s, loss (batch)=0.624]INFO: Validation Dice score: 0.3276742994785309

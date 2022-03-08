@@ -1,0 +1,89 @@
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      256
+        Learning rate:   1e-05
+        Training size:   1464
+        Validation size: 1449
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  0.5
+        Mixed Precision: True
+Epoch 1/5:   0%|                                                           | 0/1464 [00:00<?, ?img/s]/home/dginzburg/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torch/nn/functional.py:3609: UserWarning: Default upsampling behavior when mode=bilinear is changed to align_corners=False since 0.4.0. Please specify align_corners=True if the old behavior is desired. See the documentation of nn.Upsample for details.
+  warnings.warn(
+/home/dginzburg/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torch/nn/functional.py:718: UserWarning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (Triggered internally at  /pytorch/c10/core/TensorImpl.h:1156.)
+  return torch.max_pool2d(input, kernel_size, stride, padding, dilation, ceil_mode)
+
+
+
+
+Epoch 1/5:  87%|█████████████████████████▎   | 1280/1464 [00:51<00:07, 24.39img/s, loss (batch)=1.19]
+
+
+
+
+
+
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [00:44<00:09,  9.09s/batch]
+Epoch 1/5: 100%|█████████████████████████████| 1464/1464 [01:49<00:00, 13.34img/s, loss (batch)=1.15]
+INFO: Checkpoint 1 saved!
+
+
+
+Epoch 2/5:  70%|████████████████████▎        | 1024/1464 [00:38<00:17, 25.83img/s, loss (batch)=1.07]
+
+
+
+
+
+
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [00:45<00:09,  9.21s/batch]
+Epoch 2/5: 100%|█████████████████████████████| 1464/1464 [01:46<00:00, 13.70img/s, loss (batch)=1.01]
+INFO: Checkpoint 2 saved!
+
+
+
+Epoch 3/5:  52%|███████████████▏             | 768/1464 [00:29<00:27, 25.19img/s, loss (batch)=0.982]
+
+
+
+
+
+
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [00:44<00:09,  9.05s/batch]
+
+Epoch 3/5: 100%|████████████████████████████| 1464/1464 [01:46<00:00, 13.80img/s, loss (batch)=0.967]
+INFO: Checkpoint 3 saved!
+
+
+Epoch 4/5:  35%|██████████▏                  | 512/1464 [00:20<00:39, 23.94img/s, loss (batch)=0.935]
+
+
+
+
+
+
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [00:44<00:09,  9.06s/batch]
+
+
+Epoch 4/5: 100%|████████████████████████████| 1464/1464 [01:46<00:00, 13.79img/s, loss (batch)=0.914]
+INFO: Checkpoint 4 saved!
+Epoch 5/5:  17%|█████                        | 256/1464 [00:11<00:53, 22.73img/s, loss (batch)=0.896]
+
+
+
+
+
+
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [00:44<00:08,  8.93s/batch]
+
+
+
+
+Epoch 5/5: 100%|████████████████████████████| 1464/1464 [01:44<00:00, 19.61img/s, loss (batch)=0.871]
+
+
+
+
+
+Epoch 5/5: 100%|████████████████████████████| 1464/1464 [02:35<00:00,  9.43img/s, loss (batch)=0.871]
+INFO: Checkpoint 5 saved!

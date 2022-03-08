@@ -1,0 +1,25 @@
+INFO: Starting training:
+        Epochs:          50
+        Batch size:      256
+        Learning rate:   1e-05
+        Training size:   1464
+        Validation size: 1449
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  0.5
+        Mixed Precision: True
+Epoch 1/50:   0%|                                                          | 0/1464 [00:00<?, ?img/s]/home/dginzburg/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torch/nn/functional.py:3609: UserWarning: Default upsampling behavior when mode=bilinear is changed to align_corners=False since 0.4.0. Please specify align_corners=True if the old behavior is desired. See the documentation of nn.Upsample for details.
+  warnings.warn(
+Epoch 1/50:   0%|                                                          | 0/1464 [00:03<?, ?img/s]
+Traceback (most recent call last):
+  File "train.py", line 354, in <module>
+    train_net(net=torch.nn.DataParallel(net, device_ids=device_ids),
+  File "train.py", line 205, in train_net
+    R_image_temp += texts2r_image(class_name, voc12_template, device, clip_model, aug(clip_img))
+  File "train.py", line 167, in <lambda>
+    lambda x: ImageOps.flip(x),
+  File "/home/dginzburg/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/PIL/ImageOps.py", line 503, in flip
+    return image.transpose(Image.FLIP_TOP_BOTTOM)
+TypeError: transpose() received an invalid combination of arguments - got (int), but expected one of:
+ * (int dim0, int dim1)
+ * (name dim0, name dim1)

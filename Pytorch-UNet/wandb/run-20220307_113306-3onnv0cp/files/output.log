@@ -1,0 +1,23 @@
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      128
+        Learning rate:   1e-05
+        Training size:   1464
+        Validation size: 1449
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  0.5
+        Mixed Precision: True
+Epoch 1/5:   0%|                                                           | 0/1464 [00:00<?, ?img/s]/home/dginzburg/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torch/nn/functional.py:3609: UserWarning: Default upsampling behavior when mode=bilinear is changed to align_corners=False since 0.4.0. Please specify align_corners=True if the old behavior is desired. See the documentation of nn.Upsample for details.
+  warnings.warn(
+Epoch 1/5:   0%|                                                           | 0/1464 [00:05<?, ?img/s]
+Traceback (most recent call last):
+  File "train.py", line 332, in <module>
+    train_net(net=torch.nn.DataParallel(net, device_ids=device_ids),
+  File "train.py", line 229, in train_net
+    masks_pred = net(images)
+  File "/home/dginzburg/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/dginzburg/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torch/nn/parallel/data_parallel.py", line 154, in forward
+    raise RuntimeError("module must have its parameters and buffers "
+RuntimeError: module must have its parameters and buffers on device cuda:6 (device_ids[0]) but found one of them on device: cuda:0

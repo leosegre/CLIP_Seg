@@ -2,6 +2,7 @@ import argparse
 import logging
 import sys
 from pathlib import Path
+from PIL import ImageOps
 
 import torchvision
 from torchvision import transforms
@@ -14,7 +15,7 @@ import numpy as np
 from torch import optim
 from torch.utils.data import DataLoader, random_split
 from tqdm import tqdm
-from utils.utils import interpret, R_img_resize
+from utils.utils import interpret, R_img_resize, texts2r_image
 
 
 from utils.data_loading import BasicDataset, CarvanaDataset
@@ -152,14 +153,26 @@ def train_net(net,
     # ]
 
     voc12_template = [
-        'A {} in the scene.',    
-        'a bad photo of the {}.',
+        'A {} in the scene',    
+        # 'a bad photo of the {}.',
     ]
 
     distractors_template = [
-        'A Fish in the scene.',    
-        'A picture of the moon.',
-        'A pineapple.',
+        'A scene',    
+        # 'A picture of the moon.',
+        # 'A pineapple.',
+    ]
+
+    # augs = [
+    #     lambda x: ImageOps.flip(x),   
+    #     lambda x: ImageOps.mirror(x),
+    #     lambda x: ImageOps.mirror(ImageOps.flip(x))
+    # ]
+
+    augs = [
+        # torchvision.transforms.RandomVerticalFlip(p=1),
+        # torchvision.transforms.RandomHorizontalFlip(p=1),
+        # torchvision.transforms.Compose([torchvision.transforms.RandomVerticalFlip(p=1), torchvision.transforms.RandomHorizontalFlip(p=1)])
     ]
 
     # 5. Begin training
@@ -192,22 +205,24 @@ def train_net(net,
                     to_pil = transforms.ToPILImage()
                     clip_img = clip_preprocess(to_pil(images[i])).unsqueeze(0).to(device)
                     class_name = [labels_dict[element_to_mask]]
+                    
+                    R_image_temp = texts2r_image(class_name, voc12_template, device, clip_model, clip_img)
+                    for aug in augs:
+                        R_image_temp += aug(texts2r_image(class_name, voc12_template, device, clip_model, aug(clip_img)))
+                    R_image_temp /= len(augs)+1
 
-                    texts = [template.format(class_name) for template in voc12_template] #format with class
-                    text = clip.tokenize(texts).to(device)
-                    R_image_temp = interpret(model=clip_model, image=clip_img, texts=text, device=device)
-                    R_image_temp = R_image_temp.mean(axis=0)
+                    # distractors_R_image_temp = texts2r_image(class_name, distractors_template, device, clip_model, clip_img)
+                    # for aug in augs:
+                    #     distractors_R_image_temp += aug(texts2r_image(class_name, distractors_template, device, clip_model, aug(clip_img)))
+                    # distractors_R_image_temp /= len(augs)+1
 
-                    distractors_texts = [template for template in distractors_template] #format with class
-                    distractors_text = clip.tokenize(distractors_texts).to(device)
-                    distractors_R_image_temp = interpret(model=clip_model, image=clip_img, texts=distractors_text, device=device)
-                    distractors_R_image_temp = distractors_R_image_temp.mean(axis=0)
-
-                    R_image_temp -= distractors_R_image_temp
+                    # R_image_temp -= distractors_R_image_temp
+                    R_image_temp = (R_image_temp - R_image_temp.min()) / (R_image_temp.max() - R_image_temp.min())
                     # R_image_temp = torch.clamp(R_image_temp, min=0)
 
+                    R_image[i] = R_image_temp
 
-                    R_image[i] = R_img_resize(R_image_temp)
+                    # R_image[i] = R_img_resize(R_image_temp)
                     # print(R_image[i])
                     # relevance_map[i] = (255 * R_image[i]).to(torch.uint8)
 
@@ -257,7 +272,7 @@ def train_net(net,
                             histograms['Weights/' + tag] = wandb.Histogram(value.data.cpu())
                             histograms['Gradients/' + tag] = wandb.Histogram(value.grad.data.cpu())
 
-                        val_score = evaluate(net, val_loader, device, labels_dict, voc12_template, distractors_template, clip_model, clip_preprocess)
+                        val_score = evaluate(net, val_loader, device, labels_dict, voc12_template, distractors_template, clip_model, clip_preprocess, augs)
                         scheduler.step(val_score)
 
                         logging.info('Validation Dice score: {}'.format(val_score))
@@ -303,7 +318,8 @@ def get_args():
 
 if __name__ == '__main__':
     args = get_args()
-
+    first_device = 0 if args.device_ids==None else int(args.device_ids[0])
+    torch.cuda.set_device(first_device)
     logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     logging.info(f'Using device {device}')
@@ -322,9 +338,14 @@ if __name__ == '__main__':
         net.load_state_dict(torch.load(args.load, map_location=device))
         logging.info(f'Model loaded from {args.load}')
 
+    if args.device_ids == None:
+        device_ids = None
+    else:
+        device_ids = list(map(int, args.device_ids.split(",")))
+
     net.to(device=device)
     try:
-        train_net(net=torch.nn.DataParallel(net, device_ids=list(map(int, args.device_ids.split(",")))),
+        train_net(net=torch.nn.DataParallel(net, device_ids=device_ids),
                   epochs=args.epochs,
                   batch_size=args.batch_size,
                   learning_rate=args.lr,

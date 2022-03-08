@@ -4,7 +4,7 @@ from tqdm import tqdm
 import numpy as np
 from torchvision import transforms
 import Transformer_MM_Explainability.CLIP.clip as clip
-from utils.utils import interpret, R_img_resize
+from utils.utils import interpret, R_img_resize, texts2r_image
 
 
 
@@ -15,7 +15,7 @@ from utils.dice_score import multiclass_dice_coeff, dice_coeff
 
 
 
-def evaluate(net, dataloader, device, labels_dict, voc12_template, distractors_template, clip_model, clip_preprocess):
+def evaluate(net, dataloader, device, labels_dict, voc12_template, distractors_template, clip_model, clip_preprocess, augs):
     net.eval()
     num_val_batches = len(dataloader)
     dice_score = 0
@@ -47,20 +47,23 @@ def evaluate(net, dataloader, device, labels_dict, voc12_template, distractors_t
             class_name = [labels_dict[element_to_mask]]
             # text = clip.tokenize(texts).to(device)
 
-            texts = [template.format(class_name) for template in voc12_template] #format with class
-            text = clip.tokenize(texts).to(device)
-            R_image_temp = interpret(model=clip_model, image=clip_img, texts=text, device=device)
-            R_image_temp = R_image_temp.mean(axis=0)
+            R_image_temp = texts2r_image(class_name, voc12_template, device, clip_model, clip_img)
+            for aug in augs:
+                R_image_temp += aug(texts2r_image(class_name, voc12_template, device, clip_model, aug(clip_img)))
+            R_image_temp /= len(augs)+1
 
-            distractors_texts = [template for template in distractors_template] #format with class
-            distractors_text = clip.tokenize(distractors_texts).to(device)
-            distractors_R_image_temp = interpret(model=clip_model, image=clip_img, texts=distractors_text, device=device)
-            distractors_R_image_temp = distractors_R_image_temp.mean(axis=0)
 
-            R_image_temp -= distractors_R_image_temp
+            # distractors_R_image_temp = texts2r_image(class_name, distractors_template, device, clip_model, clip_img)
+            # for aug in augs:
+            #     distractors_R_image_temp += aug(texts2r_image(class_name, distractors_template, device, clip_model, aug(clip_img)))
+            # distractors_R_image_temp /= len(augs)+1
+
+            # R_image_temp -= distractors_R_image_temp
+            R_image_temp = (R_image_temp - R_image_temp.min()) / (R_image_temp.max() - R_image_temp.min())
             # R_image_temp = torch.clamp(R_image_temp, min=0)
+            R_image[i] = R_image_temp
 
-            R_image[i] = R_img_resize(R_image_temp)
+            # R_image[i] = R_img_resize(R_image_temp)
 
         image = torch.cat((image, R_image.unsqueeze(axis=1)), axis=1)
         image = image.to(device=device, dtype=torch.float32)

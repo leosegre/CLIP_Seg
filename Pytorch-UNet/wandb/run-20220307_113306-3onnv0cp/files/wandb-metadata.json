@@ -1,0 +1,34 @@
+{
+    "os": "Linux-5.4.0-53-generic-x86_64-with-glibc2.17",
+    "python": "3.8.12",
+    "heartbeatAt": "2022-03-07T09:33:07.925425",
+    "startedAt": "2022-03-07T09:33:06.298707",
+    "docker": null,
+    "gpu": "Quadro RTX 8000",
+    "gpu_count": 8,
+    "cpu_count": 72,
+    "cuda": "10.2.89",
+    "args": [
+        "--amp",
+        "-b",
+        "128",
+        "-e",
+        "5",
+        "-l",
+        "1e-5",
+        "-d",
+        "6,7"
+    ],
+    "state": "running",
+    "program": "train.py",
+    "codePath": "Pytorch-UNet/train.py",
+    "git": {
+        "remote": "https://github.com/leosegre/CLIP_Seg.git",
+        "commit": "600fa6ccc137480c9a190e3e1e285fb844590fd6"
+    },
+    "email": "dvir",
+    "root": "/home/dginzburg/CLIP_Seg",
+    "host": "gdl-G291-281-00",
+    "username": "dginzburg",
+    "executable": "/home/dginzburg/anaconda3/envs/CLIP_Seg/bin/python"
+}

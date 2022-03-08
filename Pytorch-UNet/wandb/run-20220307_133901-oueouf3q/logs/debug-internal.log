@@ -1,0 +1,830 @@
+2022-03-07 13:39:01,673 INFO    MainThread:71129 [internal.py:wandb_internal():92] W&B internal server running at pid: 71129, started at: 2022-03-07 13:39:01.673392
+2022-03-07 13:39:01,676 INFO    WriterThread:71129 [datastore.py:open_for_write():77] open: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/run-oueouf3q.wandb
+2022-03-07 13:39:01,679 DEBUG   SenderThread:71129 [sender.py:send():235] send: header
+2022-03-07 13:39:01,680 DEBUG   SenderThread:71129 [sender.py:send():235] send: run
+2022-03-07 13:39:01,683 INFO    SenderThread:71129 [sender.py:_maybe_setup_resume():492] checking resume status for None/U-Net/oueouf3q
+2022-03-07 13:39:02,404 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: check_version
+2022-03-07 13:39:02,406 INFO    SenderThread:71129 [dir_watcher.py:__init__():169] watching files in: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files
+2022-03-07 13:39:02,406 INFO    SenderThread:71129 [sender.py:_start_run_threads():812] run started: oueouf3q with start time 1646653141
+2022-03-07 13:39:02,406 DEBUG   SenderThread:71129 [sender.py:send():235] send: summary
+2022-03-07 13:39:02,407 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-07 13:39:02,407 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: check_version
+2022-03-07 13:39:02,713 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: run_start
+2022-03-07 13:39:02,722 DEBUG   HandlerThread:71129 [meta.py:__init__():37] meta init
+2022-03-07 13:39:02,722 DEBUG   HandlerThread:71129 [meta.py:__init__():51] meta init done
+2022-03-07 13:39:02,722 DEBUG   HandlerThread:71129 [meta.py:probe():211] probe
+2022-03-07 13:39:02,731 DEBUG   HandlerThread:71129 [meta.py:_setup_git():201] setup git
+2022-03-07 13:39:02,749 DEBUG   HandlerThread:71129 [meta.py:_setup_git():208] setup git done
+2022-03-07 13:39:02,750 DEBUG   HandlerThread:71129 [meta.py:_save_pip():55] save pip
+2022-03-07 13:39:02,750 DEBUG   HandlerThread:71129 [meta.py:_save_pip():69] save pip done
+2022-03-07 13:39:02,751 DEBUG   HandlerThread:71129 [meta.py:_save_conda():76] save conda
+2022-03-07 13:39:03,410 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_created():217] file/dir created: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/requirements.txt
+2022-03-07 13:39:03,410 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_created():217] file/dir created: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/conda-environment.yaml
+2022-03-07 13:39:03,411 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_created():217] file/dir created: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/wandb-summary.json
+2022-03-07 13:39:03,863 DEBUG   HandlerThread:71129 [meta.py:_save_conda():86] save conda done
+2022-03-07 13:39:03,863 DEBUG   HandlerThread:71129 [meta.py:probe():249] probe done
+2022-03-07 13:39:03,872 DEBUG   SenderThread:71129 [sender.py:send():235] send: files
+2022-03-07 13:39:03,872 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file wandb-metadata.json with policy now
+2022-03-07 13:39:03,881 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:39:03,882 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:39:04,206 DEBUG   SenderThread:71129 [sender.py:send():235] send: telemetry
+2022-03-07 13:39:04,206 DEBUG   SenderThread:71129 [sender.py:send():235] send: config
+2022-03-07 13:39:04,410 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/conda-environment.yaml
+2022-03-07 13:39:04,411 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_created():217] file/dir created: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:39:04,411 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_created():217] file/dir created: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/wandb-metadata.json
+2022-03-07 13:39:04,796 INFO    Thread-11 :71129 [upload_job.py:push():137] Uploaded file /tmp/tmp3l1bjpjkwandb/3vhgznne-wandb-metadata.json
+2022-03-07 13:39:06,411 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:39:08,412 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:39:19,209 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:39:19,209 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:39:23,755 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-07 13:39:23,757 DEBUG   SenderThread:71129 [sender.py:send():235] send: history
+2022-03-07 13:39:23,758 DEBUG   SenderThread:71129 [sender.py:send():235] send: summary
+2022-03-07 13:39:23,763 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-07 13:39:24,419 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:39:24,419 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/wandb-summary.json
+2022-03-07 13:39:26,420 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:39:33,295 DEBUG   SenderThread:71129 [sender.py:send():235] send: stats
+2022-03-07 13:39:33,423 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/config.yaml
+2022-03-07 13:39:34,552 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:39:34,553 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:39:36,424 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:39:38,076 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-07 13:39:38,079 DEBUG   SenderThread:71129 [sender.py:send():235] send: history
+2022-03-07 13:39:38,080 DEBUG   SenderThread:71129 [sender.py:send():235] send: summary
+2022-03-07 13:39:38,084 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-07 13:39:38,425 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/wandb-summary.json
+2022-03-07 13:39:40,426 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:39:49,909 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:39:49,909 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:39:52,333 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-07 13:39:52,337 DEBUG   SenderThread:71129 [sender.py:send():235] send: history
+2022-03-07 13:39:52,338 DEBUG   SenderThread:71129 [sender.py:send():235] send: summary
+2022-03-07 13:39:52,342 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-07 13:39:52,432 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/wandb-summary.json
+2022-03-07 13:39:54,432 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:40:05,244 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:40:05,245 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:40:05,777 DEBUG   SenderThread:71129 [sender.py:send():235] send: stats
+2022-03-07 13:40:06,438 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:40:06,741 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-07 13:40:06,743 DEBUG   SenderThread:71129 [sender.py:send():235] send: history
+2022-03-07 13:40:06,743 DEBUG   SenderThread:71129 [sender.py:send():235] send: summary
+2022-03-07 13:40:06,745 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-07 13:40:07,438 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/wandb-summary.json
+2022-03-07 13:40:08,438 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:40:20,607 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:40:20,608 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:40:21,070 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-07 13:40:21,072 DEBUG   SenderThread:71129 [sender.py:send():235] send: history
+2022-03-07 13:40:21,072 DEBUG   SenderThread:71129 [sender.py:send():235] send: summary
+2022-03-07 13:40:21,073 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-07 13:40:21,445 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/wandb-summary.json
+2022-03-07 13:40:22,445 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:40:24,446 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:40:35,952 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:40:35,952 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:40:38,148 DEBUG   SenderThread:71129 [sender.py:send():235] send: stats
+2022-03-07 13:40:38,452 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:40:51,308 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:40:51,308 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:40:52,460 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:41:06,466 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:41:06,644 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:41:06,645 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:41:10,493 DEBUG   SenderThread:71129 [sender.py:send():235] send: stats
+2022-03-07 13:41:20,472 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:41:21,987 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:41:21,987 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:41:34,478 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:41:37,447 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:41:37,448 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:41:41,035 DEBUG   SenderThread:71129 [sender.py:send():235] send: files
+2022-03-07 13:41:41,036 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file media/images/image_5_43065bb82f48fdb8243c.png with policy now
+2022-03-07 13:41:41,036 DEBUG   SenderThread:71129 [sender.py:send():235] send: files
+2022-03-07 13:41:41,036 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file media/images/relevance_map_5_7efcccd99ca4fb8a23df.png with policy now
+2022-03-07 13:41:41,036 DEBUG   SenderThread:71129 [sender.py:send():235] send: files
+2022-03-07 13:41:41,036 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file media/images/true_5_432bafd4951e512f1b0b.png with policy now
+2022-03-07 13:41:41,037 DEBUG   SenderThread:71129 [sender.py:send():235] send: files
+2022-03-07 13:41:41,037 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file media/images/pred_5_9539cf441238495203ce.png with policy now
+2022-03-07 13:41:41,050 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-07 13:41:41,071 DEBUG   SenderThread:71129 [sender.py:send():235] send: history
+2022-03-07 13:41:41,098 DEBUG   SenderThread:71129 [sender.py:send():235] send: summary
+2022-03-07 13:41:41,117 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-07 13:41:41,481 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/wandb-summary.json
+2022-03-07 13:41:41,481 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_created():217] file/dir created: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/relevance_map_5_7efcccd99ca4fb8a23df.png
+2022-03-07 13:41:41,481 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_created():217] file/dir created: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/true_5_432bafd4951e512f1b0b.png
+2022-03-07 13:41:41,482 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_created():217] file/dir created: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/pred_5_9539cf441238495203ce.png
+2022-03-07 13:41:41,482 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_created():217] file/dir created: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/image_5_43065bb82f48fdb8243c.png
+2022-03-07 13:41:41,482 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_created():217] file/dir created: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media
+2022-03-07 13:41:41,482 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_created():217] file/dir created: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images
+2022-03-07 13:41:42,004 INFO    Thread-14 :71129 [upload_job.py:push():137] Uploaded file /tmp/tmp3l1bjpjkwandb/3bmb1rp5-media/images/true_5_432bafd4951e512f1b0b.png
+2022-03-07 13:41:42,022 INFO    Thread-15 :71129 [upload_job.py:push():137] Uploaded file /tmp/tmp3l1bjpjkwandb/i5ni5g4t-media/images/pred_5_9539cf441238495203ce.png
+2022-03-07 13:41:42,123 INFO    Thread-13 :71129 [upload_job.py:push():137] Uploaded file /tmp/tmp3l1bjpjkwandb/o3lnrd2g-media/images/relevance_map_5_7efcccd99ca4fb8a23df.png
+2022-03-07 13:41:42,374 INFO    Thread-12 :71129 [upload_job.py:push():137] Uploaded file /tmp/tmp3l1bjpjkwandb/7us3n4g2-media/images/image_5_43065bb82f48fdb8243c.png
+2022-03-07 13:41:42,481 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:41:42,924 DEBUG   SenderThread:71129 [sender.py:send():235] send: stats
+2022-03-07 13:41:51,306 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-07 13:41:51,312 DEBUG   SenderThread:71129 [sender.py:send():235] send: history
+2022-03-07 13:41:51,338 DEBUG   SenderThread:71129 [sender.py:send():235] send: summary
+2022-03-07 13:41:51,366 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-07 13:41:51,487 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/wandb-summary.json
+2022-03-07 13:41:52,487 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:41:52,788 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:41:52,788 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:41:54,489 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:42:07,993 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-07 13:42:07,999 DEBUG   SenderThread:71129 [sender.py:send():235] send: history
+2022-03-07 13:42:08,015 DEBUG   SenderThread:71129 [sender.py:send():235] send: summary
+2022-03-07 13:42:08,028 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-07 13:42:08,147 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:42:08,147 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:42:08,497 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/wandb-summary.json
+2022-03-07 13:42:10,498 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:42:15,439 DEBUG   SenderThread:71129 [sender.py:send():235] send: stats
+2022-03-07 13:42:22,408 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-07 13:42:22,415 DEBUG   SenderThread:71129 [sender.py:send():235] send: history
+2022-03-07 13:42:22,432 DEBUG   SenderThread:71129 [sender.py:send():235] send: summary
+2022-03-07 13:42:22,445 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-07 13:42:22,504 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/wandb-summary.json
+2022-03-07 13:42:23,528 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:42:23,529 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:42:24,506 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:42:36,513 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:42:36,615 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-07 13:42:36,622 DEBUG   SenderThread:71129 [sender.py:send():235] send: history
+2022-03-07 13:42:36,642 DEBUG   SenderThread:71129 [sender.py:send():235] send: summary
+2022-03-07 13:42:36,655 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-07 13:42:37,514 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/wandb-summary.json
+2022-03-07 13:42:38,514 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:42:38,857 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:42:38,858 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:42:47,922 DEBUG   SenderThread:71129 [sender.py:send():235] send: stats
+2022-03-07 13:42:50,936 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-07 13:42:50,942 DEBUG   SenderThread:71129 [sender.py:send():235] send: history
+2022-03-07 13:42:50,951 DEBUG   SenderThread:71129 [sender.py:send():235] send: summary
+2022-03-07 13:42:50,978 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-07 13:42:51,522 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/wandb-summary.json
+2022-03-07 13:42:52,523 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:42:54,328 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:42:54,328 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:43:08,531 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:43:09,687 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:43:09,687 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:43:20,493 DEBUG   SenderThread:71129 [sender.py:send():235] send: stats
+2022-03-07 13:43:22,538 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:43:25,020 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:43:25,020 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:43:36,547 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:43:40,338 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:43:40,338 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:43:50,555 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:43:52,956 DEBUG   SenderThread:71129 [sender.py:send():235] send: stats
+2022-03-07 13:43:55,725 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:43:55,726 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:44:04,562 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:44:11,124 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:44:11,124 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:44:11,574 DEBUG   SenderThread:71129 [sender.py:send():235] send: files
+2022-03-07 13:44:11,575 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file media/images/image_11_685b3c808b203bfc434b.png with policy now
+2022-03-07 13:44:11,575 DEBUG   SenderThread:71129 [sender.py:send():235] send: files
+2022-03-07 13:44:11,575 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file media/images/relevance_map_11_04425f4bac2348d68e59.png with policy now
+2022-03-07 13:44:11,576 DEBUG   SenderThread:71129 [sender.py:send():235] send: files
+2022-03-07 13:44:11,576 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file media/images/true_11_69fcaa6435d58f31660c.png with policy now
+2022-03-07 13:44:11,576 DEBUG   SenderThread:71129 [sender.py:send():235] send: files
+2022-03-07 13:44:11,576 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file media/images/pred_11_a2d329fb58f247279c97.png with policy now
+2022-03-07 13:44:11,587 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-07 13:44:11,613 DEBUG   SenderThread:71129 [sender.py:send():235] send: history
+2022-03-07 13:44:11,647 DEBUG   SenderThread:71129 [sender.py:send():235] send: summary
+2022-03-07 13:44:11,677 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-07 13:44:12,526 INFO    Thread-18 :71129 [upload_job.py:push():137] Uploaded file /tmp/tmp3l1bjpjkwandb/3saghtw5-media/images/true_11_69fcaa6435d58f31660c.png
+2022-03-07 13:44:12,565 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:44:12,566 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/wandb-summary.json
+2022-03-07 13:44:12,566 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_created():217] file/dir created: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/relevance_map_11_04425f4bac2348d68e59.png
+2022-03-07 13:44:12,566 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_created():217] file/dir created: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/true_11_69fcaa6435d58f31660c.png
+2022-03-07 13:44:12,566 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_created():217] file/dir created: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/pred_11_a2d329fb58f247279c97.png
+2022-03-07 13:44:12,566 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_created():217] file/dir created: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/image_11_685b3c808b203bfc434b.png
+2022-03-07 13:44:12,566 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images
+2022-03-07 13:44:12,594 INFO    Thread-19 :71129 [upload_job.py:push():137] Uploaded file /tmp/tmp3l1bjpjkwandb/2si9o9be-media/images/pred_11_a2d329fb58f247279c97.png
+2022-03-07 13:44:12,783 INFO    Thread-17 :71129 [upload_job.py:push():137] Uploaded file /tmp/tmp3l1bjpjkwandb/21x9yxxm-media/images/relevance_map_11_04425f4bac2348d68e59.png
+2022-03-07 13:44:12,852 INFO    Thread-16 :71129 [upload_job.py:push():137] Uploaded file /tmp/tmp3l1bjpjkwandb/xpjxaxxz-media/images/image_11_685b3c808b203bfc434b.png
+2022-03-07 13:44:25,488 DEBUG   SenderThread:71129 [sender.py:send():235] send: stats
+2022-03-07 13:44:25,905 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-07 13:44:25,911 DEBUG   SenderThread:71129 [sender.py:send():235] send: history
+2022-03-07 13:44:25,920 DEBUG   SenderThread:71129 [sender.py:send():235] send: summary
+2022-03-07 13:44:25,940 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-07 13:44:26,452 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:44:26,452 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:44:26,574 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/wandb-summary.json
+2022-03-07 13:44:28,576 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:44:36,221 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-07 13:44:36,227 DEBUG   SenderThread:71129 [sender.py:send():235] send: history
+2022-03-07 13:44:36,246 DEBUG   SenderThread:71129 [sender.py:send():235] send: summary
+2022-03-07 13:44:36,272 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-07 13:44:36,581 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/wandb-summary.json
+2022-03-07 13:44:38,582 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:44:41,780 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:44:41,780 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:44:53,063 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-07 13:44:53,071 DEBUG   SenderThread:71129 [sender.py:send():235] send: history
+2022-03-07 13:44:53,090 DEBUG   SenderThread:71129 [sender.py:send():235] send: summary
+2022-03-07 13:44:53,104 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-07 13:44:53,592 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/wandb-summary.json
+2022-03-07 13:44:54,592 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:44:57,130 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:44:57,130 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:44:58,048 DEBUG   SenderThread:71129 [sender.py:send():235] send: stats
+2022-03-07 13:45:04,600 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:45:07,191 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-07 13:45:07,199 DEBUG   SenderThread:71129 [sender.py:send():235] send: history
+2022-03-07 13:45:07,217 DEBUG   SenderThread:71129 [sender.py:send():235] send: summary
+2022-03-07 13:45:07,231 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-07 13:45:07,602 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/wandb-summary.json
+2022-03-07 13:45:08,603 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:45:12,467 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:45:12,467 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:45:21,469 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-07 13:45:21,476 DEBUG   SenderThread:71129 [sender.py:send():235] send: history
+2022-03-07 13:45:21,494 DEBUG   SenderThread:71129 [sender.py:send():235] send: summary
+2022-03-07 13:45:21,521 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-07 13:45:21,611 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/wandb-summary.json
+2022-03-07 13:45:22,612 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:45:24,613 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:45:27,794 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:45:27,795 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:45:30,667 DEBUG   SenderThread:71129 [sender.py:send():235] send: stats
+2022-03-07 13:45:38,622 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:45:43,135 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:45:43,135 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:45:52,631 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:45:58,478 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:45:58,479 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:46:03,167 DEBUG   SenderThread:71129 [sender.py:send():235] send: stats
+2022-03-07 13:46:06,637 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:46:13,924 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:46:13,924 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:46:20,644 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:46:29,260 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:46:29,261 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:46:34,653 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:46:35,617 DEBUG   SenderThread:71129 [sender.py:send():235] send: stats
+2022-03-07 13:46:41,802 DEBUG   SenderThread:71129 [sender.py:send():235] send: files
+2022-03-07 13:46:41,803 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file media/images/image_17_39868312759f28d1e7c7.png with policy now
+2022-03-07 13:46:41,803 DEBUG   SenderThread:71129 [sender.py:send():235] send: files
+2022-03-07 13:46:41,803 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file media/images/relevance_map_17_a477eb4ca1e80e6bd45a.png with policy now
+2022-03-07 13:46:41,804 DEBUG   SenderThread:71129 [sender.py:send():235] send: files
+2022-03-07 13:46:41,804 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file media/images/true_17_a9a479cfc1388159de08.png with policy now
+2022-03-07 13:46:41,807 DEBUG   SenderThread:71129 [sender.py:send():235] send: files
+2022-03-07 13:46:41,808 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file media/images/pred_17_b88608446bcf6c5cbc85.png with policy now
+2022-03-07 13:46:41,816 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-07 13:46:41,841 DEBUG   SenderThread:71129 [sender.py:send():235] send: history
+2022-03-07 13:46:41,864 DEBUG   SenderThread:71129 [sender.py:send():235] send: summary
+2022-03-07 13:46:41,893 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-07 13:46:42,658 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:46:42,658 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/wandb-summary.json
+2022-03-07 13:46:42,659 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_created():217] file/dir created: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/true_17_a9a479cfc1388159de08.png
+2022-03-07 13:46:42,659 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_created():217] file/dir created: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/image_17_39868312759f28d1e7c7.png
+2022-03-07 13:46:42,659 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_created():217] file/dir created: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/relevance_map_17_a477eb4ca1e80e6bd45a.png
+2022-03-07 13:46:42,659 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_created():217] file/dir created: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/pred_17_b88608446bcf6c5cbc85.png
+2022-03-07 13:46:42,659 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images
+2022-03-07 13:46:42,766 INFO    Thread-22 :71129 [upload_job.py:push():137] Uploaded file /tmp/tmp3l1bjpjkwandb/hnv9wo7y-media/images/true_17_a9a479cfc1388159de08.png
+2022-03-07 13:46:42,833 INFO    Thread-23 :71129 [upload_job.py:push():137] Uploaded file /tmp/tmp3l1bjpjkwandb/33hb0nzx-media/images/pred_17_b88608446bcf6c5cbc85.png
+2022-03-07 13:46:42,861 INFO    Thread-21 :71129 [upload_job.py:push():137] Uploaded file /tmp/tmp3l1bjpjkwandb/1f43x7rq-media/images/relevance_map_17_a477eb4ca1e80e6bd45a.png
+2022-03-07 13:46:43,189 INFO    Thread-20 :71129 [upload_job.py:push():137] Uploaded file /tmp/tmp3l1bjpjkwandb/38y9wgtn-media/images/image_17_39868312759f28d1e7c7.png
+2022-03-07 13:46:44,609 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:46:44,610 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:46:56,379 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-07 13:46:56,386 DEBUG   SenderThread:71129 [sender.py:send():235] send: history
+2022-03-07 13:46:56,406 DEBUG   SenderThread:71129 [sender.py:send():235] send: summary
+2022-03-07 13:46:56,420 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-07 13:46:56,667 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/wandb-summary.json
+2022-03-07 13:46:58,668 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:46:59,940 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:46:59,941 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:47:08,023 DEBUG   SenderThread:71129 [sender.py:send():235] send: stats
+2022-03-07 13:47:10,792 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-07 13:47:10,799 DEBUG   SenderThread:71129 [sender.py:send():235] send: history
+2022-03-07 13:47:10,821 DEBUG   SenderThread:71129 [sender.py:send():235] send: summary
+2022-03-07 13:47:10,835 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-07 13:47:11,677 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/wandb-summary.json
+2022-03-07 13:47:12,678 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:47:15,297 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:47:15,298 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:47:21,064 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-07 13:47:21,070 DEBUG   SenderThread:71129 [sender.py:send():235] send: history
+2022-03-07 13:47:21,085 DEBUG   SenderThread:71129 [sender.py:send():235] send: summary
+2022-03-07 13:47:21,113 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-07 13:47:21,684 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/wandb-summary.json
+2022-03-07 13:47:22,685 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:47:30,689 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:47:30,689 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:47:37,933 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-07 13:47:37,941 DEBUG   SenderThread:71129 [sender.py:send():235] send: history
+2022-03-07 13:47:37,960 DEBUG   SenderThread:71129 [sender.py:send():235] send: summary
+2022-03-07 13:47:37,989 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-07 13:47:38,701 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:47:38,702 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/wandb-summary.json
+2022-03-07 13:47:40,433 DEBUG   SenderThread:71129 [sender.py:send():235] send: stats
+2022-03-07 13:47:46,023 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:47:46,023 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:47:52,226 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-07 13:47:52,233 DEBUG   SenderThread:71129 [sender.py:send():235] send: history
+2022-03-07 13:47:52,250 DEBUG   SenderThread:71129 [sender.py:send():235] send: summary
+2022-03-07 13:47:52,275 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-07 13:47:52,713 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/wandb-summary.json
+2022-03-07 13:47:54,714 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:48:01,365 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:48:01,367 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:48:08,725 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:48:12,847 DEBUG   SenderThread:71129 [sender.py:send():235] send: stats
+2022-03-07 13:48:16,713 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:48:16,714 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:48:22,733 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:48:32,044 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:48:32,044 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:48:36,743 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:48:45,367 DEBUG   SenderThread:71129 [sender.py:send():235] send: stats
+2022-03-07 13:48:47,381 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:48:47,381 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:48:50,752 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:49:02,734 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:49:02,734 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:49:04,763 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:49:11,740 DEBUG   SenderThread:71129 [sender.py:send():235] send: files
+2022-03-07 13:49:11,741 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file media/images/image_23_88190aff14b8eed127cb.png with policy now
+2022-03-07 13:49:11,741 DEBUG   SenderThread:71129 [sender.py:send():235] send: files
+2022-03-07 13:49:11,741 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file media/images/relevance_map_23_d0a1b311c9f90b813e19.png with policy now
+2022-03-07 13:49:11,742 DEBUG   SenderThread:71129 [sender.py:send():235] send: files
+2022-03-07 13:49:11,742 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file media/images/true_23_648aa6ed59fe0aa4b1f8.png with policy now
+2022-03-07 13:49:11,742 DEBUG   SenderThread:71129 [sender.py:send():235] send: files
+2022-03-07 13:49:11,742 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file media/images/pred_23_f0bd4485f07a456ab180.png with policy now
+2022-03-07 13:49:11,754 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-07 13:49:11,780 DEBUG   SenderThread:71129 [sender.py:send():235] send: history
+2022-03-07 13:49:11,828 DEBUG   SenderThread:71129 [sender.py:send():235] send: summary
+2022-03-07 13:49:11,843 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-07 13:49:11,844 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_created():217] file/dir created: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/true_23_648aa6ed59fe0aa4b1f8.png
+2022-03-07 13:49:11,845 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_created():217] file/dir created: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/relevance_map_23_d0a1b311c9f90b813e19.png
+2022-03-07 13:49:11,845 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_created():217] file/dir created: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/image_23_88190aff14b8eed127cb.png
+2022-03-07 13:49:11,845 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_created():217] file/dir created: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/pred_23_f0bd4485f07a456ab180.png
+2022-03-07 13:49:11,845 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images
+2022-03-07 13:49:12,748 INFO    Thread-26 :71129 [upload_job.py:push():137] Uploaded file /tmp/tmp3l1bjpjkwandb/3jbglnih-media/images/true_23_648aa6ed59fe0aa4b1f8.png
+2022-03-07 13:49:12,767 INFO    Thread-27 :71129 [upload_job.py:push():137] Uploaded file /tmp/tmp3l1bjpjkwandb/11m0h0vk-media/images/pred_23_f0bd4485f07a456ab180.png
+2022-03-07 13:49:12,798 INFO    Thread-25 :71129 [upload_job.py:push():137] Uploaded file /tmp/tmp3l1bjpjkwandb/2wtwhn3s-media/images/relevance_map_23_d0a1b311c9f90b813e19.png
+2022-03-07 13:49:12,845 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:49:12,845 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/wandb-summary.json
+2022-03-07 13:49:13,048 INFO    Thread-24 :71129 [upload_job.py:push():137] Uploaded file /tmp/tmp3l1bjpjkwandb/md7ccguy-media/images/image_23_88190aff14b8eed127cb.png
+2022-03-07 13:49:17,880 DEBUG   SenderThread:71129 [sender.py:send():235] send: stats
+2022-03-07 13:49:18,076 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:49:18,077 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:49:26,120 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-07 13:49:26,126 DEBUG   SenderThread:71129 [sender.py:send():235] send: history
+2022-03-07 13:49:26,148 DEBUG   SenderThread:71129 [sender.py:send():235] send: summary
+2022-03-07 13:49:26,161 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-07 13:49:26,855 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:49:26,855 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/wandb-summary.json
+2022-03-07 13:49:33,421 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:49:33,422 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:49:40,344 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-07 13:49:40,350 DEBUG   SenderThread:71129 [sender.py:send():235] send: history
+2022-03-07 13:49:40,371 DEBUG   SenderThread:71129 [sender.py:send():235] send: summary
+2022-03-07 13:49:40,385 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-07 13:49:40,869 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/wandb-summary.json
+2022-03-07 13:49:42,870 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:49:48,762 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:49:48,763 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:49:50,272 DEBUG   SenderThread:71129 [sender.py:send():235] send: stats
+2022-03-07 13:49:54,496 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-07 13:49:54,502 DEBUG   SenderThread:71129 [sender.py:send():235] send: history
+2022-03-07 13:49:54,522 DEBUG   SenderThread:71129 [sender.py:send():235] send: summary
+2022-03-07 13:49:54,535 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-07 13:49:54,880 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:49:54,880 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/wandb-summary.json
+2022-03-07 13:49:56,881 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:50:04,092 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:50:04,093 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:50:04,710 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-07 13:50:04,716 DEBUG   SenderThread:71129 [sender.py:send():235] send: history
+2022-03-07 13:50:04,719 DEBUG   SenderThread:71129 [sender.py:send():235] send: summary
+2022-03-07 13:50:04,746 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-07 13:50:04,887 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/wandb-summary.json
+2022-03-07 13:50:06,889 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:50:19,440 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:50:19,441 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:50:21,568 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-07 13:50:21,574 DEBUG   SenderThread:71129 [sender.py:send():235] send: history
+2022-03-07 13:50:21,596 DEBUG   SenderThread:71129 [sender.py:send():235] send: summary
+2022-03-07 13:50:21,623 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-07 13:50:21,902 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/wandb-summary.json
+2022-03-07 13:50:22,900 DEBUG   SenderThread:71129 [sender.py:send():235] send: stats
+2022-03-07 13:50:22,903 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:50:34,813 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:50:34,814 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:50:38,914 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:50:50,208 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:50:50,208 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:50:52,924 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:50:55,286 DEBUG   SenderThread:71129 [sender.py:send():235] send: stats
+2022-03-07 13:51:05,539 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:51:05,540 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:51:06,936 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:51:20,946 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:51:20,950 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:51:20,950 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:51:27,695 DEBUG   SenderThread:71129 [sender.py:send():235] send: stats
+2022-03-07 13:51:34,956 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:51:36,281 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:51:36,281 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:51:41,927 DEBUG   SenderThread:71129 [sender.py:send():235] send: files
+2022-03-07 13:51:41,927 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file media/images/image_29_e90ba43ff19dfa71b38d.png with policy now
+2022-03-07 13:51:41,928 DEBUG   SenderThread:71129 [sender.py:send():235] send: files
+2022-03-07 13:51:41,928 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file media/images/relevance_map_29_9e013afacdf5b577c0d3.png with policy now
+2022-03-07 13:51:41,928 DEBUG   SenderThread:71129 [sender.py:send():235] send: files
+2022-03-07 13:51:41,929 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file media/images/true_29_39e1e15e0e647074b079.png with policy now
+2022-03-07 13:51:41,929 DEBUG   SenderThread:71129 [sender.py:send():235] send: files
+2022-03-07 13:51:41,929 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file media/images/pred_29_f9c6023ad4600d06372f.png with policy now
+2022-03-07 13:51:41,945 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-07 13:51:41,971 DEBUG   SenderThread:71129 [sender.py:send():235] send: history
+2022-03-07 13:51:42,011 DEBUG   SenderThread:71129 [sender.py:send():235] send: summary
+2022-03-07 13:51:42,027 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-07 13:51:42,028 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/wandb-summary.json
+2022-03-07 13:51:42,028 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_created():217] file/dir created: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/relevance_map_29_9e013afacdf5b577c0d3.png
+2022-03-07 13:51:42,028 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_created():217] file/dir created: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/true_29_39e1e15e0e647074b079.png
+2022-03-07 13:51:42,029 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_created():217] file/dir created: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/pred_29_f9c6023ad4600d06372f.png
+2022-03-07 13:51:42,029 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_created():217] file/dir created: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/image_29_e90ba43ff19dfa71b38d.png
+2022-03-07 13:51:42,029 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images
+2022-03-07 13:51:42,825 INFO    Thread-30 :71129 [upload_job.py:push():137] Uploaded file /tmp/tmp3l1bjpjkwandb/1vhqaz6e-media/images/true_29_39e1e15e0e647074b079.png
+2022-03-07 13:51:42,883 INFO    Thread-31 :71129 [upload_job.py:push():137] Uploaded file /tmp/tmp3l1bjpjkwandb/cvapskvk-media/images/pred_29_f9c6023ad4600d06372f.png
+2022-03-07 13:51:42,937 INFO    Thread-29 :71129 [upload_job.py:push():137] Uploaded file /tmp/tmp3l1bjpjkwandb/9g6qem0y-media/images/relevance_map_29_9e013afacdf5b577c0d3.png
+2022-03-07 13:51:42,998 INFO    Thread-28 :71129 [upload_job.py:push():137] Uploaded file /tmp/tmp3l1bjpjkwandb/2zc5jfnt-media/images/image_29_e90ba43ff19dfa71b38d.png
+2022-03-07 13:51:43,029 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:51:51,627 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:51:51,627 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:51:56,235 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-07 13:51:56,243 DEBUG   SenderThread:71129 [sender.py:send():235] send: history
+2022-03-07 13:51:56,262 DEBUG   SenderThread:71129 [sender.py:send():235] send: summary
+2022-03-07 13:51:56,279 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-07 13:51:57,042 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:51:57,042 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/wandb-summary.json
+2022-03-07 13:52:00,179 DEBUG   SenderThread:71129 [sender.py:send():235] send: stats
+2022-03-07 13:52:06,965 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:52:06,966 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:52:10,671 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-07 13:52:10,677 DEBUG   SenderThread:71129 [sender.py:send():235] send: history
+2022-03-07 13:52:10,686 DEBUG   SenderThread:71129 [sender.py:send():235] send: summary
+2022-03-07 13:52:10,707 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-07 13:52:11,055 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/wandb-summary.json
+2022-03-07 13:52:13,057 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:52:22,311 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:52:22,312 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:52:24,892 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-07 13:52:24,898 DEBUG   SenderThread:71129 [sender.py:send():235] send: history
+2022-03-07 13:52:24,919 DEBUG   SenderThread:71129 [sender.py:send():235] send: summary
+2022-03-07 13:52:24,933 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-07 13:52:25,067 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:52:25,068 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/wandb-summary.json
+2022-03-07 13:52:27,068 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:52:32,682 DEBUG   SenderThread:71129 [sender.py:send():235] send: stats
+2022-03-07 13:52:38,036 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:52:38,036 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:52:39,117 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-07 13:52:39,134 DEBUG   SenderThread:71129 [sender.py:send():235] send: history
+2022-03-07 13:52:39,143 DEBUG   SenderThread:71129 [sender.py:send():235] send: summary
+2022-03-07 13:52:39,156 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-07 13:52:40,080 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/wandb-summary.json
+2022-03-07 13:52:41,081 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:52:49,331 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-07 13:52:49,337 DEBUG   SenderThread:71129 [sender.py:send():235] send: history
+2022-03-07 13:52:49,353 DEBUG   SenderThread:71129 [sender.py:send():235] send: summary
+2022-03-07 13:52:49,380 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-07 13:52:50,088 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/wandb-summary.json
+2022-03-07 13:52:51,090 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:52:53,361 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:52:53,362 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:53:05,403 DEBUG   SenderThread:71129 [sender.py:send():235] send: stats
+2022-03-07 13:53:07,103 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:53:08,688 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:53:08,689 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:53:21,115 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:53:24,035 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:53:24,035 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:53:35,129 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:53:37,811 DEBUG   SenderThread:71129 [sender.py:send():235] send: stats
+2022-03-07 13:53:39,379 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:53:39,379 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:53:47,140 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:53:54,707 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:53:54,707 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:54:01,151 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:54:09,500 DEBUG   SenderThread:71129 [sender.py:send():235] send: files
+2022-03-07 13:54:09,500 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file media/images/image_35_d8f1c77a90158487c265.png with policy now
+2022-03-07 13:54:09,502 DEBUG   SenderThread:71129 [sender.py:send():235] send: files
+2022-03-07 13:54:09,502 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file media/images/relevance_map_35_60abd984aebda8e32dee.png with policy now
+2022-03-07 13:54:09,506 DEBUG   SenderThread:71129 [sender.py:send():235] send: files
+2022-03-07 13:54:09,506 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file media/images/true_35_012c2fd295a487bebeda.png with policy now
+2022-03-07 13:54:09,510 DEBUG   SenderThread:71129 [sender.py:send():235] send: files
+2022-03-07 13:54:09,511 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-07 13:54:09,511 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file media/images/pred_35_a5ddcb24ab775ff9326d.png with policy now
+2022-03-07 13:54:09,547 DEBUG   SenderThread:71129 [sender.py:send():235] send: history
+2022-03-07 13:54:09,573 DEBUG   SenderThread:71129 [sender.py:send():235] send: summary
+2022-03-07 13:54:09,594 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-07 13:54:10,036 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:54:10,046 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:54:10,158 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/wandb-summary.json
+2022-03-07 13:54:10,159 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_created():217] file/dir created: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/pred_35_a5ddcb24ab775ff9326d.png
+2022-03-07 13:54:10,160 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_created():217] file/dir created: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/true_35_012c2fd295a487bebeda.png
+2022-03-07 13:54:10,160 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_created():217] file/dir created: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/image_35_d8f1c77a90158487c265.png
+2022-03-07 13:54:10,160 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_created():217] file/dir created: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/relevance_map_35_60abd984aebda8e32dee.png
+2022-03-07 13:54:10,161 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images
+2022-03-07 13:54:10,389 DEBUG   SenderThread:71129 [sender.py:send():235] send: stats
+2022-03-07 13:54:10,491 INFO    Thread-35 :71129 [upload_job.py:push():137] Uploaded file /tmp/tmp3l1bjpjkwandb/10rndmwa-media/images/pred_35_a5ddcb24ab775ff9326d.png
+2022-03-07 13:54:10,539 INFO    Thread-34 :71129 [upload_job.py:push():137] Uploaded file /tmp/tmp3l1bjpjkwandb/3cykfb4l-media/images/true_35_012c2fd295a487bebeda.png
+2022-03-07 13:54:10,560 INFO    Thread-33 :71129 [upload_job.py:push():137] Uploaded file /tmp/tmp3l1bjpjkwandb/17rtd244-media/images/relevance_map_35_60abd984aebda8e32dee.png
+2022-03-07 13:54:10,819 INFO    Thread-32 :71129 [upload_job.py:push():137] Uploaded file /tmp/tmp3l1bjpjkwandb/37791yg2-media/images/image_35_d8f1c77a90158487c265.png
+2022-03-07 13:54:11,159 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:54:25,391 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:54:25,391 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:54:26,209 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-07 13:54:26,216 DEBUG   SenderThread:71129 [sender.py:send():235] send: history
+2022-03-07 13:54:26,236 DEBUG   SenderThread:71129 [sender.py:send():235] send: summary
+2022-03-07 13:54:26,249 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-07 13:54:27,174 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:54:27,174 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/wandb-summary.json
+2022-03-07 13:54:40,569 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-07 13:54:40,575 DEBUG   SenderThread:71129 [sender.py:send():235] send: history
+2022-03-07 13:54:40,599 DEBUG   SenderThread:71129 [sender.py:send():235] send: summary
+2022-03-07 13:54:40,613 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-07 13:54:40,720 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:54:40,720 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:54:41,186 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:54:41,186 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/wandb-summary.json
+2022-03-07 13:54:42,760 DEBUG   SenderThread:71129 [sender.py:send():235] send: stats
+2022-03-07 13:54:54,948 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-07 13:54:54,956 DEBUG   SenderThread:71129 [sender.py:send():235] send: history
+2022-03-07 13:54:54,975 DEBUG   SenderThread:71129 [sender.py:send():235] send: summary
+2022-03-07 13:54:54,990 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-07 13:54:55,198 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:54:55,199 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/wandb-summary.json
+2022-03-07 13:54:56,053 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:54:56,053 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:54:57,200 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:55:09,319 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-07 13:55:09,326 DEBUG   SenderThread:71129 [sender.py:send():235] send: history
+2022-03-07 13:55:09,346 DEBUG   SenderThread:71129 [sender.py:send():235] send: summary
+2022-03-07 13:55:09,359 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-07 13:55:10,212 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/wandb-summary.json
+2022-03-07 13:55:11,213 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:55:11,384 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:55:11,384 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:55:15,162 DEBUG   SenderThread:71129 [sender.py:send():235] send: stats
+2022-03-07 13:55:23,489 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-07 13:55:23,495 DEBUG   SenderThread:71129 [sender.py:send():235] send: history
+2022-03-07 13:55:23,512 DEBUG   SenderThread:71129 [sender.py:send():235] send: summary
+2022-03-07 13:55:23,530 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-07 13:55:24,223 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/wandb-summary.json
+2022-03-07 13:55:25,225 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:55:26,737 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:55:26,737 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:55:41,238 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:55:42,093 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:55:42,093 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:55:47,687 DEBUG   SenderThread:71129 [sender.py:send():235] send: stats
+2022-03-07 13:55:55,251 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:55:57,481 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:55:57,481 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:56:09,264 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:56:12,964 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:56:12,964 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:56:20,187 DEBUG   SenderThread:71129 [sender.py:send():235] send: stats
+2022-03-07 13:56:21,275 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:56:28,310 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:56:28,310 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:56:35,286 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:56:43,382 DEBUG   SenderThread:71129 [sender.py:send():235] send: files
+2022-03-07 13:56:43,383 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file media/images/image_41_d2e3e64e0f5cff561f13.png with policy now
+2022-03-07 13:56:43,384 DEBUG   SenderThread:71129 [sender.py:send():235] send: files
+2022-03-07 13:56:43,385 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file media/images/relevance_map_41_e49623205866691fcdc8.png with policy now
+2022-03-07 13:56:43,390 DEBUG   SenderThread:71129 [sender.py:send():235] send: files
+2022-03-07 13:56:43,390 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file media/images/true_41_a797cdf69bec05152d29.png with policy now
+2022-03-07 13:56:43,397 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-07 13:56:43,424 DEBUG   SenderThread:71129 [sender.py:send():235] send: files
+2022-03-07 13:56:43,425 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file media/images/pred_41_691f9527b0e927da9507.png with policy now
+2022-03-07 13:56:43,466 DEBUG   SenderThread:71129 [sender.py:send():235] send: history
+2022-03-07 13:56:43,494 DEBUG   SenderThread:71129 [sender.py:send():235] send: summary
+2022-03-07 13:56:43,520 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-07 13:56:43,655 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:56:43,656 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:56:44,294 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/wandb-summary.json
+2022-03-07 13:56:44,294 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_created():217] file/dir created: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/pred_41_691f9527b0e927da9507.png
+2022-03-07 13:56:44,295 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_created():217] file/dir created: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/relevance_map_41_e49623205866691fcdc8.png
+2022-03-07 13:56:44,295 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_created():217] file/dir created: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/true_41_a797cdf69bec05152d29.png
+2022-03-07 13:56:44,295 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_created():217] file/dir created: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/image_41_d2e3e64e0f5cff561f13.png
+2022-03-07 13:56:44,295 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images
+2022-03-07 13:56:44,402 INFO    Thread-38 :71129 [upload_job.py:push():137] Uploaded file /tmp/tmp3l1bjpjkwandb/2r04arf7-media/images/true_41_a797cdf69bec05152d29.png
+2022-03-07 13:56:44,424 INFO    Thread-39 :71129 [upload_job.py:push():137] Uploaded file /tmp/tmp3l1bjpjkwandb/xi3abvco-media/images/pred_41_691f9527b0e927da9507.png
+2022-03-07 13:56:44,448 INFO    Thread-37 :71129 [upload_job.py:push():137] Uploaded file /tmp/tmp3l1bjpjkwandb/bxvespeb-media/images/relevance_map_41_e49623205866691fcdc8.png
+2022-03-07 13:56:44,757 INFO    Thread-36 :71129 [upload_job.py:push():137] Uploaded file /tmp/tmp3l1bjpjkwandb/3f7dpo24-media/images/image_41_d2e3e64e0f5cff561f13.png
+2022-03-07 13:56:45,295 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:56:52,711 DEBUG   SenderThread:71129 [sender.py:send():235] send: stats
+2022-03-07 13:56:53,714 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-07 13:56:53,720 DEBUG   SenderThread:71129 [sender.py:send():235] send: history
+2022-03-07 13:56:53,737 DEBUG   SenderThread:71129 [sender.py:send():235] send: summary
+2022-03-07 13:56:53,763 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-07 13:56:54,304 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/wandb-summary.json
+2022-03-07 13:56:55,305 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:56:59,001 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:56:59,002 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:57:10,398 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-07 13:57:10,404 DEBUG   SenderThread:71129 [sender.py:send():235] send: history
+2022-03-07 13:57:10,422 DEBUG   SenderThread:71129 [sender.py:send():235] send: summary
+2022-03-07 13:57:10,438 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-07 13:57:11,317 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:57:11,317 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/wandb-summary.json
+2022-03-07 13:57:14,346 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:57:14,347 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:57:24,702 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-07 13:57:24,708 DEBUG   SenderThread:71129 [sender.py:send():235] send: history
+2022-03-07 13:57:24,727 DEBUG   SenderThread:71129 [sender.py:send():235] send: summary
+2022-03-07 13:57:24,742 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-07 13:57:25,311 DEBUG   SenderThread:71129 [sender.py:send():235] send: stats
+2022-03-07 13:57:25,328 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:57:25,328 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/wandb-summary.json
+2022-03-07 13:57:29,846 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:57:29,846 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:57:39,142 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-07 13:57:39,148 DEBUG   SenderThread:71129 [sender.py:send():235] send: history
+2022-03-07 13:57:39,167 DEBUG   SenderThread:71129 [sender.py:send():235] send: summary
+2022-03-07 13:57:39,180 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-07 13:57:39,340 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/wandb-summary.json
+2022-03-07 13:57:41,343 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:57:45,188 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:57:45,188 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:57:53,490 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-07 13:57:53,496 DEBUG   SenderThread:71129 [sender.py:send():235] send: history
+2022-03-07 13:57:53,505 DEBUG   SenderThread:71129 [sender.py:send():235] send: summary
+2022-03-07 13:57:53,532 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-07 13:57:54,354 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/wandb-summary.json
+2022-03-07 13:57:55,357 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:57:57,830 DEBUG   SenderThread:71129 [sender.py:send():235] send: stats
+2022-03-07 13:58:00,531 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-07 13:58:00,532 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: stop_status
+2022-03-07 13:58:07,295 WARNING MainThread:71129 [internal.py:wandb_internal():155] Internal process interrupt: 1
+2022-03-07 13:58:07,765 DEBUG   SenderThread:71129 [sender.py:send():235] send: telemetry
+2022-03-07 13:58:07,766 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-07 13:58:09,371 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:58:10,058 DEBUG   SenderThread:71129 [sender.py:send():235] send: exit
+2022-03-07 13:58:10,059 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-07 13:58:10,059 INFO    SenderThread:71129 [sender.py:send_exit():371] handling exit code: 0
+2022-03-07 13:58:10,060 INFO    SenderThread:71129 [sender.py:send_exit():373] handling runtime: 1147
+2022-03-07 13:58:10,080 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-07 13:58:10,080 INFO    SenderThread:71129 [sender.py:send_exit():379] send defer
+2022-03-07 13:58:10,080 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: poll_exit
+2022-03-07 13:58:10,081 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: defer
+2022-03-07 13:58:10,081 INFO    HandlerThread:71129 [handler.py:handle_request_defer():164] handle defer: 0
+2022-03-07 13:58:10,081 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: defer
+2022-03-07 13:58:10,082 INFO    SenderThread:71129 [sender.py:send_request_defer():388] handle sender defer: 0
+2022-03-07 13:58:10,082 INFO    SenderThread:71129 [sender.py:transition_state():392] send defer: 1
+2022-03-07 13:58:10,082 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: defer
+2022-03-07 13:58:10,082 INFO    HandlerThread:71129 [handler.py:handle_request_defer():164] handle defer: 1
+2022-03-07 13:58:10,304 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: defer
+2022-03-07 13:58:10,304 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-07 13:58:10,304 INFO    SenderThread:71129 [sender.py:send_request_defer():388] handle sender defer: 1
+2022-03-07 13:58:10,305 INFO    SenderThread:71129 [sender.py:transition_state():392] send defer: 2
+2022-03-07 13:58:10,305 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: poll_exit
+2022-03-07 13:58:10,306 DEBUG   SenderThread:71129 [sender.py:send():235] send: stats
+2022-03-07 13:58:10,306 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: defer
+2022-03-07 13:58:10,308 INFO    HandlerThread:71129 [handler.py:handle_request_defer():164] handle defer: 2
+2022-03-07 13:58:10,308 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: defer
+2022-03-07 13:58:10,308 INFO    SenderThread:71129 [sender.py:send_request_defer():388] handle sender defer: 2
+2022-03-07 13:58:10,308 INFO    SenderThread:71129 [sender.py:transition_state():392] send defer: 3
+2022-03-07 13:58:10,309 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: defer
+2022-03-07 13:58:10,309 INFO    HandlerThread:71129 [handler.py:handle_request_defer():164] handle defer: 3
+2022-03-07 13:58:10,309 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: defer
+2022-03-07 13:58:10,310 INFO    SenderThread:71129 [sender.py:send_request_defer():388] handle sender defer: 3
+2022-03-07 13:58:10,310 INFO    SenderThread:71129 [sender.py:transition_state():392] send defer: 4
+2022-03-07 13:58:10,310 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: defer
+2022-03-07 13:58:10,310 INFO    HandlerThread:71129 [handler.py:handle_request_defer():164] handle defer: 4
+2022-03-07 13:58:10,332 DEBUG   SenderThread:71129 [sender.py:send():235] send: summary
+2022-03-07 13:58:10,361 INFO    SenderThread:71129 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-07 13:58:10,362 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: defer
+2022-03-07 13:58:10,362 INFO    SenderThread:71129 [sender.py:send_request_defer():388] handle sender defer: 4
+2022-03-07 13:58:10,362 INFO    SenderThread:71129 [sender.py:transition_state():392] send defer: 5
+2022-03-07 13:58:10,362 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: defer
+2022-03-07 13:58:10,362 INFO    HandlerThread:71129 [handler.py:handle_request_defer():164] handle defer: 5
+2022-03-07 13:58:10,363 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: defer
+2022-03-07 13:58:10,363 INFO    SenderThread:71129 [sender.py:send_request_defer():388] handle sender defer: 5
+2022-03-07 13:58:10,372 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:58:10,372 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/wandb-summary.json
+2022-03-07 13:58:10,408 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-07 13:58:10,731 INFO    SenderThread:71129 [sender.py:transition_state():392] send defer: 6
+2022-03-07 13:58:10,732 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: poll_exit
+2022-03-07 13:58:10,733 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: defer
+2022-03-07 13:58:10,733 INFO    HandlerThread:71129 [handler.py:handle_request_defer():164] handle defer: 6
+2022-03-07 13:58:10,733 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: defer
+2022-03-07 13:58:10,733 INFO    SenderThread:71129 [sender.py:send_request_defer():388] handle sender defer: 6
+2022-03-07 13:58:10,733 INFO    SenderThread:71129 [dir_watcher.py:finish():283] shutting down directory watcher
+2022-03-07 13:58:10,834 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-07 13:58:11,373 INFO    Thread-7  :71129 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/config.yaml
+2022-03-07 13:58:11,375 INFO    SenderThread:71129 [dir_watcher.py:finish():313] scan: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files
+2022-03-07 13:58:11,375 INFO    SenderThread:71129 [dir_watcher.py:finish():327] scan save: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log output.log
+2022-03-07 13:58:11,375 INFO    SenderThread:71129 [dir_watcher.py:finish():327] scan save: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/wandb-metadata.json wandb-metadata.json
+2022-03-07 13:58:11,376 INFO    SenderThread:71129 [dir_watcher.py:finish():327] scan save: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/config.yaml config.yaml
+2022-03-07 13:58:11,382 INFO    SenderThread:71129 [dir_watcher.py:finish():327] scan save: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/requirements.txt requirements.txt
+2022-03-07 13:58:11,383 INFO    SenderThread:71129 [dir_watcher.py:finish():327] scan save: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/wandb-summary.json wandb-summary.json
+2022-03-07 13:58:11,383 INFO    SenderThread:71129 [dir_watcher.py:finish():327] scan save: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/conda-environment.yaml conda-environment.yaml
+2022-03-07 13:58:11,408 INFO    SenderThread:71129 [dir_watcher.py:finish():327] scan save: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/pred_29_f9c6023ad4600d06372f.png media/images/pred_29_f9c6023ad4600d06372f.png
+2022-03-07 13:58:11,408 INFO    SenderThread:71129 [dir_watcher.py:finish():327] scan save: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/image_11_685b3c808b203bfc434b.png media/images/image_11_685b3c808b203bfc434b.png
+2022-03-07 13:58:11,408 INFO    SenderThread:71129 [dir_watcher.py:finish():327] scan save: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/true_17_a9a479cfc1388159de08.png media/images/true_17_a9a479cfc1388159de08.png
+2022-03-07 13:58:11,408 INFO    SenderThread:71129 [dir_watcher.py:finish():327] scan save: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/relevance_map_35_60abd984aebda8e32dee.png media/images/relevance_map_35_60abd984aebda8e32dee.png
+2022-03-07 13:58:11,408 INFO    SenderThread:71129 [dir_watcher.py:finish():327] scan save: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/image_23_88190aff14b8eed127cb.png media/images/image_23_88190aff14b8eed127cb.png
+2022-03-07 13:58:11,409 INFO    SenderThread:71129 [dir_watcher.py:finish():327] scan save: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/relevance_map_5_7efcccd99ca4fb8a23df.png media/images/relevance_map_5_7efcccd99ca4fb8a23df.png
+2022-03-07 13:58:11,409 INFO    SenderThread:71129 [dir_watcher.py:finish():327] scan save: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/true_29_39e1e15e0e647074b079.png media/images/true_29_39e1e15e0e647074b079.png
+2022-03-07 13:58:11,409 INFO    SenderThread:71129 [dir_watcher.py:finish():327] scan save: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/pred_41_691f9527b0e927da9507.png media/images/pred_41_691f9527b0e927da9507.png
+2022-03-07 13:58:11,409 INFO    SenderThread:71129 [dir_watcher.py:finish():327] scan save: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/image_17_39868312759f28d1e7c7.png media/images/image_17_39868312759f28d1e7c7.png
+2022-03-07 13:58:11,409 INFO    SenderThread:71129 [dir_watcher.py:finish():327] scan save: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/relevance_map_29_9e013afacdf5b577c0d3.png media/images/relevance_map_29_9e013afacdf5b577c0d3.png
+2022-03-07 13:58:11,409 INFO    SenderThread:71129 [dir_watcher.py:finish():327] scan save: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/image_29_e90ba43ff19dfa71b38d.png media/images/image_29_e90ba43ff19dfa71b38d.png
+2022-03-07 13:58:11,409 INFO    SenderThread:71129 [dir_watcher.py:finish():327] scan save: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/true_23_648aa6ed59fe0aa4b1f8.png media/images/true_23_648aa6ed59fe0aa4b1f8.png
+2022-03-07 13:58:11,409 INFO    SenderThread:71129 [dir_watcher.py:finish():327] scan save: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/true_5_432bafd4951e512f1b0b.png media/images/true_5_432bafd4951e512f1b0b.png
+2022-03-07 13:58:11,410 INFO    SenderThread:71129 [dir_watcher.py:finish():327] scan save: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/pred_17_b88608446bcf6c5cbc85.png media/images/pred_17_b88608446bcf6c5cbc85.png
+2022-03-07 13:58:11,410 INFO    SenderThread:71129 [dir_watcher.py:finish():327] scan save: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/pred_35_a5ddcb24ab775ff9326d.png media/images/pred_35_a5ddcb24ab775ff9326d.png
+2022-03-07 13:58:11,410 INFO    SenderThread:71129 [dir_watcher.py:finish():327] scan save: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/relevance_map_17_a477eb4ca1e80e6bd45a.png media/images/relevance_map_17_a477eb4ca1e80e6bd45a.png
+2022-03-07 13:58:11,410 INFO    SenderThread:71129 [dir_watcher.py:finish():327] scan save: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/pred_11_a2d329fb58f247279c97.png media/images/pred_11_a2d329fb58f247279c97.png
+2022-03-07 13:58:11,410 INFO    SenderThread:71129 [dir_watcher.py:finish():327] scan save: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/pred_5_9539cf441238495203ce.png media/images/pred_5_9539cf441238495203ce.png
+2022-03-07 13:58:11,410 INFO    SenderThread:71129 [dir_watcher.py:finish():327] scan save: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/pred_23_f0bd4485f07a456ab180.png media/images/pred_23_f0bd4485f07a456ab180.png
+2022-03-07 13:58:11,410 INFO    SenderThread:71129 [dir_watcher.py:finish():327] scan save: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/image_5_43065bb82f48fdb8243c.png media/images/image_5_43065bb82f48fdb8243c.png
+2022-03-07 13:58:11,410 INFO    SenderThread:71129 [dir_watcher.py:finish():327] scan save: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/relevance_map_11_04425f4bac2348d68e59.png media/images/relevance_map_11_04425f4bac2348d68e59.png
+2022-03-07 13:58:11,411 INFO    SenderThread:71129 [dir_watcher.py:finish():327] scan save: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/relevance_map_23_d0a1b311c9f90b813e19.png media/images/relevance_map_23_d0a1b311c9f90b813e19.png
+2022-03-07 13:58:11,411 INFO    SenderThread:71129 [dir_watcher.py:finish():327] scan save: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/true_11_69fcaa6435d58f31660c.png media/images/true_11_69fcaa6435d58f31660c.png
+2022-03-07 13:58:11,411 INFO    SenderThread:71129 [dir_watcher.py:finish():327] scan save: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/relevance_map_41_e49623205866691fcdc8.png media/images/relevance_map_41_e49623205866691fcdc8.png
+2022-03-07 13:58:11,411 INFO    SenderThread:71129 [dir_watcher.py:finish():327] scan save: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/image_35_d8f1c77a90158487c265.png media/images/image_35_d8f1c77a90158487c265.png
+2022-03-07 13:58:11,411 INFO    SenderThread:71129 [dir_watcher.py:finish():327] scan save: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/true_35_012c2fd295a487bebeda.png media/images/true_35_012c2fd295a487bebeda.png
+2022-03-07 13:58:11,411 INFO    SenderThread:71129 [dir_watcher.py:finish():327] scan save: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/image_41_d2e3e64e0f5cff561f13.png media/images/image_41_d2e3e64e0f5cff561f13.png
+2022-03-07 13:58:11,411 INFO    SenderThread:71129 [dir_watcher.py:finish():327] scan save: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/media/images/true_41_a797cdf69bec05152d29.png media/images/true_41_a797cdf69bec05152d29.png
+2022-03-07 13:58:11,412 INFO    SenderThread:71129 [sender.py:transition_state():392] send defer: 7
+2022-03-07 13:58:11,412 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: poll_exit
+2022-03-07 13:58:11,413 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: defer
+2022-03-07 13:58:11,413 INFO    HandlerThread:71129 [handler.py:handle_request_defer():164] handle defer: 7
+2022-03-07 13:58:11,413 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: defer
+2022-03-07 13:58:11,413 INFO    SenderThread:71129 [sender.py:send_request_defer():388] handle sender defer: 7
+2022-03-07 13:58:11,414 INFO    SenderThread:71129 [file_pusher.py:finish():145] shutting down file pusher
+2022-03-07 13:58:11,514 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-07 13:58:11,515 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: poll_exit
+2022-03-07 13:58:11,617 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-07 13:58:11,617 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: poll_exit
+2022-03-07 13:58:11,720 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-07 13:58:11,720 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: poll_exit
+2022-03-07 13:58:11,822 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-07 13:58:11,822 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: poll_exit
+2022-03-07 13:58:11,924 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-07 13:58:11,925 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: poll_exit
+2022-03-07 13:58:12,027 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-07 13:58:12,027 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: poll_exit
+2022-03-07 13:58:12,130 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-07 13:58:12,130 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: poll_exit
+2022-03-07 13:58:12,232 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-07 13:58:12,233 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: poll_exit
+2022-03-07 13:58:12,305 INFO    Thread-40 :71129 [upload_job.py:push():137] Uploaded file /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/output.log
+2022-03-07 13:58:12,309 INFO    Thread-41 :71129 [upload_job.py:push():137] Uploaded file /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/config.yaml
+2022-03-07 13:58:12,312 INFO    Thread-42 :71129 [upload_job.py:push():137] Uploaded file /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/requirements.txt
+2022-03-07 13:58:12,335 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-07 13:58:12,335 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: poll_exit
+2022-03-07 13:58:12,381 INFO    Thread-44 :71129 [upload_job.py:push():137] Uploaded file /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/conda-environment.yaml
+2022-03-07 13:58:12,437 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-07 13:58:12,438 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: poll_exit
+2022-03-07 13:58:12,540 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-07 13:58:12,540 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: poll_exit
+2022-03-07 13:58:12,643 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-07 13:58:12,645 INFO    Thread-43 :71129 [upload_job.py:push():137] Uploaded file /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/files/wandb-summary.json
+2022-03-07 13:58:12,645 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: poll_exit
+2022-03-07 13:58:12,748 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-07 13:58:12,748 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: poll_exit
+2022-03-07 13:58:12,846 INFO    Thread-6  :71129 [sender.py:transition_state():392] send defer: 8
+2022-03-07 13:58:12,847 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: defer
+2022-03-07 13:58:12,847 INFO    HandlerThread:71129 [handler.py:handle_request_defer():164] handle defer: 8
+2022-03-07 13:58:12,847 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: defer
+2022-03-07 13:58:12,848 INFO    SenderThread:71129 [sender.py:send_request_defer():388] handle sender defer: 8
+2022-03-07 13:58:12,854 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-07 13:58:14,064 INFO    SenderThread:71129 [sender.py:transition_state():392] send defer: 9
+2022-03-07 13:58:14,065 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: poll_exit
+2022-03-07 13:58:14,066 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: defer
+2022-03-07 13:58:14,066 INFO    HandlerThread:71129 [handler.py:handle_request_defer():164] handle defer: 9
+2022-03-07 13:58:14,066 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: defer
+2022-03-07 13:58:14,066 INFO    SenderThread:71129 [sender.py:send_request_defer():388] handle sender defer: 9
+2022-03-07 13:58:14,067 INFO    SenderThread:71129 [sender.py:transition_state():392] send defer: 10
+2022-03-07 13:58:14,068 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: defer
+2022-03-07 13:58:14,068 DEBUG   SenderThread:71129 [sender.py:send():235] send: final
+2022-03-07 13:58:14,068 INFO    HandlerThread:71129 [handler.py:handle_request_defer():164] handle defer: 10
+2022-03-07 13:58:14,069 DEBUG   SenderThread:71129 [sender.py:send():235] send: footer
+2022-03-07 13:58:14,069 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: defer
+2022-03-07 13:58:14,069 INFO    SenderThread:71129 [sender.py:send_request_defer():388] handle sender defer: 10
+2022-03-07 13:58:14,167 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-07 13:58:14,168 DEBUG   SenderThread:71129 [sender.py:send_request():249] send_request: poll_exit
+2022-03-07 13:58:14,168 INFO    SenderThread:71129 [file_pusher.py:join():150] waiting for file pusher
+2022-03-07 13:58:14,939 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: sampled_history
+2022-03-07 13:58:14,942 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: get_summary
+2022-03-07 13:58:14,965 DEBUG   HandlerThread:71129 [handler.py:handle_request():141] handle_request: shutdown
+2022-03-07 13:58:14,965 INFO    HandlerThread:71129 [handler.py:finish():778] shutting down handler
+2022-03-07 13:58:15,069 INFO    WriterThread:71129 [datastore.py:close():281] close: /home/dginzburg/CLIP_Seg/Pytorch-UNet/wandb/run-20220307_133901-oueouf3q/run-oueouf3q.wandb
+2022-03-07 13:58:15,837 INFO    SenderThread:71129 [sender.py:finish():1078] shutting down sender
+2022-03-07 13:58:15,838 INFO    SenderThread:71129 [file_pusher.py:finish():145] shutting down file pusher
+2022-03-07 13:58:15,838 INFO    SenderThread:71129 [file_pusher.py:join():150] waiting for file pusher
+2022-03-07 13:58:15,845 INFO    MainThread:71129 [internal.py:handle_exit():82] Internal process exited

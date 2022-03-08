@@ -1,0 +1,28 @@
+INFO: Starting training:
+        Epochs:          50
+        Batch size:      256
+        Learning rate:   1e-05
+        Training size:   1464
+        Validation size: 1449
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  0.5
+        Mixed Precision: True
+Epoch 1/50:   0%|                                                          | 0/1464 [00:00<?, ?img/s]/home/dginzburg/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torch/nn/functional.py:3609: UserWarning: Default upsampling behavior when mode=bilinear is changed to align_corners=False since 0.4.0. Please specify align_corners=True if the old behavior is desired. See the documentation of nn.Upsample for details.
+  warnings.warn(
+/home/dginzburg/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torch/nn/functional.py:718: UserWarning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (Triggered internally at  /pytorch/c10/core/TensorImpl.h:1156.)
+  return torch.max_pool2d(input, kernel_size, stride, padding, dilation, ceil_mode)
+
+
+
+Epoch 1/50:  87%|████████████████████████▍   | 1280/1464 [04:38<00:40,  4.56img/s, loss (batch)=1.14]
+
+
+
+
+
+
+Validation round:  83%|█████████████████████████████████████▌       | 5/6 [04:29<00:54, 54.02s/batch]
+Epoch 1/50: 100%|████████████████████████████| 1464/1464 [10:22<00:00,  2.35img/s, loss (batch)=1.14]
+INFO: Checkpoint 1 saved!
+

@@ -1,0 +1,19 @@
+INFO: Starting training:
+        Epochs:          50
+        Batch size:      256
+        Learning rate:   1e-05
+        Training size:   1464
+        Validation size: 1449
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  0.5
+        Mixed Precision: True
+Epoch 1/50:   0%|                                                          | 0/1464 [00:03<?, ?img/s]
+Traceback (most recent call last):
+  File "train.py", line 348, in <module>
+    train_net(net=torch.nn.DataParallel(net, device_ids=device_ids),
+  File "train.py", line 209, in train_net
+    R_image_temp = texts2r_image(class_name, voc12_template, device, clip_model, clip_img)
+  File "/home/dginzburg/CLIP_Seg/Pytorch-UNet/utils/utils.py", line 140, in texts2r_image
+    R_image_temp = R_img_resize(R_image_temp)
+TypeError: R_img_resize() missing 1 required positional argument: 'image'
