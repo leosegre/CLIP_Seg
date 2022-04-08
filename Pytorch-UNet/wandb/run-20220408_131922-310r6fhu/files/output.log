@@ -1,0 +1,448 @@
+INFO: Starting training:
+        Epochs:          20
+        Batch size:      128
+        Learning rate:   1e-05
+        Training size:   1464
+        Validation size: 1449
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  0.5
+        Mixed Precision: True
+Epoch 1/20:   0%|                                                          | 0/1464 [00:00<?, ?img/s]/home/dvir_proj_1/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torch/nn/functional.py:3609: UserWarning: Default upsampling behavior when mode=bilinear is changed to align_corners=False since 0.4.0. Please specify align_corners=True if the old behavior is desired. See the documentation of nn.Upsample for details.
+  warnings.warn(
+/home/dvir_proj_1/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torch/nn/functional.py:718: UserWarning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (Triggered internally at  /tmp/pip-req-build-pyrtjkcs/c10/core/TensorImpl.h:1156.)
+  return torch.max_pool2d(input, kernel_size, stride, padding, dilation, ceil_mode)
+
+
+
+
+
+
+
+
+
+Epoch 1/20:  96%|█████████████████████████████▊ | 1408/1464 [01:42<00:02, 20.74img/s, loss (batch)=1]
+
+
+
+
+
+
+
+
+
+
+
+
+Validation round:  92%|███████████████████████████████████████▍   | 11/12 [01:04<00:05,  5.68s/batch]
+Epoch 1/20: 100%|███████████████████████████| 1464/1464 [02:53<00:00,  8.42img/s, loss (batch)=0.997]
+INFO: Checkpoint 1 saved!
+
+
+
+
+
+
+
+
+
+
+Epoch 2/20:  87%|███████████████████████▌   | 1280/1464 [01:01<00:08, 21.90img/s, loss (batch)=0.876]
+
+
+
+
+
+
+
+
+
+
+
+
+Validation round:  92%|███████████████████████████████████████▍   | 11/12 [01:04<00:05,  5.61s/batch]
+
+Epoch 2/20: 100%|███████████████████████████| 1464/1464 [02:17<00:00, 10.66img/s, loss (batch)=0.887]
+INFO: Checkpoint 2 saved!
+
+
+
+
+
+
+
+
+
+Epoch 3/20:  79%|██████████████████████      | 1152/1464 [00:55<00:14, 22.01img/s, loss (batch)=0.84]
+
+
+
+
+
+
+
+
+
+
+
+
+Validation round: 100%|███████████████████████████████████████████| 12/12 [01:10<00:00,  4.69s/batch]
+
+
+Epoch 3/20: 100%|███████████████████████████| 1464/1464 [02:22<00:00, 10.28img/s, loss (batch)=0.825]
+INFO: Checkpoint 3 saved!
+
+
+
+
+
+
+
+
+Epoch 4/20:  70%|██████████████████▉        | 1024/1464 [00:50<00:20, 21.21img/s, loss (batch)=0.802]
+
+
+
+
+
+
+
+
+
+
+
+
+Validation round:  92%|███████████████████████████████████████▍   | 11/12 [01:07<00:05,  5.87s/batch]
+
+
+Epoch 4/20: 100%|███████████████████████████| 1464/1464 [02:22<00:00, 10.29img/s, loss (batch)=0.776]
+INFO: Checkpoint 4 saved!
+
+
+
+
+
+
+Epoch 5/20:  61%|█████████████████▏          | 896/1464 [00:45<00:27, 20.38img/s, loss (batch)=0.811]
+
+
+
+
+
+
+
+
+
+
+
+
+Validation round:  92%|███████████████████████████████████████▍   | 11/12 [01:06<00:05,  5.88s/batch]
+
+
+
+
+Epoch 5/20: 100%|███████████████████████████| 1464/1464 [02:23<00:00, 10.21img/s, loss (batch)=0.805]
+INFO: Checkpoint 5 saved!
+
+
+
+
+
+
+Epoch 6/20:  52%|██████████████▋             | 768/1464 [00:38<00:33, 20.75img/s, loss (batch)=0.781]
+
+
+
+
+
+
+
+
+
+
+
+
+Validation round:  92%|███████████████████████████████████████▍   | 11/12 [01:08<00:06,  6.05s/batch]
+
+
+
+
+Epoch 6/20: 100%|███████████████████████████| 1464/1464 [02:24<00:00, 10.12img/s, loss (batch)=0.788]
+INFO: Checkpoint 6 saved!
+
+
+
+
+Epoch 7/20:  44%|████████████▏               | 640/1464 [00:33<00:40, 20.10img/s, loss (batch)=0.769]
+
+
+
+
+
+
+
+
+
+
+
+
+Validation round:  92%|███████████████████████████████████████▍   | 11/12 [01:06<00:05,  5.89s/batch]
+
+
+
+
+
+
+Epoch 7/20: 100%|███████████████████████████| 1464/1464 [02:22<00:00, 10.26img/s, loss (batch)=0.823]
+INFO: Checkpoint 7 saved!
+
+
+
+Epoch 8/20:  35%|█████████▊                  | 512/1464 [00:26<00:46, 20.27img/s, loss (batch)=0.758]
+
+
+
+
+
+
+
+
+
+
+
+
+Validation round:  92%|███████████████████████████████████████▍   | 11/12 [01:07<00:05,  5.86s/batch]
+
+
+
+
+
+
+Epoch 8/20: 100%|███████████████████████████| 1464/1464 [02:22<00:00, 10.24img/s, loss (batch)=0.757]
+INFO: Checkpoint 8 saved!
+
+
+Epoch 9/20:  26%|███████▎                    | 384/1464 [00:21<00:57, 18.85img/s, loss (batch)=0.807]
+
+
+
+
+
+
+
+
+
+
+
+
+Validation round:  92%|███████████████████████████████████████▍   | 11/12 [01:08<00:06,  6.04s/batch]
+
+
+
+
+
+
+
+Epoch 9/20: 100%|███████████████████████████| 1464/1464 [02:25<00:00, 10.08img/s, loss (batch)=0.797]
+INFO: Checkpoint 9 saved!
+
+
+Epoch 10/20:  17%|████▋                      | 256/1464 [00:14<01:07, 17.95img/s, loss (batch)=0.757]
+
+
+
+
+
+
+
+
+
+
+
+
+Validation round:  92%|███████████████████████████████████████▍   | 11/12 [01:08<00:06,  6.02s/batch]
+
+
+
+
+
+
+
+
+
+Epoch 10/20: 100%|██████████████████████████| 1464/1464 [02:24<00:00, 10.11img/s, loss (batch)=0.717]
+INFO: Checkpoint 10 saved!
+
+Epoch 11/20:   9%|██▎                        | 128/1464 [00:08<01:32, 14.46img/s, loss (batch)=0.721]
+
+
+
+
+
+
+
+
+
+
+
+
+Validation round: 100%|███████████████████████████████████████████| 12/12 [01:09<00:00,  4.69s/batch]
+
+
+
+
+
+
+
+
+
+
+Epoch 11/20: 100%|██████████████████████████| 1464/1464 [02:22<00:00, 18.82img/s, loss (batch)=0.726]
+
+
+
+
+
+
+
+
+
+
+
+Epoch 11/20: 100%|██████████████████████████| 1464/1464 [03:32<00:00,  6.89img/s, loss (batch)=0.726]
+INFO: Checkpoint 11 saved!
+
+
+
+
+
+
+
+
+
+
+Epoch 12/20:  96%|██████████████████████████▉ | 1408/1464 [01:09<00:02, 21.24img/s, loss (batch)=0.7]
+
+
+
+
+
+
+
+
+
+
+
+
+
+Validation round: 100%|███████████████████████████████████████████| 12/12 [01:08<00:00,  4.64s/batch]
+Epoch 12/20: 100%|██████████████████████████| 1464/1464 [02:22<00:00, 10.31img/s, loss (batch)=0.704]
+INFO: Checkpoint 12 saved!
+
+
+
+
+
+
+
+
+
+Epoch 13/20:  87%|██████████████████████▋   | 1280/1464 [01:02<00:08, 21.08img/s, loss (batch)=0.681]
+
+
+
+
+
+
+
+
+
+
+
+
+Validation round:  92%|███████████████████████████████████████▍   | 11/12 [01:07<00:05,  5.99s/batch]
+Epoch 13/20: 100%|██████████████████████████| 1464/1464 [02:23<00:00, 10.22img/s, loss (batch)=0.638]
+INFO: Checkpoint 13 saved!
+
+
+
+
+
+
+
+
+
+Epoch 14/20:  79%|████████████████████▍     | 1152/1464 [00:57<00:15, 20.64img/s, loss (batch)=0.707]
+
+
+
+
+
+
+
+
+
+
+
+
+Validation round:  92%|███████████████████████████████████████▍   | 11/12 [01:08<00:06,  6.00s/batch]
+
+
+Epoch 14/20: 100%|███████████████████████████| 1464/1464 [02:25<00:00, 10.08img/s, loss (batch)=0.69]
+INFO: Checkpoint 14 saved!
+
+
+
+
+
+
+
+
+Epoch 15/20:  70%|███████████████████▌        | 1024/1464 [00:51<00:21, 20.91img/s, loss (batch)=0.7]
+
+
+
+
+
+
+
+
+
+
+
+
+Validation round:  92%|███████████████████████████████████████▍   | 11/12 [01:06<00:05,  5.75s/batch]
+
+
+Epoch 15/20: 100%|██████████████████████████| 1464/1464 [02:22<00:00, 10.26img/s, loss (batch)=0.782]
+INFO: Checkpoint 15 saved!
+
+
+
+
+
+
+
+Epoch 16/20:  61%|████████████████▌          | 896/1464 [00:43<00:26, 21.42img/s, loss (batch)=0.671]
+
+
+
+
+
+
+
+
+
+
+
+
+Validation round:  92%|███████████████████████████████████████▍   | 11/12 [01:04<00:05,  5.63s/batch]
+
+
+
+Epoch 16/20: 100%|████████████████████████████| 1464/1464 [02:18<00:00, 10.61img/s, loss (batch)=0.7]
+INFO: Checkpoint 16 saved!
+
+
+Epoch 17/20:  17%|████▋                      | 256/1464 [00:20<01:37, 12.41img/s, loss (batch)=0.635]
+INFO: Saved interrupt

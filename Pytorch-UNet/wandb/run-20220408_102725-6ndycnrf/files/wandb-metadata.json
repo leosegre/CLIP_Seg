@@ -1,0 +1,30 @@
+{
+    "os": "Linux-5.4.0-54-generic-x86_64-with-glibc2.17",
+    "python": "3.8.12",
+    "heartbeatAt": "2022-04-08T07:27:27.573285",
+    "startedAt": "2022-04-08T07:27:25.850330",
+    "docker": null,
+    "gpu": "GeForce RTX 2080 Ti",
+    "gpu_count": 8,
+    "cpu_count": 40,
+    "cuda": "10.2.89",
+    "args": [
+        "--amp",
+        "-e",
+        "20",
+        "-b",
+        "128"
+    ],
+    "state": "running",
+    "program": "train.py",
+    "codePath": "Pytorch-UNet/train.py",
+    "git": {
+        "remote": "https://github.com/leosegre/CLIP_Seg.git",
+        "commit": "1348bc90f1e5e33e95baa723eae4e5c095ff642e"
+    },
+    "email": "leosegre@gmail.com",
+    "root": "/home/dvir_proj_1/CLIP_Seg",
+    "host": "G291-281-00",
+    "username": "dvir_proj_1",
+    "executable": "/home/dvir_proj_1/anaconda3/envs/CLIP_Seg/bin/python"
+}

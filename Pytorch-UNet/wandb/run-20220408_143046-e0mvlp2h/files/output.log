@@ -1,0 +1,332 @@
+INFO: Starting training:
+        Epochs:          20
+        Batch size:      128
+        Learning rate:   4e-05
+        Training size:   1464
+        Validation size: 1449
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  0.5
+        Mixed Precision: True
+Epoch 1/20:   0%|                                                          | 0/1464 [00:00<?, ?img/s]/home/dvir_proj_1/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torch/nn/functional.py:3609: UserWarning: Default upsampling behavior when mode=bilinear is changed to align_corners=False since 0.4.0. Please specify align_corners=True if the old behavior is desired. See the documentation of nn.Upsample for details.
+  warnings.warn(
+/home/dvir_proj_1/anaconda3/envs/CLIP_Seg/lib/python3.8/site-packages/torch/nn/functional.py:718: UserWarning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (Triggered internally at  /tmp/pip-req-build-pyrtjkcs/c10/core/TensorImpl.h:1156.)
+  return torch.max_pool2d(input, kernel_size, stride, padding, dilation, ceil_mode)
+
+
+
+
+
+
+
+
+
+
+
+Epoch 1/20: 100%|████████████████████████████| 1464/1464 [01:45<00:00, 20.44img/s, loss (batch)=0.95]
+
+
+
+
+
+
+
+
+
+
+
+Epoch 1/20: 100%|████████████████████████████| 1464/1464 [02:56<00:00,  8.28img/s, loss (batch)=0.95]
+INFO: Checkpoint 1 saved!
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 2/20: 100%|███████████████████████████| 1464/1464 [01:08<00:00, 21.32img/s, loss (batch)=0.846]
+INFO: Checkpoint 2 saved!
+
+
+
+
+
+
+
+
+
+
+
+Epoch 3/20: 100%|███████████████████████████| 1464/1464 [01:09<00:00, 20.97img/s, loss (batch)=0.804]
+INFO: Checkpoint 3 saved!
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 4/20: 100%|███████████████████████████| 1464/1464 [01:10<00:00, 20.65img/s, loss (batch)=0.852]
+INFO: Checkpoint 4 saved!
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 5/20: 100%|███████████████████████████| 1464/1464 [01:11<00:00, 20.35img/s, loss (batch)=0.759]
+INFO: Checkpoint 5 saved!
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 6/20: 100%|███████████████████████████| 1464/1464 [01:10<00:00, 21.50img/s, loss (batch)=0.835]
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 6/20: 100%|███████████████████████████| 1464/1464 [02:19<00:00, 10.50img/s, loss (batch)=0.835]
+INFO: Checkpoint 6 saved!
+
+
+
+
+
+
+
+
+
+
+
+Epoch 7/20: 100%|███████████████████████████| 1464/1464 [01:12<00:00, 20.30img/s, loss (batch)=0.829]
+INFO: Checkpoint 7 saved!
+
+
+
+
+
+
+
+
+
+
+
+Epoch 8/20: 100%|████████████████████████████| 1464/1464 [01:11<00:00, 20.35img/s, loss (batch)=0.74]
+INFO: Checkpoint 8 saved!
+
+
+
+
+
+
+
+
+
+
+
+Epoch 9/20: 100%|███████████████████████████| 1464/1464 [01:11<00:00, 20.35img/s, loss (batch)=0.823]
+INFO: Checkpoint 9 saved!
+
+
+
+
+
+
+
+
+
+
+
+Epoch 10/20: 100%|██████████████████████████| 1464/1464 [01:11<00:00, 20.49img/s, loss (batch)=0.685]
+INFO: Checkpoint 10 saved!
+
+
+
+
+
+
+
+
+
+
+
+Epoch 11/20: 100%|██████████████████████████| 1464/1464 [01:13<00:00, 20.56img/s, loss (batch)=0.771]
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 11/20: 100%|██████████████████████████| 1464/1464 [02:24<00:00, 10.13img/s, loss (batch)=0.771]
+INFO: Checkpoint 11 saved!
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 12/20: 100%|██████████████████████████| 1464/1464 [01:11<00:00, 20.41img/s, loss (batch)=0.832]
+INFO: Checkpoint 12 saved!
+
+
+
+
+
+
+
+
+
+
+
+Epoch 13/20: 100%|██████████████████████████| 1464/1464 [01:12<00:00, 20.11img/s, loss (batch)=0.692]
+INFO: Checkpoint 13 saved!
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 14/20: 100%|██████████████████████████| 1464/1464 [01:12<00:00, 20.32img/s, loss (batch)=0.682]
+INFO: Checkpoint 14 saved!
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 15/20: 100%|██████████████████████████| 1464/1464 [01:10<00:00, 20.90img/s, loss (batch)=0.765]
+INFO: Checkpoint 15 saved!
+
+
+
+
+
+
+
+
+
+
+
+Epoch 16/20: 100%|██████████████████████████| 1464/1464 [01:13<00:00, 20.80img/s, loss (batch)=0.691]
+
+
+
+
+
+
+
+
+
+
+
+Epoch 16/20: 100%|██████████████████████████| 1464/1464 [02:24<00:00, 10.12img/s, loss (batch)=0.691]
+INFO: Checkpoint 16 saved!
+
+
+
+
+
+
+
+
+
+
+
+Epoch 17/20: 100%|██████████████████████████| 1464/1464 [01:10<00:00, 20.68img/s, loss (batch)=0.694]
+INFO: Checkpoint 17 saved!
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 18/20: 100%|██████████████████████████| 1464/1464 [01:12<00:00, 20.15img/s, loss (batch)=0.655]
+INFO: Checkpoint 18 saved!
+
+
+
+
+
+
+
+
+
+
+
+Epoch 19/20: 100%|███████████████████████████| 1464/1464 [01:12<00:00, 20.28img/s, loss (batch)=0.65]
+INFO: Checkpoint 19 saved!
+
+
+
+
+
+
+
+
+
+
+
+Epoch 20/20: 100%|██████████████████████████| 1464/1464 [01:12<00:00, 20.22img/s, loss (batch)=0.683]
+INFO: Checkpoint 20 saved!

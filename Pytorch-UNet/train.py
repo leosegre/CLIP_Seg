@@ -56,7 +56,8 @@ def train_net(net,
     T.RandomResize(224),
     T.PILToTensor(),
     T.ConvertImageDtype(torch.float32),
-    T.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+    # T.Normalize_lite()
+    # T.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
     ])
 
 
@@ -263,9 +264,9 @@ def train_net(net,
                 pbar.set_postfix(**{'loss (batch)': loss.item()})
 
                 # Evaluation round
-                division_step = (len(train_dataset) // (batch_size))
+                division_step = ((len(train_dataset) // (batch_size))+1)
                 if division_step > 0:
-                    if global_step % division_step == 0:
+                    if (global_step % division_step == 0) and (epoch % 5 == 0):
                         histograms = {}
                         for tag, value in net.named_parameters():
                             tag = tag.replace('/', '.')
